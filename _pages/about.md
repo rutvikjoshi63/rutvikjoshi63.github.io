@@ -19,7 +19,16 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+<!-- Text can be **bold**, _italic_, or ~~strikethrough~~. -->
+#Important links
+1. [**Machine Learning roadmap**](https://rutvikjoshi63.github.io/blogs/Machine-Learning-roadmap/).
+
+[**Machine Learning roadmap**](https://rutvikjoshi63.github.io/script/Machine-Learning-roadmap/).
+
+2. [**Toefl repository**](https://rutvikjoshi63.github.io/TOEFL/)
+There should be whitespace between paragraphs.
+
+The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
 Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
