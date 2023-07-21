@@ -14,7 +14,8 @@ related_publications: einstein1950meaning, einstein1905movement
     * [Mathematics](Mathematics)
     * [Get familiar with different libraries and concepts](Libraries)
     * Zero to Mastery Machine Learning for [Quick recap](https://github.com/mrdbourke/zero-to-mastery-ml)
-    * [*Andrew Ng Machine Learning Course*][*youtube*](https://www.youtube.com/watch?v=jGwO_UgTS7I&t=11s&ab_channel=StanfordOnline)
+    * *Andrew Ng Machine Learning Course*[*youtube*](https://www.youtube.com/watch?v=jGwO_UgTS7I&t=11s&ab_channel=StanfordOnline)
+    * ✨ Python ML Projects (/home/rutvik/Documents/Robotics/Robotics drive D/ML)
 
 2. [Computer vision](Computer vision)
 
