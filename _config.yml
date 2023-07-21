@@ -2,13 +2,13 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: Tracking progress # the website title (if blank, full name will be used instead)
 first_name: Rutvik
 middle_name: N.
 last_name: Joshi
 email: you@example.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. Latest blog for information
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -71,43 +71,43 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: # your GitHub user name
-gitlab_username: # your GitLab user name
-twitter_username: # your Twitter handle
-mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: # your LinkedIn user name
-telegram_username: # your Telegram user name
-scholar_userid: # your Google Scholar ID
-semanticscholar_id: # your Semantic Scholar ID
-whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
+github_username: rutvikjoshi63 # your GitHub user name
+gitlab_username:  # your GitLab user name
+twitter_username: Under Development  # your Twitter handle
+mastodon_username:  # your mastodon instance+username in the format instance.tld/@username
+linkedin_username: Under Development  # your LinkedIn user name
+telegram_username: Under Development # your Telegram user name
+scholar_userid:  # your Google Scholar ID
+semanticscholar_id:  # your Semantic Scholar ID
+whatsapp_number: +918422031006 # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 orcid_id: # your ORCID ID
-medium_username: # your Medium username
-quora_username: # your Quora username
-publons_id: # your ID on Publons
-lattes_id: # your ID on Lattes (Brazilian Lattes CV)
-osf_id: # your OSF ID
-research_gate_profile: # your profile on ResearchGate
+medium_username:  # your Medium username
+quora_username: Under Development  # your Quora username
+publons_id:  # your ID on Publons
+lattes_id:  # your ID on Lattes (Brazilian Lattes CV)
+osf_id:  # your OSF ID
+research_gate_profile:  # your profile on ResearchGate
 scopus_id: # your profile on Scopus
-blogger_url: # your blogger URL
-work_url: # work page URL
-keybase_username: # your keybase user name
-wikidata_id: # your wikidata id
-wikipedia_id: # your wikipedia id (Case sensitive)
-dblp_url: # your DBLP profile url
-stackoverflow_id: # your stackoverflow id
-kaggle_id: # your kaggle id
-lastfm_id: # your lastfm id
-spotify_id: # your spotify id
-pinterest_id: # your pinterest id
-unsplash_id: # your unsplash id
-instagram_id: # your instagram id
-facebook_id: # your facebook id
-youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
-discord_id: # your discord id (18-digit unique numerical identifier)
-zotero_username: # your zotero username
+blogger_url: Under Development # your blogger URL
+work_url: Under Development # work page URL
+keybase_username:  # your keybase user name
+wikidata_id:  # your wikidata id
+wikipedia_id:  # your wikipedia id (Case sensitive)
+dblp_url:  # your DBLP profile url
+stackoverflow_id: Under Development # your stackoverflow id
+kaggle_id: Under Development # your kaggle id
+lastfm_id:  # your lastfm id
+spotify_id: Under Development # your spotify id
+pinterest_id:  # your pinterest id
+unsplash_id:  # your unsplash id
+instagram_id: Under Development # your instagram id
+facebook_id: Under Development # your facebook id
+youtube_id: Under Development # your youtube channel id (youtube.com/@<youtube_id>)
+discord_id: Under Development # your discord id (18-digit unique numerical identifier)
+zotero_username:  # your zotero username
 
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  No contact please
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -123,9 +123,9 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
+blog_name: Persnal Blogs # blog_name will be displayed in your blog page
 blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: a simple whitespace theme for academics
+blog_description: Tracking progress
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -153,7 +153,7 @@ giscus:
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
