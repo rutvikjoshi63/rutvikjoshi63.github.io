@@ -11,26 +11,38 @@ related_publications: einstein1950meaning, einstein1905movement
 ---
 *## A New Post for resources to learn machine learning*
 1. Use Parallel Conquring Technique
-    * [Deep Learning Mathematics Roadmap](https://github.com/h9-tect/ML-DL_Roadmap./tree/main).
-    * [Machine-Learning-in-90-days](https://www.youtube.com/watch?v=czQO1_GEEos&list=PLZoTAELRMXVPBTrWtJkn3wWQxZkmTXGwe)
+    * [Mathematics](Mathematics)
+    * [Get familiar with different libraries and concepts](Libraries)
     * Zero to Mastery Machine Learning for [Quick recap](https://github.com/mrdbourke/zero-to-mastery-ml)
+    * [*Andrew Ng Machine Learning Course*][*youtube*](https://www.youtube.com/watch?v=jGwO_UgTS7I&t=11s&ab_channel=StanfordOnline)
 
-* *Libraries*
+2. [Computer vision](Computer vision)
+
+3. [Maybe check-out NLP](NLP)
+
+#Mathematics
+  * [Deep Learning Mathematics Roadmap](https://github.com/h9-tect/ML-DL_Roadmap./tree/main).
+
+  * *LinearAlgebra*
+    * file:///home/rutvik/Documents/Robotics/Robotics%20drive%20D/LinearAlgebra/linalg.pdf
+
+  * *Statistics*
+    * file:///home/rutvik/Documents/Robotics/Robotics%20drive%20D/Statistics/astats.pdf
+
+
+#Libraries
+  * [Machine-Learning-in-90-days](https://www.youtube.com/watch?v=czQO1_GEEos&list=PLZoTAELRMXVPBTrWtJkn3wWQxZkmTXGwe)
   * [scikit-learn](https://scikit-learn.org/stable/getting_started.html)
+  [user guide](https://scikit-learn.org/stable/user_guide.html)
+  * [Data repo](https://archive.ics.uci.edu/)
 
-*LinearAlgebra*
-  * file:///home/rutvik/Documents/Robotics/Robotics%20drive%20D/LinearAlgebra/linalg.pdf
+#Computer vision
+* [*Computer vision by Krish*](https://www.youtube.com/watch?v=sXqWrtUseK8&ab_channel=KrishNaik)
 
-*Statistics*
-  * file:///home/rutvik/Documents/Robotics/Robotics%20drive%20D/Statistics/astats.pdf
+* [*Convolutional Neural Networks for Visual Recognition*](https://www.youtube.com/watch?v=vT1JzLTH4G4&t=33s&ab_channel=StanfordUniversitySchoolofEngineering)
 
-[*Computer vision by Krish*](https://www.youtube.com/watch?v=sXqWrtUseK8&ab_channel=KrishNaik)
-
-[*Convolutional Neural Networks for Visual Recognition*](https://www.youtube.com/watch?v=vT1JzLTH4G4&t=33s&ab_channel=StanfordUniversitySchoolofEngineering)
-
-[*Andrew Ng Machine Learning Course*][*youtube*](https://www.youtube.com/watch?v=jGwO_UgTS7I&t=11s&ab_channel=StanfordOnline)
-
-[*NLP with Deep Learning*](https://www.youtube.com/watch?v=rmVRLeJRkl4&t=2s&ab_channel=StanfordOnline)
+#NLP
+* [*NLP with Deep Learning*](https://www.youtube.com/watch?v=rmVRLeJRkl4&t=2s&ab_channel=StanfordOnline)
 
 
  Use the toolbar above, or click the **?** button for formatting help.

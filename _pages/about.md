@@ -1,8 +1,8 @@
 ---
 layout: about
-title: about
+title: Rutvik Joshi
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='#'>Affiliations</a>. Software Developer insterested in ML and Robotics.
 
 profile:
   align: right
