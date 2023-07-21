@@ -26,9 +26,13 @@ social: true  # includes social icons at the bottom of the page
 
 1. [**Machine Learning roadmap**](https://rutvikjoshi63.github.io/blog/2023/Machine-Learning-roadmap/).
 
-2. [**Toefl repository**](https://rutvikjoshi63.github.io/blog/2023/post-bibliography/)
+2. [**Toefl repository**](https://rutvikjoshi63.github.io/blog/2023/Toefl-repository/)
 
-3. [***swayam***](https://swayam.gov.in/mycourses)
+3. [**swayam**](https://swayam.gov.in/mycourses)
+
+4. [**Data Structures & Algorithms**](https://rutvikjoshi63.github.io/blog/2023/Data-Structures-Algorithms/)
+
+5. [**discord**](https://discord.com/channels/759039091433013309/759039091433013312)
 
 There should be whitespace between paragraphs.
 
