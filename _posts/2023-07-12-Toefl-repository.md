@@ -10,8 +10,35 @@ related_posts: false
 related_publications: einstein1950meaning, einstein1905movement
 ---
 [ETS](https://www.ets.org/)
+[practise test](https://www.ets.org/toefl.html)
+top 100 words for toefl writing
+and phrases
+Reading (recheck ans in last 5 min)writing Listening and Speaking
+take a test first
+spellings in writing
+focus on weakness
+[**vocabulary website**](https://www.vocabulary.com/play/)
+[testglider](https://www.testglider.com/) for free test
+watch videos on biology
+Listen to different accents
+Take notes while listening (any upside A)(watch videos on this)
+type faster(video)
+don't use exact text while speaking
 
-Vocabulary words:
+Have template(structured) for speaking and essays, writing
+Practise
+
+last week only practise
+rest before test
+
+
+Follow these five easy steps to make your English sound more fluent starting today.
+1)Smile and breathe. No matter what your level of English, confidence is vital. ...
+2)Memorize examples with vocabulary. Don't just memorize lists of words. ...
+3)Listen to learn. ...
+4)Exercise your mouth muscles. ...
+5)Copy a native speaker
+
 
  releated important links\\
 The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file
