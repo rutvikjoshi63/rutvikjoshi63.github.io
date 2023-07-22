@@ -2,7 +2,7 @@
 layout: about
 title: Rutvik Joshi
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Software Developer insterested in ML and Robotics.
+subtitle: <a href='#'>Software Developer insterested in ML and Robotics.</a>. 
 
 profile:
   align: right
@@ -26,7 +26,8 @@ social: true  # includes social icons at the bottom of the page
 
 1. [**Machine Learning roadmap**](https://rutvikjoshi63.github.io/blog/2023/Machine-Learning-roadmap/).
 
-2. [**Toefl repository**](https://rutvikjoshi63.github.io/blog/2023/Toefl-repository/)
+2. [**Masters**](https://rutvikjoshi63.github.io/blog/2023/Masters/)
+    [**Toefl repository**](https://rutvikjoshi63.github.io/blog/2023/Toefl-repository/)
 
 3. [**swayam**](https://swayam.gov.in/mycourses)
 
