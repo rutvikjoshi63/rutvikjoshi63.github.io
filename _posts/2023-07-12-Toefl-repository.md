@@ -10,19 +10,33 @@ related_posts: false
 related_publications: einstein1950meaning, einstein1905movement
 ---
 [ETS](https://www.ets.org/)
+
 [practise test](https://www.ets.org/toefl.html)
+
 top 100 words for toefl writing
 and phrases
+
 Reading (recheck ans in last 5 min)writing Listening and Speaking
+
 take a test first
+
 spellings in writing
+
 focus on weakness
+
 [**vocabulary website**](https://www.vocabulary.com/play/)
+
 [testglider](https://www.testglider.com/) for free test
+
+[**Sample and Practise test**](https://www.graduateshotline.com/toefl.html)
+
+
 watch videos on biology
 Listen to different accents
 Take notes while listening (any upside A)(watch videos on this)
 type faster(video)
+
+
 don't use exact text while speaking
 
 Have template(structured) for speaking and essays, writing
