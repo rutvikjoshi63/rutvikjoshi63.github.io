@@ -21,21 +21,24 @@ social: true  # includes social icons at the bottom of the page
 
 
 <!-- Text can be **bold**, _italic_, or ~~strikethrough~~. -->
-#Important links
+**Important links**
 <!-- 1. [**Machine Learning roadmap**](https://rutvikjoshi63.github.io/blogs/Machine-Learning-roadmap/). -->
 
 1. [**Machine Learning roadmap**](https://rutvikjoshi63.github.io/blog/2023/Machine-Learning-roadmap/).
 
 2. [**Masters**](https://rutvikjoshi63.github.io/blog/2023/Masters/)
+   
     [**Toefl repository**](https://rutvikjoshi63.github.io/blog/2023/Toefl-repository/)
 
-3. [**swayam**](https://swayam.gov.in/mycourses)
+4. [**swayam**](https://swayam.gov.in/mycourses)
 
-4. [**Data Structures & Algorithms**](https://rutvikjoshi63.github.io/blog/2023/Data-Structures-Algorithms/)
+5. [**Data Structures & Algorithms**](https://rutvikjoshi63.github.io/blog/2023/Data-Structures-Algorithms/)
 
-5. [**discord**](https://discord.com/channels/759039091433013309/759039091433013312)
+6. [**discord**](https://discord.com/channels/759039091433013309/759039091433013312)
 
 6.[**Ros books**]([https://discord.com/channels/791638463614287872/792385880953323532/848487861681651712](https://drive.google.com/drive/u/1/folders/1uxy-lXOb3fA8h-7npO-MO_jqbhOIx8Ou)) 
+
+[Stanford Engineering Everywhere-Introduction to Robotics](https://see.stanford.edu/Course/CS223A)
 
 There should be whitespace between paragraphs.
 
