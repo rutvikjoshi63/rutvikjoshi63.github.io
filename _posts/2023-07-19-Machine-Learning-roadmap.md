@@ -10,6 +10,7 @@ related_posts: false
 related_publications: einstein1950meaning, einstein1905movement
 ---
 *## A New Post for resources to learn machine learning*
+****PLEASE SCROLL BELOW(links not working yet)****
 1. Use Parallel Conquring Technique
     * [Mathematics](Mathematics)
     * [Get familiar with different libraries and concepts](Libraries)
@@ -17,18 +18,27 @@ related_publications: einstein1950meaning, einstein1905movement
     * *Andrew Ng Machine Learning Course*[*youtube*](https://www.youtube.com/watch?v=jGwO_UgTS7I&t=11s&ab_channel=StanfordOnline)
     * ✨ Python ML Projects (/home/rutvik/Documents/Robotics/Robotics drive D/ML)
 
-2. [Computer vision](Computer vision)
+2. Deep Learning
+   [Computer vision](Computer vision)
 
 3. [Maybe check-out NLP](NLP)
+   
+4. [MLCheatsheets_for_AI_Neural_Networks_ML_DL__Big_Data](E:\MLCheatsheets_for_AI_Neural_Networks_ML_DL__Big_Data.pdf)
 
 #Mathematics
-  * [Deep Learning Mathematics Roadmap](https://github.com/h9-tect/ML-DL_Roadmap./tree/main).
+  * Videos
+       * [Complete Statistics For Data Science In 6 hours By Krish Naik](https://www.youtube.com/watch?v=LZzq1zSL1bs&ab_channel=KrishNaik)
+       * [Stat Quest for concept clarification](https://www.youtube.com/watch?v=4jRBRDbJemM&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF&index=23&ab_channel=StatQuestwithJoshStarmer)
+  * Github Courses link
+    [Deep Learning Mathematics Roadmap](https://github.com/h9-tect/ML-DL_Roadmap./tree/main).
 
-  * *LinearAlgebra*
-    * file:///home/rutvik/Documents/Robotics/Robotics%20drive%20D/LinearAlgebra/linalg.pdf
-
-  * *Statistics*
-    * file:///home/rutvik/Documents/Robotics/Robotics%20drive%20D/Statistics/astats.pdf
+  * PDF
+      *LinearAlgebra*
+         * file:///home/rutvik/Documents/Robotics/Robotics%20drive%20D/LinearAlgebra/linalg.pdf
+      * *Statistics*
+         * file:///home/rutvik/Documents/Robotics/Robotics%20drive%20D/Statistics/astats.pdf
+   * Discord Channel
+      * Robotix with Sina/ resources
 
 
 #Libraries
