@@ -35,6 +35,8 @@ social: true  # includes social icons at the bottom of the page
 
 5. [**discord**](https://discord.com/channels/759039091433013309/759039091433013312)
 
+6.[**Ros books**]([https://discord.com/channels/791638463614287872/792385880953323532/848487861681651712](https://drive.google.com/drive/u/1/folders/1uxy-lXOb3fA8h-7npO-MO_jqbhOIx8Ou)) 
+
 There should be whitespace between paragraphs.
 
 <!-- The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder. -->
