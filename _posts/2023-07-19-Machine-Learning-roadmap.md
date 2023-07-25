@@ -9,29 +9,36 @@ giscus_comments: true
 related_posts: false
 related_publications: einstein1950meaning, einstein1905movement
 ---
-*## A New Post for resources to learn machine learning*
+## A New Post for resources to learn machine learning*
+
 ****PLEASE SCROLL BELOW(links not working yet)****
+
 1. Use Parallel Conquring Technique
     * [Mathematics](Mathematics)
     * [Get familiar with different libraries and concepts](Libraries)
     * Zero to Mastery Machine Learning for [Quick recap](https://github.com/mrdbourke/zero-to-mastery-ml)
-    * *Andrew Ng Machine Learning Course*[*youtube*](https://www.youtube.com/watch?v=jGwO_UgTS7I&t=11s&ab_channel=StanfordOnline)
+    * Andrew Ng Machine Learning Course on [*youtube*](https://www.youtube.com/watch?v=jGwO_UgTS7I&t=11s&ab_channel=StanfordOnline)
+      
       [Stanford Engineering Everywhere- CS229 - Machine Learning](https://see.stanford.edu/Course/CS229)
       Some courses on Linear Systems and Optimization by EE dep
     * ✨ Python ML Projects (/home/rutvik/Documents/Robotics/Robotics drive D/ML)
 
 2. Deep Learning
-   [Computer vision](Computer vision)
-
-3. [Maybe check-out NLP](NLP)
    
-4. [MLCheatsheets_for_AI_Neural_Networks_ML_DL__Big_Data](E:\MLCheatsheets_for_AI_Neural_Networks_ML_DL__Big_Data.pdf)
+   [Computer vision](Computervision)
+
+4. [Maybe check-out NLP](NLP)
+   
+5. [MLCheatsheets_for_AI_Neural_Networks_ML_DL__Big_Data](E:\MLCheatsheets_for_AI_Neural_Networks_ML_DL__Big_Data.pdf)
 
 # Mathematics
   * Videos
        * [Complete Statistics For Data Science In 6 hours By Krish Naik](https://www.youtube.com/watch?v=LZzq1zSL1bs&ab_channel=KrishNaik)
+         
        * [Stat Quest for concept clarification](https://www.youtube.com/watch?v=4jRBRDbJemM&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF&index=23&ab_channel=StatQuestwithJoshStarmer)
+         
        * [Machine Learning- Balaraman Ravindran 88 videos](https://www.youtube.com/watch?v=r4sgKrRL2Ys&list=PL1xHD4vteKYVpaIiy295pg6_SY5qznc77&ab_channel=MachineLearning-BalaramanRavindran)
+         
   * Github Courses link
     [Deep Learning Mathematics Roadmap](https://github.com/h9-tect/ML-DL_Roadmap./tree/main).
 
