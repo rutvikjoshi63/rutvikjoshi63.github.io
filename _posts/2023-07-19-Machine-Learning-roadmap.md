@@ -65,6 +65,8 @@ related_publications: einstein1950meaning, einstein1905movement
 
 * [Deep Learning for Computer Vision with Python and TensorFlow – Complete Course freeCodeCamp.org](https://www.youtube.com/watch?v=IA3WxTTPXqQ&ab_channel=freeCodeCamp.org)
 
+* [*Convolutional Neural Network freeCodeCamp](https://www.youtube.com/watch?v=nVhau51w6dM&ab_channel=freeCodeCamp.org)
+
 * [*Convolutional Neural Networks for Visual Recognition*](https://www.youtube.com/watch?v=vT1JzLTH4G4&t=33s&ab_channel=StanfordUniversitySchoolofEngineering)
 
 # NLP
