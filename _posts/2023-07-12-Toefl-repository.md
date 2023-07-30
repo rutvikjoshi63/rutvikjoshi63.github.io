@@ -13,9 +13,9 @@ related_publications: einstein1950meaning, einstein1905movement
 
 [practise test](https://www.ets.org/toefl.html)
 
-top 100 words for toefl writing
-and phrases
+top 100 words for toefl writing and phrases
 
+#[academic vocabulary](https://www.oxfordlearnersdictionaries.com/wordlist/academic/academic/)
 Reading (recheck ans in last 5 min)writing Listening and Speaking
 
 take a test first
