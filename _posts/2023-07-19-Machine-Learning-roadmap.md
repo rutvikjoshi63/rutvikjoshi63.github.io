@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Machine Learning
+title: Machine/Deep Learning
 date: 2023-07-19 09:56:00-0400
 description: Study resources for Machine Learning
 tags: Machine Learning Masters
@@ -12,41 +12,67 @@ related_publications: einstein1950meaning, einstein1905movement
 *## A New Post for resources to learn machine learning*
 #[deep-learning Specialization](https://www.coursera.org/specializations/deep-learning#courses)
 Check all deep-learning courses
+## A New Post for resources to learn machine learning*
+
+****PLEASE SCROLL BELOW(links not working yet)****
 
 1. Use Parallel Conquring Technique
     * [Mathematics](Mathematics)
     * [Get familiar with different libraries and concepts](Libraries)
     * Zero to Mastery Machine Learning for [Quick recap](https://github.com/mrdbourke/zero-to-mastery-ml)
-    * *Andrew Ng Machine Learning Course*[*youtube*](https://www.youtube.com/watch?v=jGwO_UgTS7I&t=11s&ab_channel=StanfordOnline)
+    * Andrew Ng Machine Learning Course on [*youtube*](https://www.youtube.com/watch?v=jGwO_UgTS7I&t=11s&ab_channel=StanfordOnline)
+      
+      [Stanford Engineering Everywhere- CS229 - Machine Learning](https://see.stanford.edu/Course/CS229)
+      Some courses on Linear Systems and Optimization by EE dep
     * ✨ Python ML Projects (/home/rutvik/Documents/Robotics/Robotics drive D/ML)
 
-2. [Computer vision](Computer vision)
+2. Deep Learning
+   
+   [Computer vision](Computervision)
 
-3. [Maybe check-out NLP](NLP)
+4. [Maybe check-out NLP](NLP)
+   
+5. [MLCheatsheets_for_AI_Neural_Networks_ML_DL__Big_Data](E:\MLCheatsheets_for_AI_Neural_Networks_ML_DL__Big_Data.pdf)
 
-#Mathematics
-  * [Deep Learning Mathematics Roadmap](https://github.com/h9-tect/ML-DL_Roadmap./tree/main).
+# Mathematics
+  * Videos
+       * [Complete Statistics For Data Science In 6 hours By Krish Naik](https://www.youtube.com/watch?v=LZzq1zSL1bs&ab_channel=KrishNaik)
+         
+       * [Stat Quest for concept clarification](https://www.youtube.com/watch?v=4jRBRDbJemM&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF&index=23&ab_channel=StatQuestwithJoshStarmer)
+         
+       * [Machine Learning- Balaraman Ravindran 88 videos](https://www.youtube.com/watch?v=r4sgKrRL2Ys&list=PL1xHD4vteKYVpaIiy295pg6_SY5qznc77&ab_channel=MachineLearning-BalaramanRavindran)
+         
+  * Github Courses link
+    [Deep Learning Mathematics Roadmap](https://github.com/h9-tect/ML-DL_Roadmap./tree/main).
 
-  * *LinearAlgebra*
-    * file:///home/rutvik/Documents/Robotics/Robotics%20drive%20D/LinearAlgebra/linalg.pdf
+  * PDF
+      *LinearAlgebra*
+         * file:///home/rutvik/Documents/Robotics/Robotics%20drive%20D/LinearAlgebra/linalg.pdf
+      * *Statistics*
+         * file:///home/rutvik/Documents/Robotics/Robotics%20drive%20D/Statistics/astats.pdf
+   * Discord Channel
+      * Robotix with Sina/ resources
 
-  * *Statistics*
-    * file:///home/rutvik/Documents/Robotics/Robotics%20drive%20D/Statistics/astats.pdf
 
-
-#Libraries
+# Libraries
   * [Machine-Learning-in-90-days](https://www.youtube.com/watch?v=czQO1_GEEos&list=PLZoTAELRMXVPBTrWtJkn3wWQxZkmTXGwe)
   * [Data Science freecode camp playlist](https://www.youtube.com/watch?v=ua-CiDNNj30&list=PLWKjhJtqVAblQe2CCWqV4Zy3LY01Z8aF1)
   * [scikit-learn](https://scikit-learn.org/stable/getting_started.html)
   [user guide](https://scikit-learn.org/stable/user_guide.html)
   * [Data repo](https://archive.ics.uci.edu/)
 
-#Computer vision
+# Computer vision
 * [*Computer vision by Krish*](https://www.youtube.com/watch?v=sXqWrtUseK8&ab_channel=KrishNaik)
+
+* [OpenCV Course - Full Tutorial with Python freeCodeCamp.](https://www.youtube.com/watch?v=oXlwWbU8l2o&ab_channel=freeCodeCamp.org)
+
+* [Deep Learning for Computer Vision with Python and TensorFlow – Complete Course freeCodeCamp.org](https://www.youtube.com/watch?v=IA3WxTTPXqQ&ab_channel=freeCodeCamp.org)
+
+* [*Convolutional Neural Network freeCodeCamp](https://www.youtube.com/watch?v=nVhau51w6dM&ab_channel=freeCodeCamp.org)
 
 * [*Convolutional Neural Networks for Visual Recognition*](https://www.youtube.com/watch?v=vT1JzLTH4G4&t=33s&ab_channel=StanfordUniversitySchoolofEngineering)
 
-#NLP
+# NLP
 * [*NLP with Deep Learning*](https://www.youtube.com/watch?v=rmVRLeJRkl4&t=2s&ab_channel=StanfordOnline)
 
 
