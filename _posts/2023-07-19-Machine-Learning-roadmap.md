@@ -10,6 +10,9 @@ related_posts: false
 related_publications: einstein1950meaning, einstein1905movement
 ---
 *## A New Post for resources to learn machine learning*
+#[deep-learning Specialization](https://www.coursera.org/specializations/deep-learning#courses)
+Check all deep-learning courses
+
 1. Use Parallel Conquring Technique
     * [Mathematics](Mathematics)
     * [Get familiar with different libraries and concepts](Libraries)
