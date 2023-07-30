@@ -18,6 +18,8 @@ top 100 words for toefl writing and phrases
 #[academic vocabulary](https://www.oxfordlearnersdictionaries.com/wordlist/academic/academic/)
 Reading (recheck ans in last 5 min)writing Listening and Speaking
 
+![Alt text](Fill_table.png) For Fill table in Reading Section.
+
 take a test first
 
 spellings in writing
