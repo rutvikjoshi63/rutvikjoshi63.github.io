@@ -15,7 +15,7 @@ related_publications: einstein1950meaning, einstein1905movement
 
 top 100 words for toefl writing and phrases
 
-#[academic vocabulary](https://www.oxfordlearnersdictionaries.com/wordlist/academic/academic/)
+# [academic vocabulary](https://www.oxfordlearnersdictionaries.com/wordlist/academic/academic/)
 Reading (recheck ans in last 5 min)writing Listening and Speaking
 
 ![_config.yml]({{ site.baseurl }}/assets/img/Fill_table.png) For Fill table in Reading Section.
