@@ -1,7 +1,7 @@
 ---
 layout: post
 title: TOEFL
-date: 2023-07-19 09:56:00-0400
+date: 2023-07-31 09:56:00-0400
 description: Study resources for TOEFL
 tags: TOEFL Masters
 categories: sample-posts
@@ -18,7 +18,7 @@ top 100 words for toefl writing and phrases
 #[academic vocabulary](https://www.oxfordlearnersdictionaries.com/wordlist/academic/academic/)
 Reading (recheck ans in last 5 min)writing Listening and Speaking
 
-![Alt text](Fill_table.png) For Fill table in Reading Section.
+![_config.yml]({{ site.baseurl }}/assets/img/Fill_table.png) For Fill table in Reading Section.
 
 take a test first
 
