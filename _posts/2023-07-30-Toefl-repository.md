@@ -11,6 +11,10 @@ related_publications: einstein1950meaning, einstein1905movement
 ---
 [ETS](https://www.ets.org/)
 
+[toefl.magoosh](https://toefl.magoosh.com/guide-toefl-ibt?utm_source=toeflblog&utm_medium=blog&utm_campaign=blog-pdfs&utm_term=button&utm_content=ibt)
+1. [Tips to Help You Ace the Writing Section](https://toefl.magoosh.com/toefl-writing-tips-ebook/?utm_source=toeflblog&utm_medium=blog&utm_campaign=toeflwritingtips&utm_term=inline&utm_content=toefl-writing-tips)
+2. [Free TOEFL Practice Questions](https://toefl.magoosh.com/toefl-practice-questions-pdf/?utm_source=toeflblog&utm_medium=blog&utm_campaign=toeflpracticequestionspdf&utm_term=inline&utm_content=toefl-practice)
+3. [guide-toefl-ibt](https://toefl.magoosh.com/guide-toefl-ibt?utm_source=toeflblog&utm_medium=blog&utm_campaign=blog-pdfs&utm_term=button&utm_content=ibt)
 [practise test](https://www.ets.org/toefl.html)
 
 top 100 words for toefl writing and phrases
