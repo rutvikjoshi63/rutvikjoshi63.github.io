@@ -20,6 +20,7 @@ Check all deep-learning courses
     * [Mathematics](Mathematics)
     * [Get familiar with different libraries and concepts](Libraries)
     * Zero to Mastery Machine Learning for [Quick recap](https://github.com/mrdbourke/zero-to-mastery-ml)
+    * [scaler free](https://www.scaler.com/topics/course/free-supervised-learning-course/)
     * Andrew Ng Machine Learning Course on [*youtube*](https://www.youtube.com/watch?v=jGwO_UgTS7I&t=11s&ab_channel=StanfordOnline)
       
       [Stanford Engineering Everywhere- CS229 - Machine Learning](https://see.stanford.edu/Course/CS229)
@@ -75,6 +76,8 @@ Check all deep-learning courses
 # NLP
 * [*NLP with Deep Learning*](https://www.youtube.com/watch?v=rmVRLeJRkl4&t=2s&ab_channel=StanfordOnline)
 
+# Exercise
+[kaggle](https://www.kaggle.com/competitions)
 
  Use the toolbar above, or click the **?** button for formatting help.
 ---
