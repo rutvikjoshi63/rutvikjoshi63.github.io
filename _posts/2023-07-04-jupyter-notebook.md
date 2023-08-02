@@ -1,9 +1,9 @@
 ---
 layout: post
-title: a post with jupyter notebook
+title: Programming Tips
 date: 2023-08-01 08:57:00-0400
 description: All tricks andd tips
-tags: formatting jupyter programming tips
+tags: formatting jupyter programming tips Machine Learning
 categories: sample-posts
 giscus_comments: true
 related_posts: false
@@ -27,22 +27,22 @@ related_posts: false
 >hello("Rutvik", "Joshi", age = 23, dob = 696969)   \\
 
 Answer: 
-("Rutvik", "Joshi") \\
-{'age' : 23, 'dob' : 696969}    \\
+>("Rutvik", "Joshi") \\
+>{'age' : 23, 'dob' : 696969}    \\
     \\
-lst = ["Rutvik", "Joshi"]   \\
-dict = {'age' : 23, 'dob' : 696969}     \\
-hello(lst, dict)    \\
+>lst = ["Rutvik", "Joshi"]   \\
+>dict = {'age' : 23, 'dob' : 696969}     \\
+>hello(lst, dict)    \\
 
 Answer: 
-(["Rutvik", "Joshi"],{'age' : 23, 'dob' : 696969}  )    \\
-{}  \\
+>(["Rutvik", "Joshi"],{'age' : 23, 'dob' : 696969}  )    \\
+>{}  \\
 
-hello(*lst, **dict) \\
+>hello(*lst, **dict) \\
 
 Answer: 
-("Rutvik", "Joshi") \\
-{'age' : 23, 'dob' : 696969}    \\
+>("Rutvik", "Joshi") \\
+>{'age' : 23, 'dob' : 696969}    \\
 
 For learning sets, Dictionary, tuples:  
 2-Python List,Dictionary,Sets etc   
