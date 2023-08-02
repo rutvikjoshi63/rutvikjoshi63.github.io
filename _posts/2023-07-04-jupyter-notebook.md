@@ -1,13 +1,23 @@
 ---
 layout: post
 title: a post with jupyter notebook
-date: 2023-07-04 08:57:00-0400
-description: an example of a blog post with jupyter notebook
-tags: formatting jupyter
+date: 2023-08-01 08:57:00-0400
+description: All tricks andd tips
+tags: formatting jupyter programming tips
 categories: sample-posts
 giscus_comments: true
 related_posts: false
 ---
+
+>print(my_str.isalnum()) #check if all char are numbers
+>print(my_str.isalpha()) #check if all char in the string are alphabetic
+>print(my_str.isdigit()) #test if string contains digits
+>print(my_str.istitle()) #test if string contains title words
+>print(my_str.isupper()) #test if string contains upper case
+>print(my_str.islower()) #test if string contains lower case
+>print(my_str.isspace()) #test if string contains spaces
+>print(my_str.endswith('k')) #test if string endswith a d
+>print(my_str.startswith('K')) #test if string startswith H
 
 To include a jupyter notebook in a post, you can use the following code:
 
