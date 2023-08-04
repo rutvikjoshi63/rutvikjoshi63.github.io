@@ -18,31 +18,51 @@ related_posts: false
 >print(my_str.isspace()) #test if string contains spaces    \\
 >print(my_str.endswith('k')) #test if string endswith a d   \\
 >print(my_str.startswith('K')) #test if string startswith H \\
-
+==================================================
 #Function Tricks
 >def hello(*args, **kwargs):                                    \\
 >   print(args) \\
 >   print(kwargs)   \\
 >   \\
 >hello("Rutvik", "Joshi", age = 23, dob = 696969)   \\
-
-Answer: 
->("Rutvik", "Joshi") \\
->{'age' : 23, 'dob' : 696969}    \\
-    \\
+\\
+Answer: \\
+>*("Rutvik", "Joshi")* \\
+>*{'age' : 23, 'dob' : 696969}*    \\
+>==================================================
 >lst = ["Rutvik", "Joshi"]   \\
 >dict = {'age' : 23, 'dob' : 696969}     \\
 >hello(lst, dict)    \\
-
+\\
 Answer: 
->(["Rutvik", "Joshi"],{'age' : 23, 'dob' : 696969}  )    \\
->{}  \\
-
+>*(["Rutvik", "Joshi"],{'age' : 23, 'dob' : 696969}  )*    \\
+>*{}*  \\
+>==================================================
 >hello(*lst, **dict) \\
+\\
+Answer: \\
+>*("Rutvik", "Joshi")* \\
+>*{'age' : 23, 'dob' : 696969}*    \\
 
-Answer: 
->("Rutvik", "Joshi") \\
->{'age' : 23, 'dob' : 696969}    \\
+Map Function 
+>==================================================
+>def even_odd(num):
+>    if i%2==0:
+>        return "{}num is even".format(num)
+>    else:
+>        return "{}num is odd".format(num)
+>    
+>list_num=[1,2,3,4,5,6]
+>list(map(even_odd, list_num))
+>
+>Answer:
+>[*"1 num is odd",*    
+>*"2 num is even",*
+>*"3 num is odd",*
+>*"4 num is even",*
+>*"5 num is odd",*
+>*"6 num is even"*]
+
 
 For learning sets, Dictionary, tuples:  
 2-Python List,Dictionary,Sets etc   
