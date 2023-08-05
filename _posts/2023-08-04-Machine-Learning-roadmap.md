@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Machine/Deep Learning
-date: 2023-07-19 09:56:00-0400
+date: 2023-08-04 09:56:00-0400
 description: Study resources for Machine Learning
 tags: Machine Learning Masters
 categories: sample-posts
@@ -11,6 +11,7 @@ related_publications: einstein1950meaning, einstein1905movement
 ---
 *## A New Post for resources to learn machine learning*
 #[deep-learning Specialization](https://www.coursera.org/specializations/deep-learning#courses)
+[Machine/Deep Learning for Everybody – Full Course  freecode camp](https://www.youtube.com/watch?v=i_LwzRVP7bg&list=PLWKjhJtqVAblStefaz_YOVpDWqcRScc2s&index=2)
 Check all deep-learning courses
 ## A New Post for resources to learn machine learning*
 
@@ -21,8 +22,7 @@ Check all deep-learning courses
     * [Get familiar with different libraries and concepts](Libraries)
     * Zero to Mastery Machine Learning for [Quick recap](https://github.com/mrdbourke/zero-to-mastery-ml)
     * [scaler free](https://www.scaler.com/topics/course/free-supervised-learning-course/)
-    * Andrew Ng Machine Learning Course on [*youtube*](https://www.youtube.com/watch?v=jGwO_UgTS7I&t=11s&ab_channel=StanfordOnline)
-      
+    * Andrew Ng Machine Learning Course on [youtube](https://www.youtube.com/watch?v=jGwO_UgTS7I&t=11s&ab_channel=StanfordOnline)
       [Stanford Engineering Everywhere- CS229 - Machine Learning](https://see.stanford.edu/Course/CS229)
       Some courses on Linear Systems and Optimization by EE dep
     * ✨ Python ML Projects (/home/rutvik/Documents/Robotics/Robotics drive D/ML)
@@ -31,7 +31,7 @@ Check all deep-learning courses
    
    [Computer vision](Computervision)
 
-4. [Maybe check-out NLP](NLP)
+4. Maybe check-out [NLP](NLP)
    
 5. [MLCheatsheets_for_AI_Neural_Networks_ML_DL__Big_Data](E:\MLCheatsheets_for_AI_Neural_Networks_ML_DL__Big_Data.pdf)
 
