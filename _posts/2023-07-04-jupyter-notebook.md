@@ -8,6 +8,71 @@ categories: sample-posts
 giscus_comments: true
 related_posts: false
 ---
+# Complex Nummbers
+```python
+##complex numbers
+j=1.0-2.3j
+j
+```
+
+Answer: \\
+>(1-2.3j)    \\
+>print(j.real,j.imag)    \\
+>1.0 -2.3    \\
+
+# string Formatting
+```python
+first_name="Krish"
+last_name="Naik"
+print("The first name is {a} and last name is {b}".format(b=last_name,a=first_name))
+
+```
+# Pointers in Python
+```python
+a="Krish"
+b="Krish"
+print(id(a))
+print(id(b))
+```
+2575134525872
+2575134525872
+
+```python
+lst=[1,2,3]
+lst1=[1,2,3]
+print(id(lst))
+print(id(lst1))
+
+```
+2575100854848
+2575100861184
+
+```markdown
+
+    "### Equality Operators\n",
+    "\n",
+    "Following operations are present in python for equlity check operation-\n",
+    "\n",
+    "|Operators|Meaning|\n",
+    "|-|-|\n",
+    "|**is**|***a is b*** returns true if variable/identifiers a and b *points* to the *same object*|\n",
+    "|**is not**|***a is not b*** returns true if variable/identifiers a and b *points* to the *different object*|\n",
+    "|**==**|***a == b*** returns true if variable/identifiers a and b has same value|\n",
+    "|**!=**|***a != b*** returns true if variable/identifiers a and b has different value|"
+```
+Equality Operators
+Following operations are present in python for equlity check operation-
+
+Operators	Meaning
+is	*a is b* returns true if variable/identifiers a and b points to the same object
+is not	*a is not b* returns true if variable/identifiers a and b points to the different object
+==	*a == b* returns true if variable/identifiers a and b has same value
+!=	*a != b* returns true if variable/identifiers a and b has different value
+/	true division
+//	integer division
+%	the modulo operator
+
+
 # Inbuilt Function Tricks
 ```python
 print(my_str.isalnum()) #check if all char are numbers \\
