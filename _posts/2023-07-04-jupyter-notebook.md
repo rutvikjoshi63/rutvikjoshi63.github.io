@@ -34,7 +34,7 @@ b="Krish"
 print(id(a))
 print(id(b))
 ```
-2575134525872
+2575134525872\\
 2575134525872
 
 ```python
@@ -44,33 +44,25 @@ print(id(lst))
 print(id(lst1))
 
 ```
-2575100854848
+2575100854848\\
 2575100861184
 
-```markdown
+### Equality Operators 
+\\
+Following operations are present in python for equlity check operation-\\
+\\
 
-    "### Equality Operators\n",
-    "\n",
-    "Following operations are present in python for equlity check operation-\n",
-    "\n",
-    "|Operators|Meaning|\n",
-    "|-|-|\n",
-    "|**is**|***a is b*** returns true if variable/identifiers a and b *points* to the *same object*|\n",
-    "|**is not**|***a is not b*** returns true if variable/identifiers a and b *points* to the *different object*|\n",
-    "|**==**|***a == b*** returns true if variable/identifiers a and b has same value|\n",
-    "|**!=**|***a != b*** returns true if variable/identifiers a and b has different value|"
-```
-Equality Operators
-Following operations are present in python for equlity check operation-
 
-Operators	Meaning
-is	*a is b* returns true if variable/identifiers a and b points to the same object
-is not	*a is not b* returns true if variable/identifiers a and b points to the different object
-==	*a == b* returns true if variable/identifiers a and b has same value
-!=	*a != b* returns true if variable/identifiers a and b has different value
-/	true division
-//	integer division
-%	the modulo operator
+| Operators    | Meaning                                                                                         |
+| :----------- | -----------------------------------------------------------------------------------------------:|
+| **is**       | ***a is b*** returns true if variable/identifiers a and b *points* to the *same object*         |
+| **is not**   | ***a is not b*** returns true if variable/identifiers a and b *points* to the *different object*|
+| **==**       | ***a == b*** returns true if variable/identifiers a and b has same value                        |
+| **!=**       | ***a != b*** returns true if variable/identifiers a and b has different value                   |
+| **/**        | true division                                                                                   |
+| **//**       | integer division                                                                                |
+| **%**        | the modulo operator                                                                             |
+
 
 
 # Inbuilt Function Tricks
@@ -85,7 +77,47 @@ print(my_str.isspace()) #test if string contains spaces    \\
 print(my_str.endswith('k')) #test if string endswith a d   \\
 print(my_str.startswith('K')) #test if string startswith H \\
 ```
+```markdown
 
+abs(x) will return the absolute value of a number x which we pass in argument. The number x can be integer, float, complex,..
+ceil(x) will return the ceiling value of a number x which we pass in argument. The ceiling value of a number x will be the smallest integer not less than x
+floor
+exp(x) will return the exponential value of a number x which we pass in argument.
+fabs()
+log(x)
+pow()
+Triggnometric functions
+modf()
+Program to check prime numbers
+Program to check max of 3 numbers
+Pop() Method
+count()
+
+```
+```python
+math.ceil(43.67)
+44
+math.ceil(-44.5)
+-44
+math.floor(43.9)
+43
+math.floor(-56.9)
+-57
+math.log(65.5)
+4.182050142641207
+math.log10(40)
+1.6020599913279623
+import math
+math.pow(20,5)
+3200000.0
+
+math.modf()
+
+lst
+[1, 2, 3, 4]
+lst.pop(2)
+3
+```
 ========================================================================================      
 ## Function Tricks
 ```python
