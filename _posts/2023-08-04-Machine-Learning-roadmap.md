@@ -57,6 +57,7 @@ Check all deep-learning courses
 
 # Libraries
   * [Machine-Learning-in-90-days](https://www.youtube.com/watch?v=czQO1_GEEos&list=PLZoTAELRMXVPBTrWtJkn3wWQxZkmTXGwe)
+  * [Python Playlist(Krish Naik Hindi)](https://www.youtube.com/watch?v=BN0nnnadFl0&list=PLTDARY42LDV4qqiJd1Z1tShm3mp9-rP4v&index=9&ab_channel=KrishNaikHindi)
   * [Data Science freecode camp playlist](https://www.youtube.com/watch?v=ua-CiDNNj30&list=PLWKjhJtqVAblQe2CCWqV4Zy3LY01Z8aF1)
   * [scikit-learn](https://scikit-learn.org/stable/getting_started.html)
   [user guide](https://scikit-learn.org/stable/user_guide.html)
