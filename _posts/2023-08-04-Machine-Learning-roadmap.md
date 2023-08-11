@@ -86,7 +86,7 @@ layout: post
 title: Markdown Style Guide
 ---
 # My Current steps:
-1. [Python Playlist Krish Naik]{https://www.youtube.com/watch?v=GWUGFjdUO7w&list=PLTDARY42LDV4qqiJd1Z1tShm3mp9-rP4v&index=16&ab_channel=KrishNaikHindi} 10/24 done
+1. [Python Playlist Krish Naik](https://www.youtube.com/watch?v=GWUGFjdUO7w&list=PLTDARY42LDV4qqiJd1Z1tShm3mp9-rP4v&index=16&ab_channel=KrishNaikHindi) 10/24 done
 
 2. [Harvard CS50’s Artificial Intelligence with Python](https://www.youtube.com/watch?v=5NgNicANyqM&ab_channel=freeCodeCamp.org) 1hr / 12 hr done
 
