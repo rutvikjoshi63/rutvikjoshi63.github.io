@@ -1,13 +1,13 @@
 ---
 layout: distill
 title: Machine/Deep Learning
-date: 2023-08-14 06:56:00-0400
+date: 2023-08-13 06:56:00-0400
 description: Study resources for Machine Learning
 tags: Machine Learning Masters
-categories: sample-posts
+# categories: sample-posts
 giscus_comments: true
-related_posts: false
-related_publications: einstein1950meaning, einstein1905movement
+# related_posts: false
+# related_publications: einstein1950meaning, einstein1905movement
 
 authors:
   - name: Rutvik Joshi
@@ -45,12 +45,9 @@ _styles: >
   }
 
 ---
-*## A New Post for resources to learn machine learning*
 
-Check all deep-learning courses
 ## A New Post for resources to learn machine learning*
 
-****PLEASE SCROLL BELOW(links not working yet)****
 
 # Parallel Conquring Technique
     * [Mathematics](Mathematics)
@@ -64,11 +61,14 @@ Check all deep-learning courses
 
 # Mathematics
   * Videos
+      {% details Click here to know more %}
        * [Complete Statistics For Data Science In 6 hours By Krish Naik](https://www.youtube.com/watch?v=LZzq1zSL1bs&ab_channel=KrishNaik)
          
        * [Stat Quest for concept clarification](https://www.youtube.com/watch?v=4jRBRDbJemM&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF&index=23&ab_channel=StatQuestwithJoshStarmer)
          
        * [Machine Learning- Balaraman Ravindran 88 videos](https://www.youtube.com/watch?v=r4sgKrRL2Ys&list=PL1xHD4vteKYVpaIiy295pg6_SY5qznc77&ab_channel=MachineLearning-BalaramanRavindran)
+      {% enddetails %}
+      
          
   * Github Courses link
     [Deep Learning Mathematics Roadmap](https://github.com/h9-tect/ML-DL_Roadmap./tree/main).
