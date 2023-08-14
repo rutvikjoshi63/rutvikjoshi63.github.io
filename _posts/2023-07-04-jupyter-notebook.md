@@ -8,6 +8,28 @@ categories: sample-posts
 giscus_comments: true
 related_posts: false
 ---
+
+# Object oriented programming 
+```python
+To find number of functions and methods defined for a class 
+print(dir(object of class))
+eg: print(dir(car1))
+
+def welcome(msg)->str:
+    """
+    Description: This function will show a welcome message
+    
+
+    Return : This function will return the welcome message 
+    """
+
+    return msg
+
+msg=welcome("Welcome all")
+print(msg + "Please subscribe")
+
+```
+
 # Complex Nummbers
 ```python
 ##complex numbers
@@ -76,6 +98,23 @@ print(my_str.islower()) #test if string contains lower case    \\
 print(my_str.isspace()) #test if string contains spaces    \\
 print(my_str.endswith('k')) #test if string endswith a d   \\
 print(my_str.startswith('K')) #test if string startswith H \\
+
+numbers=[1,2,3,4,5]
+squard_numbers=[i**2 for i in numbers]
+print(squard_numbers)
+
+##Generating a list of all the divisors of a number:
+
+number =36
+[i for i in range(1,number+1) if number%i==0]
+[1, 2, 3, 4, 6, 9, 12, 18, 36]
+
+##Generating a list of all the prime number:
+number = 10
+result = [2]
+prime_num = [result.append(i) for i in range(3, number+1) if not [x for x in result if i%x == 0]]
+
+print(result)
 ```
 ```markdown
 

@@ -1,23 +1,58 @@
 ---
-layout: post
+layout: distill
 title: Machine/Deep Learning
-date: 2023-08-04 09:56:00-0400
+date: 2023-08-14 06:56:00-0400
 description: Study resources for Machine Learning
 tags: Machine Learning Masters
 categories: sample-posts
 giscus_comments: true
 related_posts: false
 related_publications: einstein1950meaning, einstein1905movement
+
+authors:
+  - name: Rutvik Joshi
+    # url: "https://en.wikipedia.org/wiki/Albert_Einstein"
+    affiliations:
+      name: IIT-Bombay, VJTI
+
+toc:
+  - name: Current progress
+    # if a section has subsections, you can add them as follows:
+    # subsections:
+    #   - name: Example Child Subsection 1
+    #   - name: Example Child Subsection 2
+  - name: Parallel Conquring Technique
+  - name: Mathematics
+  - name: Computer vision
+  - name: NLP
+  - name: Exercise
+  - name: Libraries
+
+_styles: >
+  .fake-img {
+    background: #bbb;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 12px;
+  }
+  .fake-img p {
+    font-family: monospace;
+    color: white;
+    text-align: left;
+    margin: 12px 0;
+    text-align: center;
+    font-size: 16px;
+  }
+
 ---
 *## A New Post for resources to learn machine learning*
-#[deep-learning Specialization](https://www.coursera.org/specializations/deep-learning#courses)
-[Machine/Deep Learning for Everybody – Full Course  freecode camp](https://www.youtube.com/watch?v=i_LwzRVP7bg&list=PLWKjhJtqVAblStefaz_YOVpDWqcRScc2s&index=2)
+
 Check all deep-learning courses
 ## A New Post for resources to learn machine learning*
 
 ****PLEASE SCROLL BELOW(links not working yet)****
 
-1. Use Parallel Conquring Technique
+# Parallel Conquring Technique
     * [Mathematics](Mathematics)
     * [Get familiar with different libraries and concepts](Libraries)
     * Zero to Mastery Machine Learning for [Quick recap](https://github.com/mrdbourke/zero-to-mastery-ml)
@@ -26,14 +61,6 @@ Check all deep-learning courses
       [Stanford Engineering Everywhere- CS229 - Machine Learning](https://see.stanford.edu/Course/CS229)
       Some courses on Linear Systems and Optimization by EE dep
     * ✨ Python ML Projects (/home/rutvik/Documents/Robotics/Robotics drive D/ML)
-
-2. Deep Learning
-   
-   [Computer vision](Computervision)
-
-4. Maybe check-out [NLP](NLP)
-   
-5. [MLCheatsheets_for_AI_Neural_Networks_ML_DL__Big_Data](E:\MLCheatsheets_for_AI_Neural_Networks_ML_DL__Big_Data.pdf)
 
 # Mathematics
   * Videos
@@ -62,6 +89,7 @@ Check all deep-learning courses
   * [scikit-learn](https://scikit-learn.org/stable/getting_started.html)
   [user guide](https://scikit-learn.org/stable/user_guide.html)
   * [Data repo](https://archive.ics.uci.edu/)
+  * [MLCheatsheets_for_AI_Neural_Networks_ML_DL__Big_Data](E:\MLCheatsheets_for_AI_Neural_Networks_ML_DL__Big_Data.pdf)
 
 # Computer vision
 * [*Computer vision by Krish*](https://www.youtube.com/watch?v=sXqWrtUseK8&ab_channel=KrishNaik)
@@ -85,11 +113,13 @@ Check all deep-learning courses
 layout: post
 title: Markdown Style Guide
 ---
-# My Current steps:
-1. [Python Playlist Krish Naik](https://www.youtube.com/watch?v=GWUGFjdUO7w&list=PLTDARY42LDV4qqiJd1Z1tShm3mp9-rP4v&index=16&ab_channel=KrishNaikHindi) 10/24 done
+# Current progress:
+1. [Python Playlist Krish Naik-Hindi](https://www.youtube.com/watch?v=GWUGFjdUO7w&list=PLTDARY42LDV4qqiJd1Z1tShm3mp9-rP4v&index=16&ab_channel=KrishNaikHindi) 13-14 remaining/24 
 
 2. [Harvard CS50’s Artificial Intelligence with Python](https://www.youtube.com/watch?v=5NgNicANyqM&ab_channel=freeCodeCamp.org) 1hr / 12 hr done
 
+3. [deep-learning Specialization](https://www.coursera.org/specializations/deep-learning#courses)
+[Machine/Deep Learning for Everybody – Full Course  freecode camp](https://www.youtube.com/watch?v=i_LwzRVP7bg&list=PLWKjhJtqVAblStefaz_YOVpDWqcRScc2s&index=2)
 
 
 [This is a demo of all styled elements in Jekyll Now.](http://www.jekyllnow.com/Markdown-Style-Guide/)
