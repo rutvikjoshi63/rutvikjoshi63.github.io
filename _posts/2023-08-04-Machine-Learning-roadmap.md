@@ -50,23 +50,23 @@ _styles: >
 
 
 # Parallel Conquring Technique
-    * [Mathematics](Mathematics)
-    * [Get familiar with different libraries and concepts](Libraries)
-    * Zero to Mastery Machine Learning for [Quick recap](https://github.com/mrdbourke/zero-to-mastery-ml)
-    * [scaler free](https://www.scaler.com/topics/course/free-supervised-learning-course/)
-    * Andrew Ng Machine Learning Course on [youtube](https://www.youtube.com/watch?v=jGwO_UgTS7I&t=11s&ab_channel=StanfordOnline)
-      [Stanford Engineering Everywhere- CS229 - Machine Learning](https://see.stanford.edu/Course/CS229)
-      Some courses on Linear Systems and Optimization by EE dep
-    * ✨ Python ML Projects (/home/rutvik/Documents/Robotics/Robotics drive D/ML)
+1. [Mathematics](Mathematics)
+2. [Get familiar with different libraries and concepts](Libraries)
+3.  Zero to Mastery Machine Learning for [Quick recap](https://github.com/mrdbourke/zero-to-mastery-ml)
+4. [scaler free](https://www.scaler.com/topics/course/free-supervised-learning-course/)
+5. Andrew Ng Machine Learning Course on [youtube](https://www.youtube.com/watch?v=jGwO_UgTS7I&t=11s&ab_channel=StanfordOnline)
+  [Stanford Engineering Everywhere- CS229 - Machine Learning](https://see.stanford.edu/Course/CS229)
+  Some courses on Linear Systems and Optimization by EE dep
+6. ✨ Python ML Projects (/home/rutvik/Documents/Robotics/Robotics drive D/ML)
 
 # Mathematics
   * Videos
       {% details Click here to know more %}
-       * [Complete Statistics For Data Science In 6 hours By Krish Naik](https://www.youtube.com/watch?v=LZzq1zSL1bs&ab_channel=KrishNaik)
+       1. [Complete Statistics For Data Science In 6 hours By Krish Naik](https://www.youtube.com/watch?v=LZzq1zSL1bs&ab_channel=KrishNaik)
          
-       * [Stat Quest for concept clarification](https://www.youtube.com/watch?v=4jRBRDbJemM&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF&index=23&ab_channel=StatQuestwithJoshStarmer)
+       2. [Stat Quest for concept clarification](https://www.youtube.com/watch?v=4jRBRDbJemM&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF&index=23&ab_channel=StatQuestwithJoshStarmer)
          
-       * [Machine Learning- Balaraman Ravindran 88 videos](https://www.youtube.com/watch?v=r4sgKrRL2Ys&list=PL1xHD4vteKYVpaIiy295pg6_SY5qznc77&ab_channel=MachineLearning-BalaramanRavindran)
+       3. [Machine Learning- Balaraman Ravindran 88 videos](https://www.youtube.com/watch?v=r4sgKrRL2Ys&list=PL1xHD4vteKYVpaIiy295pg6_SY5qznc77&ab_channel=MachineLearning-BalaramanRavindran)
       {% enddetails %}
       
          
