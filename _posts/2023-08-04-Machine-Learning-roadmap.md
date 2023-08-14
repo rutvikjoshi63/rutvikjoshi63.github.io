@@ -60,26 +60,25 @@ _styles: >
 6. ✨ Python ML Projects (/home/rutvik/Documents/Robotics/Robotics drive D/ML)
 
 # Mathematics
-  * Videos
-      {% details Click here to know more %}
-       1. [Complete Statistics For Data Science In 6 hours By Krish Naik](https://www.youtube.com/watch?v=LZzq1zSL1bs&ab_channel=KrishNaik)
+* Videos
+{% details Click here to know more %}
+  1. [Complete Statistics For Data Science In 6 hours By Krish Naik](https://www.youtube.com/watch?v=LZzq1zSL1bs&ab_channel=KrishNaik)
+    
+  2. [Stat Quest for concept clarification](https://www.youtube.com/watch?v=4jRBRDbJemM&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF&index=23&ab_channel=StatQuestwithJoshStarmer)
+    
+  3. [Machine Learning- Balaraman Ravindran 88 videos](https://www.youtube.com/watch?v=r4sgKrRL2Ys&list=PL1xHD4vteKYVpaIiy295pg6_SY5qznc77&ab_channel=MachineLearning-BalaramanRavindran)
+{% enddetails %}
          
-       2. [Stat Quest for concept clarification](https://www.youtube.com/watch?v=4jRBRDbJemM&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF&index=23&ab_channel=StatQuestwithJoshStarmer)
-         
-       3. [Machine Learning- Balaraman Ravindran 88 videos](https://www.youtube.com/watch?v=r4sgKrRL2Ys&list=PL1xHD4vteKYVpaIiy295pg6_SY5qznc77&ab_channel=MachineLearning-BalaramanRavindran)
-      {% enddetails %}
-      
-         
-  * Github Courses link
-    [Deep Learning Mathematics Roadmap](https://github.com/h9-tect/ML-DL_Roadmap./tree/main).
+* Github Courses link
+[Deep Learning Mathematics Roadmap](https://github.com/h9-tect/ML-DL_Roadmap./tree/main).
 
-  * PDF
-      *LinearAlgebra*
-         * file:///home/rutvik/Documents/Robotics/Robotics%20drive%20D/LinearAlgebra/linalg.pdf
-      * *Statistics*
-         * file:///home/rutvik/Documents/Robotics/Robotics%20drive%20D/Statistics/astats.pdf
-   * Discord Channel
-      * Robotix with Sina/ resources
+* PDF
+*LinearAlgebra*
+* file:///home/rutvik/Documents/Robotics/Robotics%20drive%20D/LinearAlgebra/linalg.pdf
+* *Statistics*
+* file:///home/rutvik/Documents/Robotics/Robotics%20drive%20D/Statistics/astats.pdf
+* Discord Channel
+* Robotix with Sina/ resources
 
 
 # Libraries
@@ -92,26 +91,22 @@ _styles: >
   * [MLCheatsheets_for_AI_Neural_Networks_ML_DL__Big_Data](E:\MLCheatsheets_for_AI_Neural_Networks_ML_DL__Big_Data.pdf)
 
 # Computer vision
-* [*Computer vision by Krish*](https://www.youtube.com/watch?v=sXqWrtUseK8&ab_channel=KrishNaik)
+* [Computer vision by Krish](https://www.youtube.com/watch?v=sXqWrtUseK8&ab_channel=KrishNaik)
 
 * [OpenCV Course - Full Tutorial with Python freeCodeCamp.](https://www.youtube.com/watch?v=oXlwWbU8l2o&ab_channel=freeCodeCamp.org)
 
 * [Deep Learning for Computer Vision with Python and TensorFlow – Complete Course freeCodeCamp.org](https://www.youtube.com/watch?v=IA3WxTTPXqQ&ab_channel=freeCodeCamp.org)
 
-* [*Convolutional Neural Network freeCodeCamp](https://www.youtube.com/watch?v=nVhau51w6dM&ab_channel=freeCodeCamp.org)
+* [Convolutional Neural Network freeCodeCamp](https://www.youtube.com/watch?v=nVhau51w6dM&ab_channel=freeCodeCamp.org)
 
-* [*Convolutional Neural Networks for Visual Recognition*](https://www.youtube.com/watch?v=vT1JzLTH4G4&t=33s&ab_channel=StanfordUniversitySchoolofEngineering)
+* [Convolutional Neural Networks for Visual Recognition](https://www.youtube.com/watch?v=vT1JzLTH4G4&t=33s&ab_channel=StanfordUniversitySchoolofEngineering)
 
 # NLP
-* [*NLP with Deep Learning*](https://www.youtube.com/watch?v=rmVRLeJRkl4&t=2s&ab_channel=StanfordOnline)
+* [NLP with Deep Learning](https://www.youtube.com/watch?v=rmVRLeJRkl4&t=2s&ab_channel=StanfordOnline)
 
 # Exercise
 [kaggle](https://www.kaggle.com/competitions)
 
- Use the toolbar above, or click the **?** button for formatting help.
----
-layout: post
-title: Markdown Style Guide
 ---
 # Current progress:
 1. [Python Playlist Krish Naik-Hindi](https://www.youtube.com/watch?v=GWUGFjdUO7w&list=PLTDARY42LDV4qqiJd1Z1tShm3mp9-rP4v&index=16&ab_channel=KrishNaikHindi) 13-14 remaining/24 
@@ -121,10 +116,19 @@ title: Markdown Style Guide
 3. [deep-learning Specialization](https://www.coursera.org/specializations/deep-learning#courses)
 [Machine/Deep Learning for Everybody – Full Course  freecode camp](https://www.youtube.com/watch?v=i_LwzRVP7bg&list=PLWKjhJtqVAblStefaz_YOVpDWqcRScc2s&index=2)
 
+4. [Machine-Learning-in-90-days](https://www.youtube.com/watch?v=czQO1_GEEos&list=PLZoTAELRMXVPBTrWtJkn3wWQxZkmTXGwe)
+
+5. Zero to Mastery Machine Learning for [Quick recap](https://github.com/mrdbourke/zero-to-mastery-ml) Just started
+
+6. [Stat Quest for concept clarification](https://www.youtube.com/watch?v=4jRBRDbJemM&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF&index=23&ab_channel=StatQuestwithJoshStarmer) Refer for concept clarification
 
 [This is a demo of all styled elements in Jekyll Now.](http://www.jekyllnow.com/Markdown-Style-Guide/)
 
 [View the markdown used to create this post](https://raw.githubusercontent.com/barryclark/www.jekyllnow.com/gh-pages/_posts/2014-6-19-Markdown-Style-Guide.md).
+
+---
+ Use the toolbar above, or click the **?** button for formatting help.
+
 
 This is a paragraph, it's surrounded by whitespace. Next up are some headers, they're heavily influenced by GitHub's markdown style.
 
