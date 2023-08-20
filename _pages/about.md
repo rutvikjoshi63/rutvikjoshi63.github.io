@@ -25,7 +25,7 @@ social: true  # includes social icons at the bottom of the page
 <!-- 1. [**Machine Learning roadmap**](https://rutvikjoshi63.github.io/blogs/Machine-Learning-roadmap/). -->
 
 1. [**Machine Learning roadmap**](https://rutvikjoshi63.github.io/blog/2023/Machine-Learning-roadmap/).
-
+Check out this blog [https://www.robotixwithsina.com/8-machine-learning-books-for-beginners-in-2023/?ref=robotixwithsina-newsletter](Ml/Dl textbook by Sina)
 2. [**Masters**](https://rutvikjoshi63.github.io/blog/2023/Masters/)
    
     [**Toefl repository**](https://rutvikjoshi63.github.io/blog/2023/Toefl-repository/)
