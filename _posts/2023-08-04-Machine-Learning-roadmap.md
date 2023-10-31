@@ -116,7 +116,7 @@ _styles: >
 3. [deep-learning Specialization](https://www.coursera.org/specializations/deep-learning#courses)
 [Machine/Deep Learning for Everybody – Full Course  freecode camp](https://www.youtube.com/watch?v=i_LwzRVP7bg&list=PLWKjhJtqVAblStefaz_YOVpDWqcRScc2s&index=2)
 
-4. [Machine-Learning-in-90-days](https://www.youtube.com/watch?v=czQO1_GEEos&list=PLZoTAELRMXVPBTrWtJkn3wWQxZkmTXGwe)
+4. [Machine-Learning-in-90-days](https://www.youtube.com/watch?v=czQO1_GEEos&list=PLZoTAELRMXVPBTrWtJkn3wWQxZkmTXGwe) (13,15,27+)/153
 
 5. Zero to Mastery Machine Learning for [Quick recap](https://github.com/mrdbourke/zero-to-mastery-ml) Just started
 

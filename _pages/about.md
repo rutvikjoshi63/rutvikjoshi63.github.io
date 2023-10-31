@@ -19,7 +19,22 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
+I am Software Engineer,Data Scientist,Machine Learning enthusiast ,Interested in the field of software engineering,Data Scientist,Machine Learning, Computer Vision, Deep Learning , Actively looking for Full Time opportunities.
+Will be pursuing Master's 
+Target to learn:
+Programming Languages: Python, C++,JAVA, Bash/Shell scripting
+•Databases: MySQL, SQL Server, Azure Cosmos DB, Firebase, MongoDB, Oracle Cloud
+•Big data ecosystem and cloud:Apache Spark, Azure(Basic)
+•Machine Learning: Regression, Classification, Clustering, Dimensionality Reduction, Support Vector Machines (SVM), K-Nearest Neighbors (KNN), Decision Trees, Random
+forest, Boosting Methods, Neural Networks, Deep Learning, CNN, RNN, LSTM, GRU, VAE, GAN, Statistics, Probability Distribution
+•Computer Vision:Image Segmentation, Object Detection, Object Tracking
+•Libraries:Numpy, Pandas, Matplotlib, Seaborn, Scikit-learn, Scipy, Pytorch, Keras, Tensorflow, Beautiful Soup
+•Tools:Azure Databricks, Jira, Bitbucket, Confluence, MATLAB, Git, Google Colab, Visual Studio code, Pycharm, LinuxOS, Anaconda, Jupyter Notebook, Excel.
+Management Information Systems - Competencies: A/B Testing, Teamwork, Agile, Customer-obsessed, Scrum, Analytical, Leadership, Critical ThinkingGreetings
 
+Northeastern University logo
+Northeastern UniversityNortheastern University
+Master of Science - MS, , General
 <!-- Text can be **bold**, _italic_, or ~~strikethrough~~. -->
 **Important links**
 <!-- 1. [**Machine Learning roadmap**](https://rutvikjoshi63.github.io/blogs/Machine-Learning-roadmap/). -->

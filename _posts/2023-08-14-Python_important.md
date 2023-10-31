@@ -28,6 +28,28 @@ def welcome(msg)->str:
 msg=welcome("Welcome all")
 print(msg + "Please subscribe")
 
+# Custom Exception
+class Error(Exception):
+    pass
+
+class dobException(Error):
+    pass
+
+class customgeneric(Error):
+    pass
+year=int(input("Enter the year of Birth "))
+age=2021-year
+try:
+    if age<=30 & age>20:
+        print("The age is valid. You can apply for the exams")
+    else:
+        raise dobException
+except dobException:
+    print("The age is not within the range. You cannot apply for the exams")
+    
+Enter the year of Birth 1986
+The year age is not within the range. You cannot apply for the exams
+
 ```
 
 # Complex Nummbers
@@ -103,18 +125,54 @@ numbers=[1,2,3,4,5]
 squard_numbers=[i**2 for i in numbers]
 print(squard_numbers)
 
-##Generating a list of all the divisors of a number:
+## Generating a list of all the divisors of a number:
 
 number =36
 [i for i in range(1,number+1) if number%i==0]
 [1, 2, 3, 4, 6, 9, 12, 18, 36]
 
-##Generating a list of all the prime number:
+## Generating a list of all the prime number:
 number = 10
 result = [2]
 prime_num = [result.append(i) for i in range(3, number+1) if not [x for x in result if i%x == 0]]
-
 print(result)
+
+## Map function
+l = [1,2,3,4,5,6,,7,8,9]
+
+cube_lst = [map(lambda x: x*x*x, l)]
+
+## Filter function
+new_list = [filter(lambda x: x>4, l)] # lambda x: x>4 return bool value
+
+## Higher order function are those that take function as argument
+## Reduce function
+from functools import reduce
+l = [1,2,3,4,5]
+# it will apply function to all elements and give sibngular output
+sum = reduce(lambda x,y: x+y, l)
+sum = 15
+
+### try else finally
+try:
+    ##code block where exception can occur
+    a=int(input("Enter the number 1 "))
+    b=int(input("Enter the number 2 "))
+    c=a/b
+    
+except NameError:
+    print("The user have not defined the variable")
+except ZeroDivisionError:
+    print("Please provide number greater than 0")
+except TypeError:
+    print("Try to make the datatype similar")
+except Exception as ex:
+    print(ex)
+else:
+    print(c)
+finally:
+    print("The execution is done")
+
 ```
 ```markdown
 
