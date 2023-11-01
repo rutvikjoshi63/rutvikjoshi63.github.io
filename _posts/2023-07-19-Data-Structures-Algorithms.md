@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Data Structures & Algorithms
-date: 2023-08-13 06:56:00-0400
+date: 2023-10-1 06:56:00-0400
 description: Study resources for Machine Learning
 tags: Machine Learning Masters
 # categories: sample-posts
@@ -55,6 +55,21 @@ _styles: >
 
 
 # List 
+- Random Access
+- Dynamic size
+- Flexible types
+
+1. Append()
+2. Insert(loc, var)
+3. var in list
+4. count(var)
+5. index(var)--error if abscent
+   index(var, start, end)
+6. remove(var)
+7. pop() --returns, index optional
+8. del list[index start : end]
+9. max, min, sum,list.reverse(), sort() --for strings only sum will not work
+
 
 *## A New Post for resources to learn Data Structures & Algorithms*
 1. website 
