@@ -1,49 +1,16 @@
 ---
-layout: distill
+layout: post
 title: Advance Learning Algorithms
 date: 2023-10-31 06:56:00-0400
 description: Study topics
 tags: Machine Learning Masters
-# categories: sample-posts
+categories: sample-posts
 giscus_comments: true
-# related_posts: false
-# related_publications: einstein1950meaning, einstein1905movement
-
-authors:
-  - name: Rutvik Joshi
-    # url: "https://en.wikipedia.org/wiki/Albert_Einstein"
-    affiliations:
-      name: IIT-Bombay, VJTI
-
-toc:
-  - name: Week 1
-    # if a section has subsections, you can add them as follows:
-    # subsections:
-    #   - name: Example Child Subsection 1
-    #   - name: Example Child Subsection 2
-  - name: Week 2
-  - name: Week 3
-  - name: Week 4
-
-_styles: >
-  .fake-img {
-    background: #bbb;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 12px;
-  }
-  .fake-img p {
-    font-family: monospace;
-    color: white;
-    text-align: left;
-    margin: 12px 0;
-    text-align: center;
-    font-size: 16px;
-  }
-
+related_posts: false
+related_publications: einstein1950meaning, einstein1905movement
 ---
 
-## A New Post for resources to learn machine learning*
+## Topics covered in Advance Learning Algorithms
 
 
 # Week 1
