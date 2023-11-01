@@ -1,14 +1,52 @@
 ---
-layout: post
+layout: distill
 title: Data Structures & Algorithms
-date: 2023-07-19 09:56:00-0400
+date: 2023-08-13 06:56:00-0400
 description: Study resources for Machine Learning
 tags: Machine Learning Masters
-categories: sample-posts
+# categories: sample-posts
 giscus_comments: true
-related_posts: false
-related_publications: einstein1950meaning, einstein1905movement
+# related_posts: false
+# related_publications: einstein1950meaning, einstein1905movement
+
+authors:
+  - name: Rutvik Joshi
+    # url: "https://en.wikipedia.org/wiki/Albert_Einstein"
+    affiliations:
+      name: IIT-Bombay, VJTI
+
+toc:
+  - name: Geeks for Geeks
+   #  if a section has subsections, you can add them as follows:
+    subsections:
+      - name: Mathematics
+      - name: Example Child Subsection 2
+  - name: Parallel Conquring Technique
+  - name: Mathematics
+  - name: Computer vision
+  - name: NLP
+  - name: Exercise
+  - name: Libraries
+
+_styles: >
+  .fake-img {
+    background: #bbb;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 12px;
+  }
+  .fake-img p {
+    font-family: monospace;
+    color: white;
+    text-align: left;
+    margin: 12px 0;
+    text-align: center;
+    font-size: 16px;
+  }
+
 ---
+## Geeks for Geeks
+
 *## A New Post for resources to learn Data Structures & Algorithms*
 1. website 
     * [CodeWithHarry](https://www.codewithharry.com/videos/data-structures-and-algorithms-in-hindi-1/).
