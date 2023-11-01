@@ -15,13 +15,11 @@ related_publications: einstein1950meaning, einstein1905movement
 # Week 1
 
 # Week 2
-  1. [Complete Statistics For Data Science In 6 hours By Krish Naik](https://www.youtube.com/watch?v=LZzq1zSL1bs&ab_channel=KrishNaik)
-<!-- 
   * a layer is a grouping of neurons in a neural network
   * an activation is the number calculated by a neuron (and “activations” is a vector that is output by a layer that contains multiple neurons)
     ![_config.yml]({{ site.baseurl }}/assets/img/Andrew_Algorithm_w1.png)
 
-    ![_config.yml]({{ site.baseurl }}/assets/img/Andrew_w1_Notation.png) -->
+    ![_config.yml]({{ site.baseurl }}/assets/img/Andrew_w1_Notation.png)
 
 
 # Week 3
