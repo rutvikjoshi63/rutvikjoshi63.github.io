@@ -19,14 +19,15 @@ toc:
   - name: Geeks for Geeks
    #  if a section has subsections, you can add them as follows:
     subsections:
+      - name: Analysis of Algorithms
       - name: Mathematics
-      - name: Example Child Subsection 2
-  - name: Parallel Conquring Technique
-  - name: Mathematics
-  - name: Computer vision
-  - name: NLP
-  - name: Exercise
-  - name: Libraries
+      - name: List
+#   - name: Parallel Conquring Technique
+#   - name: Mathematics
+#   - name: Computer vision
+#   - name: NLP
+#   - name: Exercise
+#   - name: Libraries
 
 _styles: >
   .fake-img {
@@ -46,6 +47,14 @@ _styles: >
 
 ---
 ## Geeks for Geeks
+ 
+# Analysis of Algorithms 
+
+
+# Mathematics 
+
+
+# List 
 
 *## A New Post for resources to learn Data Structures & Algorithms*
 1. website 
