@@ -22,6 +22,11 @@ toc:
       - name: Analysis of Algorithms
       - name: Mathematics
       - name: List
+        subsections:
+        - name: Popular functions
+        - name: Working
+        - name: Advantages
+        - name: DisAdvantages
 #   - name: Parallel Conquring Technique
 #   - name: Mathematics
 #   - name: Computer vision
@@ -55,9 +60,8 @@ _styles: >
 
 
 # List 
-- Dynamic size
-- Flexible types
-- Popular functions
+
+- # Popular functions
   1. Append()
   2. Insert(loc, var)
   3. var in list
@@ -68,13 +72,15 @@ _styles: >
   7. pop() --returns, index optional
   8. del list[index start : end]
   9. max, min, sum,list.reverse(), sort() --for strings only sum will not work
-- Working:
-  Use array Data Structure (Array of references which are continous) . Actual items are not continous
-  Dynamic insertion. Allocate extra memory
-  Advantages:
+- # Working:
+    * Use array Data Structure (Array of references which are continous) . Actual items are not continous
+      Dynamic insertion. Allocate extra memory
+  # Advantages:
   - Random Access (ith item in constant time, address computations done to find location of ith item)
   - Cache friendly
-  DisAdvantages:
+  - Dynamic size
+  - Flexible types
+  # DisAdvantages:
   - Insertion, Deletion and search are slow.Take linear time
 
 
