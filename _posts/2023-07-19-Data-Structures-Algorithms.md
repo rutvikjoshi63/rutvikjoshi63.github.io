@@ -75,12 +75,17 @@ _styles: >
 - # Working:
     * Use array Data Structure (Array of references which are continous) . Actual items are not continous
       Dynamic insertion. Allocate extra memory
-  # Advantages:
+    * Preallocate some space. If becomes full
+      1. Allocate new space (multiply by x=1.125)
+      2. Copy old space to new
+      3. Free old space
+      ![_config.yml]({{ site.baseurl }}/assets/img/gfg_timecomplexity_list.png)
+- # Advantages:
   - Random Access (ith item in constant time, address computations done to find location of ith item)
   - Cache friendly
   - Dynamic size
   - Flexible types
-  # DisAdvantages:
+- # DisAdvantages:
   - Insertion, Deletion and search are slow.Take linear time
 
 
