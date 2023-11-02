@@ -72,6 +72,21 @@ _styles: >
   7. pop() --returns, index optional
   8. del list[index start : end]
   9. max, min, sum,list.reverse(), sort() --for strings only sum will not work
+  10. map:
+    ```python
+    # input size of the list
+    n = int(input("Enter the size of list : "))
+    # store integrs in a list using map,
+    # split and strip functions
+    lst = list(map(int, input("Enter the integer\
+    elements:").strip().split()))[:n]
+
+    # printing the list
+    print('The list is:', lst)
+
+  ```
+  11. Clear()	Removes all items from the list
+  12. copy()	Returns a copy of the list
 - # Working:
     * Use array Data Structure (Array of references which are continous) . Actual items are not continous
       Dynamic insertion. Allocate extra memory
@@ -88,6 +103,21 @@ _styles: >
 - # DisAdvantages:
   - Insertion, Deletion and search are slow.Take linear time
 
+- # Other functions
+1. reduce()	apply a particular function passed in its argument to all of the list elements stores the intermediate result and only returns the final summation value
+2. sum()	Sums up the numbers in the list
+3. ord()	Returns an integer representing the Unicode code point of the given Unicode character
+4. cmp()	This function returns 1 if the first list is “greater” than the second list
+5. max()	return maximum element of a given list
+6. min()	return minimum element of a given list
+7. all()	Returns true if all element is true or if the list is empty
+8. any()	return true if any element of the list is true. if the list is empty, return false
+9. len()	Returns length of the list or size of the list
+10. enumerate()	Returns enumerate object of the list
+11. accumulate()	apply a particular function passed in its argument to all of the list elements returns a list containing the intermediate results
+12. filter()	tests if each element of a list is true or not
+13. map()	returns a list of the results after applying the given function to each item of a given iterable
+14. lambda()	This function can have any number of arguments but only one expression, which is evaluated and returned.
 
 *## A New Post for resources to learn Data Structures & Algorithms*
 1. website 
