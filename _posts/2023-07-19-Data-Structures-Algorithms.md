@@ -55,20 +55,27 @@ _styles: >
 
 
 # List 
-- Random Access
 - Dynamic size
 - Flexible types
-
-1. Append()
-2. Insert(loc, var)
-3. var in list
-4. count(var)
-5. index(var)--error if abscent
-   index(var, start, end)
-6. remove(var)
-7. pop() --returns, index optional
-8. del list[index start : end]
-9. max, min, sum,list.reverse(), sort() --for strings only sum will not work
+- Popular functions
+  1. Append()
+  2. Insert(loc, var)
+  3. var in list
+  4. count(var)
+  5. index(var)--error if abscent
+    index(var, start, end)
+  6. remove(var)
+  7. pop() --returns, index optional
+  8. del list[index start : end]
+  9. max, min, sum,list.reverse(), sort() --for strings only sum will not work
+- Working:
+  Use array Data Structure (Array of references which are continous) . Actual items are not continous
+  Dynamic insertion. Allocate extra memory
+  Advantages:
+  - Random Access (ith item in constant time, address computations done to find location of ith item)
+  - Cache friendly
+  DisAdvantages:
+  - Insertion, Deletion and search are slow.Take linear time
 
 
 *## A New Post for resources to learn Data Structures & Algorithms*
