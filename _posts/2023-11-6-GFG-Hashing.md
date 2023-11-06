@@ -100,19 +100,16 @@ Dictionary and Set implement.
 
 - # Working:
     * Direct Address Table - problem Not handle large keys, floating point strings
-    * Use array Data Structure (Array of references which are continous) . Actual items are not continous
-      Dynamic insertion. Allocate extra memory
-    * Preallocate some space. If becomes full
-      1. Allocate new space (multiply by x=1.125)
-      2. Copy old space to new
-      3. Free old space
-      ![_config.yml]({{ site.baseurl }}/assets/img/gfg_timecomplexity_list.png)
+    * Hash function- need to be fast, uniformly distribute large keys
+  Examples
+  
 - # Advantages:
   - Best for Search, Insert, Delete in BigO(1)
   - insertion ovverides if exist already, no duplicates
 - # DisAdvantages:
   - Strict search, yes or No. 
   - No sorted order
+  - Not handle large keys, floating point strings
 
 - # Other functions
 1. reduce()	apply a particular function passed in its argument to all of the list elements stores the intermediate result and only returns the final summation value
