@@ -60,7 +60,7 @@ _styles: >
 
 # [List, Sets, Dictionary](https://rutvikjoshi63.github.io/blog/2023/GFG-list/) 
 
-- # Popular functions
+- # Hashing
 
 - # Working:
 
