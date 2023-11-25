@@ -9,13 +9,13 @@ profile:
   image: prof_pic.jpeg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>408 Ashar Aria</p>
+    <p>Kharegaon, Kalwa, Thane</p>
+    <p>Maharashtra, India 400605</p>
 
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 A Software Engineer, Data Scientist, and Machine Learning enthusiast with a passion for exploring the intersection of technology and innovation. I am driven by a deep interest in harnessing the power of data to solve complex problems and create meaningful impact.
@@ -35,7 +35,7 @@ Target to learn: -->
 
 <!-- Technical Skills:
  Programming Languages: Python, C++, Bash/Shell scripting <!-- ,JAVA -->
- 
+
 •Databases: MySQL, SQL Server, Azure Cosmos DB, Firebase, MongoDB, Oracle Cloud
 •Big data ecosystem and cloud:Apache Spark, Azure(Basic)
 •Machine Learning: Regression, Classification, Clustering, Dimensionality Reduction, Support Vector Machines (SVM), K-Nearest Neighbors (KNN), Decision Trees, Random
