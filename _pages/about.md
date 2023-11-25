@@ -6,7 +6,7 @@ subtitle: <a href='#'>Software Developer insterested in ML and Robotics.</a>.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic.jpeg
   image_circular: false # crops the image to make it circular
   address: >
     <p>555 your office number</p>
@@ -18,11 +18,24 @@ latest_posts: true  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
+A Software Engineer, Data Scientist, and Machine Learning enthusiast with a passion for exploring the intersection of technology and innovation. I am driven by a deep interest in harnessing the power of data to solve complex problems and create meaningful impact.
 
-I am Software Engineer,Data Scientist,Machine Learning enthusiast ,Interested in the field of software engineering,Data Scientist,Machine Learning, Computer Vision, Deep Learning , Actively looking for Full Time opportunities.
-Will be pursuing Master's 
-Target to learn:
-Programming Languages: Python, C++,JAVA, Bash/Shell scripting
+**Areas of Expertise**:
+
+1. Artificial Intelligence: Possess a strong foundation in machine learning algorithms, including regression, classification, clustering, and deep learning, with the ability to apply these techniques to solve real-world problems. Skilled in utilizing statistical and machine learning techniques to extract insights from vast datasets, enabling data-driven decision-making. Expertise in image segmentation, object detection, and object tracking, enabling the development of intelligent vision systems.
+
+<!-- 2. Data Science: Skilled in utilizing statistical and machine learning techniques to extract insights from vast datasets, enabling data-driven decision-making. -->
+
+2. Software Engineering: Proficient in a range of programming languages, including Python, C++, with experience in designing, developing, and deploying scalable software solutions.
+
+<!-- 4. Computer Vision: Expertise in image segmentation, object detection, and object tracking, enabling the development of intelligent vision systems.
+Target to learn: -->
+[**Resume/CV**](https://rutvikjoshi63.github.io/cv/)
+[**Projects**](https://rutvikjoshi63.github.io/projects/)
+
+<!-- Technical Skills:
+ Programming Languages: Python, C++, Bash/Shell scripting <!-- ,JAVA -->
+ 
 •Databases: MySQL, SQL Server, Azure Cosmos DB, Firebase, MongoDB, Oracle Cloud
 •Big data ecosystem and cloud:Apache Spark, Azure(Basic)
 •Machine Learning: Regression, Classification, Clustering, Dimensionality Reduction, Support Vector Machines (SVM), K-Nearest Neighbors (KNN), Decision Trees, Random
@@ -30,11 +43,8 @@ forest, Boosting Methods, Neural Networks, Deep Learning, CNN, RNN, LSTM, GRU, V
 •Computer Vision:Image Segmentation, Object Detection, Object Tracking
 •Libraries:Numpy, Pandas, Matplotlib, Seaborn, Scikit-learn, Scipy, Pytorch, Keras, Tensorflow, Beautiful Soup
 •Tools:Azure Databricks, Jira, Bitbucket, Confluence, MATLAB, Git, Google Colab, Visual Studio code, Pycharm, LinuxOS, Anaconda, Jupyter Notebook, Excel.
-Management Information Systems - Competencies: A/B Testing, Teamwork, Agile, Customer-obsessed, Scrum, Analytical, Leadership, Critical ThinkingGreetings
+Management Information Systems - Competencies: A/B Testing, Teamwork, Agile, Customer-obsessed, Scrum, Analytical, Leadership, Critical ThinkingGreetings -->
 
-Northeastern University logo
-Northeastern UniversityNortheastern University
-Master of Science - MS, , General
 <!-- Text can be **bold**, _italic_, or ~~strikethrough~~. -->
 **Important links**
 <!-- 1. [**Machine Learning roadmap**](https://rutvikjoshi63.github.io/blogs/Machine-Learning-roadmap/). -->
