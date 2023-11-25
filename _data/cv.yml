@@ -2,55 +2,45 @@
   type: map
   contents:
     - name: Full Name
-      value: Rutvik Joshi
+      value: Albert Einstein
     - name: Date of Birth
-      value: 8th October 2000
+      value: 14th March 1879
     - name: Languages
-      value: English, Hindi, Marathi
+      value: English, German
 
 - title: Education
   type: time_table
   contents:
-    - title: Bachelor of Technology, Civil Engineering
-      institution: VJTI, University of Mumbai, India
-      year: 2022
-      # description:
-      #   - Description 1.
-      #   - Description 2.
-      #   - title: Description 3.
+    - title: PhD
+      institution: University of Zurich, Zurich, Switzerland
+      year: 1905
+      description:
+        - Description 1.
+        - Description 2.
+        - title: Description 3.
           contents:
-            - Calculus,
-            - Differential Equations,
-            - Matrices, 
-            - Probability, 
-            - Statistics and Numerical Methods, 
-            - Computer Programming, 
-            - Optimization and Decision Sciences
-    # - title: Federal teaching diploma
-    #   institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-    #   year: 1900
-    #   description:
-    #     - Description 1.
-    #     - Description 2.
+            - Sub-description 1.
+            - Sub-description 2.
+    - title: Federal teaching diploma
+      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
+      year: 1900
+      description:
+        - Description 1.
+        - Description 2.
 
 - title: Experience
   type: time_table
   contents:
-    - title: Project Research Assistant
-      institution: Indian Institute of Technology Bombay
-      year: 2023
+    - title: Professor of Theoretical Physics
+      institution: Institute for Advanced Study, Princeton University
+      year: 1933 - 1955
       description:
-        
-        # - Description 2.
-        - title: FOSSEE project funded by Ministry of Education-India, to promote the use of FLOSS tools in academia and research. Osdag is an Indian Institute of Technology Bombay developed Steel Design Software.
+        - Description 1.
+        - Description 2.
+        - title: Description 3.
           contents:
-        - Expanded Osdag’s Struts and Flexural member design modules using Python, significantly enhancing its functionality.
-        - Spearheaded usability testing initiatives to identify and address user pain points, optimizing the overall user experience.
-        - Devised innovative methods to enhance the functionality of existing features and provide greater user control, empowering engineers and researchers.
-        - Guided interns to create a functional prototype for Osdag on cloud, leveraging Django, Three.js, and React, paving the way for future cloud-based deployment.
-        - Promoting Osdag at the G20 Pune Event as an IIT-B representative effectively expanded its reach and impact within the engineering, teaching, and research communities. Contributed to its wider adoption and fostered a more collaborative environment for software development.
-        - Enriched students’ software development and open-source tools proficiency through engaging Spoken-Tutorial Workshops and Activities.
-        
+            - Sub-description 1.
+            - Sub-description 2.
     - title: Visiting Professor
       institution: California Institute of Technology, Pasadena, California, US
       year: 1933
