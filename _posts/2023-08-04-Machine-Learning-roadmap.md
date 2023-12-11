@@ -6,6 +6,7 @@ description: Study resources for Machine Learning
 tags: Machine Learning Masters
 # categories: sample-posts
 giscus_comments: true
+featured: true
 # related_posts: false
 # related_publications: einstein1950meaning, einstein1905movement
 

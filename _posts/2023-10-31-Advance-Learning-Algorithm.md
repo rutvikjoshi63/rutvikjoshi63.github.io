@@ -21,7 +21,8 @@ related_publications: einstein1950meaning, einstein1905movement
 
     ![_config.yml]({{ site.baseurl }}/assets/img/Andrew_w1_Notation.png)
 
-
+  * Computation Graph based on Graph Theory
+    ![_config.yml]({{ site.baseurl }}/assets/img/AndrewNg/AdvAlgorithm_w2_GraphTheory.png)
 # Week 3
 
 

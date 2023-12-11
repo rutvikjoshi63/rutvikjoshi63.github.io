@@ -2,18 +2,18 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Tracking progress # the website title (if blank, full name will be used instead)
+title: Rutvik Joshi Career Portfolio # the website title (if blank, full name will be used instead)
 first_name: Rutvik
-middle_name: N.
+middle_name: N
 last_name: Joshi
-email: you@example.com
+email: rutvikjoshi63@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. Latest blog for information
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
+
+keywords: Artificial Intelligence, Machine Learning  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -71,43 +71,43 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: rutvikjoshi63 # your GitHub user name
+github_username: rutvikjoshi63 # your GitHub user name0
 gitlab_username:  # your GitLab user name
-twitter_username: Under Development  # your Twitter handle
-mastodon_username:  # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: Under Development  # your LinkedIn user name
-telegram_username: Under Development # your Telegram user name
-scholar_userid:  # your Google Scholar ID
-semanticscholar_id:  # your Semantic Scholar ID
-whatsapp_number: +918422031006 # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
-orcid_id: # your ORCID ID
-medium_username:  # your Medium username
-quora_username: Under Development  # your Quora username
-publons_id:  # your ID on Publons
-lattes_id:  # your ID on Lattes (Brazilian Lattes CV)
-osf_id:  # your OSF ID
-research_gate_profile:  # your profile on ResearchGate
-scopus_id: # your profile on Scopus
-blogger_url: Under Development # your blogger URL
-work_url: Under Development # work page URL
-keybase_username:  # your keybase user name
-wikidata_id:  # your wikidata id
-wikipedia_id:  # your wikipedia id (Case sensitive)
-dblp_url:  # your DBLP profile url
-stackoverflow_id: Under Development # your stackoverflow id
-kaggle_id: Under Development # your kaggle id
-lastfm_id:  # your lastfm id
-spotify_id: Under Development # your spotify id
-pinterest_id:  # your pinterest id
-unsplash_id:  # your unsplash id
-instagram_id: Under Development # your instagram id
-facebook_id: Under Development # your facebook id
-youtube_id: Under Development # your youtube channel id (youtube.com/@<youtube_id>)
-discord_id: Under Development # your discord id (18-digit unique numerical identifier)
-zotero_username:  # your zotero username
+#twitter_username: Under Development  # your Twitter handle
+#mastodon_username:  # your mastodon instance+username in the format instance.tld/@username
+linkedin_username: https://www.linkedin.com/in/rutvikjoshi001/  # your LinkedIn user name
+#telegram_username: Under Development # your Telegram user name
+#scholar_userid:  # your Google Scholar ID
+#semanticscholar_id:  # your Semantic Scholar ID
+whatsapp_number: +919969489020 # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
+#orcid_id: # your ORCID ID
+#medium_username:  # your Medium username
+#quora_username: Under Development  # your Quora username
+#publons_id:  # your ID on Publons
+#lattes_id:  # your ID on Lattes (Brazilian Lattes CV)
+#osf_id:  # your OSF ID
+#research_gate_profile:  # your profile on ResearchGate
+#scopus_id: # your profile on Scopus
+#blogger_url: Under Development # your blogger URL
+work_url: https://fossee.in/ # work page URL
+#keybase_username:  # your keybase user name
+#wikidata_id:  # your wikidata id
+#wikipedia_id:  # your wikipedia id (Case sensitive)
+#dblp_url:  # your DBLP profile url
+#stackoverflow_id: Under Development # your stackoverflow id
+#kaggle_id: Under Development # your kaggle id
+#lastfm_id:  # your lastfm id
+#spotify_id: Under Development # your spotify id
+#pinterest_id:  # your pinterest id
+#unsplash_id:  # your unsplash id
+#instagram_id: Under Development # your instagram id
+#facebook_id: Under Development # your facebook id
+#youtube_id: Under Development # your youtube channel id (youtube.com/@<youtube_id>)
+discord_id: 593447167801163786 # your discord id (18-digit unique numerical identifier)
+#zotero_username:  # your zotero username
 
-contact_note: >
-  No contact please
+# contact_note: >
+#   please use email
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -180,12 +180,12 @@ collections:
 announcements:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: 3 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  limit: 5 # leave blank to include all the blog posts
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -274,8 +274,8 @@ display_categories: ['blockquotes'] # these categories will be displayed on the 
 
 scholar:
 
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Joshi]
+  first_name: [Rutvik, N.]
 
   style: apa
   locale: en
@@ -417,12 +417,12 @@ jsonresume:
   - basics
   - work
   - education
-  - publications
+  # - publications
   - projects
   - volunteer
-  - awards
+  # - awards
   - certificates
   - skills
   - languages
   - interests
-  - references
+  # - references
