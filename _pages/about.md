@@ -28,28 +28,28 @@ I have successfully completed my undergraduate studies in Civil Engineering from
 Now, my focus has shifted towards harnessing the capabilities of Artificial Intelligence to pioneer innovative solutions for industries and infrastructure. I am passionate about utilizing AI in ways that have never been explored before, aiming to contribute to the evolution of these crucial sectors.
 
 **A New Era of Development**:
-My mission is to usher in a new era of development, one where the fusion of traditional engineering principles and cutting-edge AI technologies leads to unprecedented advancements. I am excited about the potential to optimize processes, enhance efficiency, and drive sustainable progress in industries and infrastructure projects.
+My mission is to usher in a new era of development, one where cutting-edge AI technologies enhance our capacity to deal with climate change, smart cities and new ways of construction robotics leading to unprecedented advancements. I am excited about the potential to optimize processes, enhance efficiency, and drive sustainable progress in industries and infrastructure projects.
 
 **Exploring the Uncharted**:
-With a commitment to pushing boundaries, I am eager to explore uncharted territories where AI meets civil engineering. Through this convergence, I aim to bring forth solutions that not only meet but exceed the evolving needs of our industries and contribute to the creation of smarter, more resilient infrastructure.
+With a commitment to pushing boundaries, I am eager to explore uncharted territories where AI meets engineering and the beyond. Through this, I aim to bring forth solutions that not only meet but exceed the evolving needs of our industries and contribute to the creation of smarter, more resilient autonomous systems and infrastructure.
 
-Thank you for joining me on this journey as I explore the exciting intersection of Civil Engineering and Artificial Intelligence, seeking to redefine the way we approach and develop industries and infrastructure.
+Thank you for joining me on this journey as I explore the exciting intersection of Engineering and Artificial Intelligence, seeking to redefine the way we approach and develop industries and infrastructure.
 
 **Areas of Expertise**:
 
-1. **Artificial Intelligence**: Possess a strong foundation in machine learning algorithms, including regression, classification, clustering, and deep learning, with the ability to apply these techniques to solve real-world problems. Skilled in utilizing statistical and machine learning techniques to extract insights from vast datasets, enabling data-driven decision-making. Expertise in anamoly detection, image compression, object detection, enabling the development of intelligent vision systems.
+1. **Artificial Intelligence**: Possess a strong foundation in machine learning algorithms, including regression, classification, clustering, and deep learning, with the ability to apply these techniques to solve real-world problems. Skilled in utilizing statistical and machine learning techniques to extract insights from vast datasets, enabling data-driven decision-making. Interested in anamoly detection, image compression, object detection, enabling the development of intelligent vision systems. Used Reward based system in Deep Q-Network for landing lunar lander using a Reinforcement Learning model.
 
 2. **Data Science**: Skilled in utilizing statistical and machine learning techniques to extract insights from vast datasets, enabling data-driven decision-making.
 
-3. **Software Engineering**: Proficient in a range of programming languages, including Python, C++, with experience in designing, developing, and deploying scalable software solutions. Familiar with Django, React and Threejs frameworks for web development
+3. **Software Engineering**: Proficient in a range of programming languages, including Python, C++, with experience in designing, developing, and deploying scalable software solutions. Familiar with Django, React and Threejs frameworks for web development.
 
-4. Computer Vision: Expertise in image segmentation, object detection, and object tracking, enabling the development of intelligent vision systems.
+4. **Computer Vision**: Expertise in image segmentation, object detection, and object tracking, enabling the development of intelligent vision systems.
 
 **Technical Skills**:
 
 + Programming Languages: Python, C++, Bash/Shell scripting <!-- ,JAVA -->
 + Databases: MySQL <!--, SQL Server, Azure Cosmos DB, Firebase, MongoDB, Oracle Cloud--> <!-- •Big data ecosystem and cloud:Apache Spark, Azure(Basic) -->
-+ Machine Learning: Regression, Classification, Clustering, Dimensionality Reduction, Support Vector Machines (SVM), K-Nearest Neighbors (KNN), Decision Trees, Random forest, Boosting Methods, Neural Networks, Deep Learning, CNN <!--,, RNN, LSTM, GRU, VAE, GAN, Statistics, Probability Distribution  -->
++ Machine Learning: Regression, Classification, Clustering, Dimensionality Reduction, Support Vector Machines (SVM), K-Nearest Neighbors (KNN), Decision Trees, Random forest, Boosting Methods, Neural Networks, Deep Learning, CNN, Reinforcement Learning <!--,, RNN, LSTM, GRU, VAE, GAN, Statistics, Probability Distribution  -->
 + Computer Vision:Image Segmentation, Object Detection, Object Tracking
 + Libraries:Numpy, Pandas, Matplotlib, Seaborn, Scikit-learn, Scipy, Pytorch, Keras, Tensorflow, Beautiful Soup, SymPy, PyQt5, PyLaTeX
 + Tools: MATLAB, Git, Google Colab, Visual Studio code, Pycharm, LinuxOS, Anaconda, Jupyter Notebook, Excel. <!-- Azure Databricks, Jira, Bitbucket, Confluence, -->
