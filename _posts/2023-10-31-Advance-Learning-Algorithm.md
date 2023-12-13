@@ -27,5 +27,3 @@ related_publications: einstein1950meaning, einstein1905movement
 
 
 # Week 4
-
-
