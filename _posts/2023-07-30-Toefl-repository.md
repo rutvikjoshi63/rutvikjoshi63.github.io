@@ -63,7 +63,7 @@ Follow these five easy steps to make your English sound more fluent starting tod
 4)Exercise your mouth muscles. ...
 5)Copy a native speaker
 
-
+<!-- <!-- 
  releated important links\\
 The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file
 
@@ -73,8 +73,6 @@ The easiest way to make your first post is to edit this one. Go into /_posts/ an
 For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
 
 
-second blog
+second blog -->
 
 
-
- If you would like something more academic, check the [distill style post]({% post_url 2018-12-22-distill %}).
