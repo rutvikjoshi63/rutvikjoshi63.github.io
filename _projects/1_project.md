@@ -1,25 +1,25 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
+title: Osdag - FOSSEE
+description: A software application for Steel Design
+img: assets/img/IIT/Indian_Institute_of_Technology_Bombay_Logo.svg.png
 importance: 1
 category: work
-related_publications: einstein1956investigations, einstein1950meaning
+# related_publications: einstein1956investigations, einstein1950meaning
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+The [FOSSEE](https://fossee.in/) project is part of the National Mission on Education through Information and Communication Technology (ICT), Ministry of Education (MoE), Government of India.\\
+[Osdag](https://osdag.fossee.in/) is a cross-platform free/libre and open-source software for the design (and detailing) of steel structures, following the Indian Standard IS 800:2007. 
+<!-- Make your photos 1/3, 2/3, or full width. -->
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+<!-- To give your project a background in the portfolio page, just add the img tag to the front matter like so:
 
     ---
     layout: page
     title: project
     description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+    img: /assets/img/IIT/Indian_Institute_of_Technology_Bombay_Logo.svg.png
+    --- -->
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
