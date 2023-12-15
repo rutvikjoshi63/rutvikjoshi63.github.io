@@ -5,7 +5,7 @@ permalink: /projects/
 description: A collection of Computer Science projects.
 nav: true
 nav_order: 2
-display_categories: [work, fun]
+display_categories: [work, Personal]
 horizontal: false
 ---
 <!-- Artificial Intelligence and Data Science -->
