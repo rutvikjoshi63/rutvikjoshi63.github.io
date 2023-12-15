@@ -5,23 +5,13 @@ description: A Design module in Osdag software application for Steel Design
 img: assets/img/IIT/Indian_Institute_of_Technology_Bombay_Logo.svg.png
 importance: 1
 category: work
-# related_publications: einstein1956investigations, einstein1950meaning
 ---
 
 The [FOSSEE](https://fossee.in/) project is part of the National Mission on Education through Information and Communication Technology (ICT), Ministry of Education (MoE), Government of India.\\
 [Osdag](https://osdag.fossee.in/) is a cross-platform free/libre and open-source software for the design (and detailing) of steel structures, following the Indian Standard IS 800:2007. 
 
 Below I have added the images of the module - `Compression member` and it's sub-modules: `Columns in Frames` and `Struts in Trusses`
-<!-- Make your photos 1/3, 2/3, or full width. -->
 
-<!-- To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/IIT/Indian_Institute_of_Technology_Bombay_Logo.svg.png
-    --- -->
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
