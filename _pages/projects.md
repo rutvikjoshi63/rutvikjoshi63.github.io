@@ -2,13 +2,13 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: A collection of Computer Science projects.
 nav: true
 nav_order: 2
-display_categories: [work, fun]
+display_categories: [work, Personal]
 horizontal: false
 ---
-
+<!-- Artificial Intelligence and Data Science -->
 <!-- pages/projects.md -->
 <div class="projects">
 {%- if site.enable_project_categories and page.display_categories %}
