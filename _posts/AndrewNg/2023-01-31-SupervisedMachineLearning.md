@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Supervised Machine Learning
-date: 2023-11-31 06:56:00-0400
+date: 2023-01-31 06:56:00-0400
 description: Study topics
-tags: Machine Learning Masters
+tags: Machine Learning Masters math
 categories: sample-posts
 giscus_comments: true
 related_posts: false

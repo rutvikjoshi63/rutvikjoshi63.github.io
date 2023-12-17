@@ -2,11 +2,16 @@ github_users:
   - rutvikjoshi63
 
 github_repos:
-  - rutvikjoshi63/rutvikjoshi63.github.io
-  - rutvikjoshi63/MarsRover
-  - rutvikjoshi63/CV-AL-ML-final
-  - rutvikjoshi63/Python_notes 
+  # - rutvikjoshi63/rutvikjoshi63.github.io
+  - rutvikjoshi63/Land-Lunar-Lander-on-landing-pad/tree/main/LunarLander
+  - rutvikjoshi63/Image_Classification/tree/main/MultiClassClassification
+  # - rutvikjoshi63/Land-Lunar-Lander-on-landing-pad/tree/main/K-means_ImageCompression
   - rutvikjoshi63/Osdag
-  - rutvikjoshi63/Data-Structure-Class
+  # - rutvikjoshi63/Land-Lunar-Lander-on-landing-pad/tree/main/AnamolyDetection
+  # - rutvikjoshi63/Land-Lunar-Lander-on-landing-pad/tree/main/CollabarativeFiletring
+  # - rutvikjoshi63/Image_Classification/tree/main/BinaryClassification
+  # - rutvikjoshi63/Image_Classification
+  - rutvikjoshi63/Student-admission-prediction
+  # - rutvikjoshi63/Python_notes 
   
 

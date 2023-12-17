@@ -1,10 +1,9 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
-img:
-importance: 4
-category: fun
+title: Land Lunar Lander on landing pad
+description: an agent learns through trial and error, maximizing its reward by making optimal decisions in a dynamic environment.
+category: Personal
+redirect: https://github.com/rutvikjoshi63/Land-Lunar-Lander-on-landing-pad/tree/main/LunarLander
 ---
 
 Every project has a beautiful feature showcase page.

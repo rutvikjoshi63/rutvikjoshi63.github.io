@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Handwritten Digits Image Multiclass Classification
-description: a neural network to recognize the hand-written digits from zero and nine.
+title: K-means Image Compression
+description: to reduce image file size while preserving visual quality using K-means clustering
 img: 
-importance: 1
+importance: 2
 category: Personal
-redirect: https://github.com/rutvikjoshi63/Image_Classification/tree/main/MultiClassClassification
+redirect: https://github.com/rutvikjoshi63/Land-Lunar-Lander-on-landing-pad/tree/main/K-means_ImageCompression
 ---
 
 Every project has a beautiful feature showcase page.

@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Data Structures & Algorithms
-date: 2023-10-1 06:56:00-0400
+date: 2023-10-25 06:56:00-0400
 description: Study resources for Machine Learning
 tags: Machine Learning Masters
 # categories: sample-posts

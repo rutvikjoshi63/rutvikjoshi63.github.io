@@ -21,7 +21,7 @@ social: true  # includes social icons at the bottom of the page
 
 Welcome to my portfolio! I hold a bachelor's degree in Civil Engineering, and I am on a transformative journey to leverage the power of Artificial Intelligence (AI) to reshape and elevate the fields of industries and infrastructure.
 
-**Educational Background**:
+## **Educational Background**:
 I have successfully completed my undergraduate studies in Civil Engineering from [**VJTI**](https://vjti.ac.in/)([*University of Mumbai*](https://www.bing.com/ck/a?!&&p=39b698e33800fd68JmltdHM9MTcwMjI1MjgwMCZpZ3VpZD0wM2Q3OTUzOS1jYmJkLTZiODMtMDA4ZS04NjcwY2EwZjZhMDkmaW5zaWQ9NTIzMw&ptn=3&ver=2&hsh=3&fclid=03d79539-cbbd-6b83-008e-8670ca0f6a09&psq=university+of+mumbai&u=a1aHR0cHM6Ly9tdS5hYy5pbi8&ntb=1)), where I gained a solid foundation in the principles and practices that underpin the development of robust infrastructure.
 
 **AI for Industries and Infrastructure**:
@@ -35,7 +35,7 @@ With a commitment to pushing boundaries, I am eager to explore uncharted territo
 
 Thank you for joining me on this journey as I explore the exciting intersection of Engineering and Artificial Intelligence, seeking to redefine the way we approach and develop industries and infrastructure.
 
-**Areas of Expertise**:
+## **Areas of Expertise**:
 
 1. **Artificial Intelligence**: Possess a strong foundation in machine learning algorithms, including regression, classification, clustering, and deep learning, with the ability to apply these techniques to solve real-world problems. Skilled in utilizing statistical and machine learning techniques to extract insights from vast datasets, enabling data-driven decision-making. Interested in anamoly detection, image compression, object detection, enabling the development of intelligent vision systems. Used Reward based system in Deep Q-Network for landing lunar lander using a Reinforcement Learning model.
 
@@ -45,14 +45,14 @@ Thank you for joining me on this journey as I explore the exciting intersection 
 
 4. **Computer Vision**: Expertise in image segmentation, object detection, and object tracking, enabling the development of intelligent vision systems.
 
-**Technical Skills**:
+## **Technical Skills**:
 
-+ Programming Languages: Python, C++, Bash/Shell scripting <!-- ,JAVA -->
-+ Databases: MySQL <!--, SQL Server, Azure Cosmos DB, Firebase, MongoDB, Oracle Cloud--> <!-- •Big data ecosystem and cloud:Apache Spark, Azure(Basic) -->
-+ Machine Learning: Regression, Classification, Clustering, Dimensionality Reduction, Support Vector Machines (SVM), K-Nearest Neighbors (KNN), Decision Trees, Random forest, Boosting Methods, Neural Networks, Deep Learning, CNN, Reinforcement Learning <!--,, RNN, LSTM, GRU, VAE, GAN, Statistics, Probability Distribution  -->
-+ Computer Vision:Image Segmentation, Object Detection, Object Tracking
-+ Libraries:Numpy, Pandas, Matplotlib, Seaborn, Scikit-learn, Scipy, Pytorch, Keras, Tensorflow, Beautiful Soup, SymPy, PyQt5, PyLaTeX
-+ Tools: MATLAB, Git, Google Colab, Visual Studio code, Pycharm, LinuxOS, Anaconda, Jupyter Notebook, Excel. <!-- Azure Databricks, Jira, Bitbucket, Confluence, -->
++ **Programming Languages**: Python, C++, Bash/Shell scripting <!-- ,JAVA -->
++ **Databases**: MySQL <!--, SQL Server, Azure Cosmos DB, Firebase, MongoDB, Oracle Cloud--> <!-- •Big data ecosystem and cloud:Apache Spark, Azure(Basic) -->
++ **Machine Learning**: Regression, Classification, Clustering, Dimensionality Reduction, Support Vector Machines (SVM), K-Nearest Neighbors (KNN), Decision Trees, Random forest, Boosting Methods, Neural Networks, Deep Learning, CNN, Reinforcement Learning <!--,, RNN, LSTM, GRU, VAE, GAN, Statistics, Probability Distribution  -->
++ **Computer Vision**:Image Segmentation, Object Detection, Object Tracking
++ **Libraries**:Numpy, Pandas, Matplotlib, Seaborn, Scikit-learn, Scipy, Pytorch, Keras, Tensorflow, Beautiful Soup, SymPy, PyQt5, PyLaTeX
++ **Tools**: MATLAB, Git, Google Colab, Visual Studio code, Pycharm, LinuxOS, Anaconda, Jupyter Notebook, Excel. <!-- Azure Databricks, Jira, Bitbucket, Confluence, -->
 <!-- Management Information Systems - Competencies: A/B Testing, Teamwork, Agile, Customer-obsessed, Scrum, Analytical, Leadership, Critical ThinkingGreetings -->
 
 <!-- Text can be **bold**, _italic_, or ~~strikethrough~~. -->
