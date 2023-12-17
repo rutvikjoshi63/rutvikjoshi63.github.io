@@ -1,7 +1,7 @@
 ---
 layout: distill
-title: Lists
-date: 2023-10-1 06:56:00-0400
+title: Hashing
+date: 2023-10-15 06:56:00-0400
 description: Study resources for Data Structures & Algorithms
 tags: Data Structures & Algorithms
 # categories: sample-posts
@@ -16,9 +16,10 @@ authors:
       name: IIT-Bombay, VJTI
 
 toc:
-  - name: List
+  - name: Hashing
    #  if a section has subsections, you can add them as follows:
     subsections:
+      - name: Applications
       - name: Popular functions
       - name: Working
       - name: Advantages
@@ -26,7 +27,6 @@ toc:
   - name: Set
    #  if a section has subsections, you can add them as follows:
     subsections:
-      - name: Popular functions
       - name: Working
       - name: Advantages
       - name: DisAdvantages
@@ -57,7 +57,19 @@ _styles: >
 ---
 ## Geeks for Geeks
 
-# List 
+# Hashing 
+Dictionary and Set implement.
+# Applications:
+- Dictionary
+- Database indexing
+- Cryptography
+- Caches
+- Data from Databases
+
+# Not used for :
+- Finding closes value
+- Sorted order
+- Prefix searching -(Trie is better)
 
 - # Popular functions
   1. Append()
@@ -85,21 +97,19 @@ _styles: >
   ```
   11. Clear()	Removes all items from the list
   12. copy()	Returns a copy of the list
+
 - # Working:
-    * Use array Data Structure (Array of references which are continous) . Actual items are not continous
-      Dynamic insertion. Allocate extra memory
-    * Preallocate some space. If becomes full
-      1. Allocate new space (multiply by x=1.125)
-      2. Copy old space to new
-      3. Free old space
-      ![_config.yml]({{ site.baseurl }}/assets/img/gfg_timecomplexity_list.png)
+    * Direct Address Table - problem Not handle large keys, floating point strings
+    * Hash function- need to be fast, uniformly distribute large keys
+  Examples
+  
 - # Advantages:
-  - Random Access (ith item in constant time, address computations done to find location of ith item)
-  - Cache friendly
-  - Dynamic size
-  - Flexible types
+  - Best for Search, Insert, Delete in BigO(1)
+  - insertion ovverides if exist already, no duplicates
 - # DisAdvantages:
-  - Insertion, Deletion and search are slow.Take linear time
+  - Strict search, yes or No. 
+  - No sorted order
+  - Not handle large keys, floating point strings
 
 - # Other functions
 1. reduce()	apply a particular function passed in its argument to all of the list elements stores the intermediate result and only returns the final summation value

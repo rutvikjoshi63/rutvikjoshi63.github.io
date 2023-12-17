@@ -3,7 +3,7 @@ layout: post
 title: Neural Network Evaluation
 date: 2023-09-31 06:56:00-0400
 description: Study topics
-tags: Machine Learning Masters
+tags: Machine Learning Masters math
 categories: sample-posts
 giscus_comments: true
 related_posts: false

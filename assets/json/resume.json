@@ -85,6 +85,21 @@
     "name": "Python for Everybody",
     "date": "May-2020",
     "issuer": "University of Michigan"
+  },
+  {
+    "name": "Machine Learning",
+    "date": "June-2022",
+    "issuer": "DeepLearning.AI"
+  },
+  {
+    "name": "Mathematics for ML and DS",
+    "date": "December-2023",
+    "issuer": "DeepLearning.AI"
+  },
+  {
+    "name": "SQL for Data Science",
+    "date": "May-2020",
+    "issuer": "University of California, Davis"
   }
 ],
   "publications": [],
@@ -100,6 +115,9 @@
     }
   ],
   "interests": [],
-  "references": [],
+  "references": [
+    {"GRE" : "/assets/pdf/GRE_sc.pdf"}, 
+    {"TOEFL" : "/assets/pdf/Toefl_sc2.pdf"} 
+  ],
   "projects": []
 }
