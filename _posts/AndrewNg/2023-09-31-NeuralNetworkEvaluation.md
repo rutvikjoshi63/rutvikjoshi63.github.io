@@ -1,161 +1,114 @@
 ---
-layout: post
-title: Neural Network Evaluation
+layout: distill
+title: Bias and Variance
 date: 2023-09-31 06:56:00-0400
-description: Study topics
-tags: Machine Learning Masters math
-categories: sample-posts
+description: Neural Network Evaluation
+tags: Machine Learning Evaluation math
+# categories: sample-posts
 giscus_comments: true
 related_posts: false
 # related_publications: einstein1950meaning, einstein1905movement
+
+authors:
+  - name: Rutvik Joshi
+    # url: "https://en.wikipedia.org/wiki/Albert_Einstein"
+    affiliations:
+      name: IIT-Bombay, VJTI
+
+toc:
+  - name: Intro
+  - name: Bias
+  - name: Variance
+  - name: Regularisation
+ #  if a section has subsections, you can add them as follows:
+    subsections:
+      - name: Lambda very large
+      - name: Lambda very small
+  - name: baseline level of performance
+  - name: Learning curves
+#  if a section has subsections, you can add them as follows:
+    subsections:
+      - name: high bias
+      - name: high variance
+  - name: neural networks
+
+_styles: >
+  .fake-img {
+    background: #bbb;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 12px;
+  }
+  .fake-img p {
+    font-family: monospace;
+    color: white;
+    text-align: left;
+    margin: 12px 0;
+    text-align: center;
+    font-size: 16px;
+  }
 ---
+<!-- Fee Structure: 1. Full Payment - 21,999 INR 2. Two Installments - 13,000 INR (First) + 10,999 INR (Second) [Total - 23999] 3. Three Installment - 8,999 INR (First) + 8,999 INR (Second) + 8000 INR (Third) [Total - 25999] You need to pay installments within 21 days. -->
 
-## Topics covered in Supervised Machine Learning
-It is usually a good idea to perform feature scaling to help your model converge faster. This is especially true if your input features have widely different ranges of values.
-For that, you will use the [`StandardScaler`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html) class from scikit-learn. This computes the z-score of your inputs. As a refresher, the z-score is given by the equation:
+## Intro
+J_train not being too high indicates this doesn't have a high bias problem and J_cv not being much worse than J_train this indicates that it doesn't have a high variance problem either. 
 
-$$ z = \frac{x - \mu}{\sigma} $$
+## Bias (underfitted)
+If your learning algorithm has high bias, the key indicator will be if J train is high.
 
-where $\mu$ is the mean of the feature values and $\sigma$ is the standard deviation. 
-# Initialize the class
-scaler_linear = StandardScaler()
+## Variance (Overfitted)
+the key indicator for high-variance will be if J_cv is much greater than J train does
 
-# Compute the mean and standard deviation of the training set then transform it
-X_train_scaled = scaler_linear.fit_transform(x_train)
+## Note
+if you're training a neural network, there are some applications where unfortunately you have high bias and high variance
 
-print(f"Computed mean of the training set: {scaler_linear.mean_.squeeze():.2f}")
-print(f"Computed standard deviation of the training set: {scaler_linear.scale_.squeeze():.2f}")
+One way to recognize that situation will be if J train is high, so you're not doing that well on the training set, but even worse, the cross-validation error is again, even much larger than the training set. 
+Meaning
+we fit the training set really well and we overfit in part of the input, and we don't even fit the training data well, and we underfit the part of the input. 
 
-### Train the model
+## Regularisation
+the value of Lambda is the regularization parameter that controls how much you trade-off keeping the parameters w small versus fitting the training data well.
 
-Next, you will create and train a regression model. For this lab, you will use the [LinearRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html) class but take note that there are other [linear regressors](https://scikit-learn.org/stable/modules/classes.html#classical-linear-regressors) which you can also use.
-# Initialize the class
-linear_model = LinearRegression()
+## Lambda very large
+**if Lambda were very large**, then the algorithm is highly motivated to keep these parameters w very small and so you end up with w_1, w_2, really all of these parameters will be very close to zero.(d=0)
 
-# Train the model
-linear_model.fit(X_train_scaled, y_train )
+## Lambda very small
+**setting Lambda equals zero** you end up with that curve that overfits the data.
 
-### Evaluate the Model
+By trying out a large range of possible values for Lambda, fitting parameters using those different regularization parameters, and then evaluating the performance on the cross-validation set, you can then try to pick what is the best value for the regularization parameter. 
 
-To evaluate the performance of your model, you will measure the error for the training and cross validation sets. For the training error, recall the equation for calculating the mean squared error (MSE):
+## Baseline level of performance
+In order to judge if the training error is high, it turns out to be more useful to see if the training error is much higher than a human level of performance
 
-$$J_{train}(\vec{w}, b) = \frac{1}{2m_{train}}\left[\sum_{i=1}^{m_{train}}(f_{\vec{w},b}(\vec{x}_{train}^{(i)}) - y_{train}^{(i)})^2\right]$$
+- how well humans can do on this task because humans are really good at understanding speech data, or processing images or understanding texts.
 
-Scikit-learn also has a built-in [`mean_squared_error()`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html) function that you can use. Take note though that [as per the documentation](https://scikit-learn.org/stable/modules/model_evaluation.html#mean-squared-error), scikit-learn's implementation only divides by `m` and not `2*m`, where `m` is the number of examples. 
-# Feed the scaled training set and get the predictions
-yhat = linear_model.predict(X_train_scaled)
+- some competing algorithm, maybe a previous implementation that someone else has implemented or even a competitor's algorithm
 
-# Use scikit-learn's utility function and divide by 2
-print(f"training MSE (using sklearn function): {mean_squared_error(y_train, yhat) / 2}")
+-guess based on prior experience
 
-You can then compute the MSE for the cross validation set with basically the same equation. 
-* Say that your training set has an input feature equal to `500` which is scaled down to `0.5` using the z-score.
-* After training, your model is able to accurately map this scaled input `x=0.5` to the target output `y=300`. 
-* Now let's say that you deployed this model and one of your users fed it a sample equal to `500`. 
-* If you get this input sample's z-score using any other values of the mean and standard deviation, then it might not be scaled to `0.5` and your model will most likely make a wrong prediction (i.e. not equal to `y=300`). 
+# Learning curves
+![_config.yml]({{ site.baseurl }}/assets/img/AndrewNg/AdvAlgorithm_w3_Learningcurve.png) 
+## high bias
+I know that we're used to thinking that having more data is good, but if your algorithm has high bias, then if the only thing you do is throw more training data at it, that by itself will not ever let you bring down the error rate that much. 
+fix a high bias problem
+- adding additional features
+- Adding polynomial features
+- decreasing Lambda
+## high variance
+If a learning algorithm suffers from high variance, then getting more training data is indeed likely to help. Because extrapolating to the right of this curve, you see that you can expect J cv to keep on coming down.
+fix a high variance problem:
+- more training examples 
+- smaller set of features
+- increasing Lambda
 
-You will scale the cross validation set below by using the same `StandardScaler` you used earlier but only calling its [`transform()`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler.transform) method instead of [`fit_transform()`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler.fit_transform).
+# neural networks
+Bias Variance tradeoff
 
-# Scale the cross validation set using the mean and standard deviation of the training set
-X_cv_scaled = scaler_linear.transform(x_cv)
+large neural networks when trained on small / moderate sized datasets are low bias machines.
 
-print(f"Mean used to scale the CV set: {scaler_linear.mean_.squeeze():.2f}")
-print(f"Standard deviation used to scale the CV set: {scaler_linear.scale_.squeeze():.2f}")
+1. first train your algorithm on your training set and then asked does it do well on the training set. So measure Jtrain and see if it is high and by high, I mean for example, relative to human level performance or some baseline level of performance and if it is not doing well then you have a high bias problem, high trainset error. And one way to reduce bias is to just use a bigger neural network and by bigger neural network, I mean either more hidden layers or more hidden units per layer. And you can then keep on going through this loop and make your neural network bigger and bigger until it does well on the training set.
+2. After it does well on the training set, so the answer to that question is yes. You then ask does it do well on the cross validation set? In other words, does it have high variance and if the answer is no, then you can conclude that the algorithm has high variance because it doesn't want to train set does not do on the cross validation set.So that big gap in Jcv and Jtrain indicates you probably have a high variance problem, and if you have a high variance problem, then one way to try to fix it is to get more data. To get more data and go back and retrain the model and just double-check, do you just want the training set? If not, have a bigger network, or it does see if it does when the cross validation set and if not get more data. And if you can keep on going around and around and around this loop until eventually it does well in the cross validation set. 
 
-# Feed the scaled cross validation set
-yhat = linear_model.predict(X_cv_scaled)
-
-# Use scikit-learn's utility function and divide by 2
-print(f"Cross validation MSE: {mean_squared_error(y_cv, yhat) / 2}")
-
-## Adding Polynomial Features
-### Create the additional features
-
-First, you will generate the polynomial features from your training set. The code below demonstrates how to do this using the [`PolynomialFeatures`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PolynomialFeatures.html) class. It will create a new input feature which has the squared values of the input `x` (i.e. degree=2).
-# Instantiate the class to make polynomial features
-poly = PolynomialFeatures(degree=2, include_bias=False)
-
-# Compute the number of features and transform the training set
-X_train_mapped = poly.fit_transform(x_train)
-
-# Preview the first 5 elements of the new training set. Left column is `x` and right column is `x^2`
-# Note: The `e+<number>` in the output denotes how many places the decimal point should 
-# be moved. For example, `3.24e+03` is equal to `3240`
-print(X_train_mapped[:5])
-You will then scale the inputs as before to narrow down the range of values.
-# Instantiate the class
-scaler_poly = StandardScaler()
-
-# Compute the mean and standard deviation of the training set then transform it
-X_train_mapped_scaled = scaler_poly.fit_transform(X_train_mapped)
-
-# Preview the first 5 elements of the scaled training set.
-print(X_train_mapped_scaled[:5])
-You can then proceed to train the model. After that, you will measure the model's performance against the cross validation set. Like before, you should make sure to perform the same transformations as you did in the training set. You will add the same number of polynomial features then scale the range of values.
-# Initialize the class
-model = LinearRegression()
-
-# Train the model
-model.fit(X_train_mapped_scaled, y_train )
-
-# Compute the training MSE
-yhat = model.predict(X_train_mapped_scaled)
-print(f"Training MSE: {mean_squared_error(y_train, yhat) / 2}")
-
-# Add the polynomial features to the cross validation set
-X_cv_mapped = poly.transform(x_cv)
-
-# Scale the cross validation set using the mean and standard deviation of the training set
-X_cv_mapped_scaled = scaler_poly.transform(X_cv_mapped)
-
-# Compute the cross validation MSE
-yhat = model.predict(X_cv_mapped_scaled)
-print(f"Cross validation MSE: {mean_squared_error(y_cv, yhat) / 2}")
-
-**You can create a loop that contains all the steps in the previous code cells. Here is one implementation that adds polynomial features up to degree=10.**
-# Initialize lists containing the lists, models, and scalers
-train_mses = []
-cv_mses = []
-models = []
-scalers = []
-
-# Loop over 10 times. Each adding one more degree of polynomial higher than the last.
-for degree in range(1,11):
-    
-    # Add polynomial features to the training set
-    poly = PolynomialFeatures(degree, include_bias=False)
-    X_train_mapped = poly.fit_transform(x_train)
-    
-    # Scale the training set
-    scaler_poly = StandardScaler()
-    X_train_mapped_scaled = scaler_poly.fit_transform(X_train_mapped)
-    scalers.append(scaler_poly)
-    
-    # Create and train the model
-    model = LinearRegression()
-    model.fit(X_train_mapped_scaled, y_train )
-    models.append(model)
-    
-    # Compute the training MSE
-    yhat = model.predict(X_train_mapped_scaled)
-    train_mse = mean_squared_error(y_train, yhat) / 2
-    train_mses.append(train_mse)
-    
-    # Add polynomial features and scale the cross validation set
-    poly = PolynomialFeatures(degree, include_bias=False)
-    X_cv_mapped = poly.fit_transform(x_cv)
-    X_cv_mapped_scaled = scaler_poly.transform(X_cv_mapped)
-    
-    # Compute the cross validation MSE
-    yhat = model.predict(X_cv_mapped_scaled)
-    cv_mse = mean_squared_error(y_cv, yhat) / 2
-    cv_mses.append(cv_mse)
-    
-# Plot the results
-degrees=range(1,11)
-utils.plot_train_cv_mses(degrees, train_mses, cv_mses, title="degree of polynomial vs. train and CV MSEs")
-
-# Get the model with the lowest CV MSE (add 1 because list indices start at 0)
-# This also corresponds to the degree of the polynomial added
-degree = np.argmin(cv_mses) + 1
-print(f"Lowest CV MSE is found in the model with degree={degree}")
+A large neural network with well-chosen regularization, well usually do as well or better than a smaller one.  if you were to regularize this larger neural network appropriately, then this larger neural network usually will do at least as well or better than the smaller one. So long as the regularization has chosen appropriately.
+![_config.yml]({{ site.baseurl }}/assets/img/AndrewNg/AdvAlgorithm_w3_NNRegularization.png) 
+TF lets you choose different values of lambda for different layers although for simplicity you can choose the same value of lambda for all the weights and all of the different layers as follows. And then this will allow you to implement regularization in your neural network.
