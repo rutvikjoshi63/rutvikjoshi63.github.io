@@ -54,8 +54,8 @@ _styles: >
 ---
 <!-- Fee Structure: 1. Full Payment - 21,999 INR 2. Two Installments - 13,000 INR (First) + 10,999 INR (Second) [Total - 23999] 3. Three Installment - 8,999 INR (First) + 8,999 INR (Second) + 8000 INR (Third) [Total - 25999] You need to pay installments within 21 days. -->
 
-## Intro
-![_config.yml]({{ site.baseurl }}/assets/img/AndrewNg/AdvAlgorithm_w3_MLDevOp.png) 
+## Bias
+![_config.yml]({{ site.baseurl }}/assets/img/AndrewNg/AdvAlgorithm_w3_EthicsBias.png.png) 
 
 Eg:  **building an email spam classifier**.
 This application is an example of text classification because you're taking a text document that is an email and trying to classify it as either spam or non-spam.
