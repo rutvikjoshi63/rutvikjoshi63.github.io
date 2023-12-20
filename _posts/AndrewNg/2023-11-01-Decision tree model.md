@@ -1,13 +1,12 @@
 ---
 layout: distill
-title: ML Development Process
-date: 2023-10-31 06:56:00-0400
+title: Decision tree model
+date: 202-11-01 06:56:00-0400
 description: Neural Network Evaluation
 tags: Machine Learning Evaluation math
 # categories: sample-posts
-giscus_comments: true
+giscus_comments: false
 related_posts: false
-featured: true
 # related_publications: einstein1950meaning, einstein1905movement
 
 authors:
@@ -20,12 +19,8 @@ toc:
   - name: Intro
     subsections:
       - name: building an email spam classifier
-  - name: Advance Algorithm
-    subsections:
-      - name: Bias and variance
-      - name: Error metrics for skewed datasets
-      - name: Decision tree model
-  - name: Insights
+  - name: Learning Process
+  - name: Measuring purity
   - name: Adding data
  #  if a section has subsections, you can add them as follows:
     subsections:
@@ -59,8 +54,30 @@ _styles: >
 ---
 <!-- Fee Structure: 1. Full Payment - 21,999 INR 2. Two Installments - 13,000 INR (First) + 10,999 INR (Second) [Total - 23999] 3. Three Installment - 8,999 INR (First) + 8,999 INR (Second) + 8000 INR (Third) [Total - 25999] You need to pay installments within 21 days. -->
 
-## Error metrics for skewed datasets) 
-**Precision and recall**,
-![_config.yml]({{ site.baseurl }}/assets/img/AndrewNg/AdvAlgorithm_w3_PrecisionRecall.png
+## Intro
+![_config.yml]({{ site.baseurl }}/assets/img/AndrewNg/AdvAlgorithm_w4_DecisionTree.png) 
 
-# Decision tree model
+
+## Learning Process
+1. How to choose what feature to split on at each node?
+Maximize purity (or minimize impurity)
+2. When do you stop splitting?
+When a node is 100% one class
+When splitting a node will result in the tree exceeding a maximum depth
+When improvements in purity score are below a
+threshold
+When number of examples in a node is below a threshold
+
+## Measuring purity:
+Entropy as a measure of impurity
+Po = 1-P1
+H(P1) = -P_1log_2(P1) - P_olog_2(po)
+= -P1 log2(P1) - (1 − P1)log2 (1 − P1)
+Note: "0 log(0)" = 0
+if you look in open source packages you may also hear about something called the Gini criteria, which is another function that looks a lot like the entropy function, and that will work well as well for building decision trees.
+
+### Information Gain
+![_config.yml]({{ site.baseurl }}/assets/img/AndrewNg/AdvAlgorithm_w4_Information Gain.png) 
+![_config.yml]({{ site.baseurl }}/assets/img/AndrewNg/AdvAlgorithm_w4_Information Gain2.png) 
+
+## Decision Tree Learning
