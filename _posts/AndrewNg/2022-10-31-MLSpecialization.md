@@ -1,9 +1,9 @@
 ---
 layout: distill
-title: ML Development Process
+title: ML Specialization
 date: 2022-10-31 06:56:00-0400
-description: Neural Network Evaluation
-tags: Machine Learning Evaluation math
+description: 
+tags: Machine Learning math
 # categories: sample-posts
 giscus_comments: true
 related_posts: false
@@ -18,8 +18,8 @@ authors:
 
 toc:
   - name: Intro
-    subsections:
-      - name: building an email spam classifier
+    # subsections:
+    #   - name: building an email spam classifier
   - name: Advance Algorithm
     subsections:
       - name: Error metrics for skewed datasets
@@ -61,9 +61,11 @@ _styles: >
     font-size: 16px;
   }
 ---
+## Intro
+
 ## Advance Algorithm
 
-### Error metrics for skewed datasets) 
+### Error metrics for skewed datasets
 **Precision and recall**,
 ![_config.yml]({{ site.baseurl }}/assets/img/AndrewNg/AdvAlgorithm_w3_PrecisionRecall.png)
 
@@ -77,7 +79,3 @@ Use Logarithm, derivates
 nabla f gives![_config.yml]({{ site.baseurl }}/assets/img/AndrewNg/Calculus_w2_Gradient.png)
 
 **maxima/minima**
-df'/dx = 0
-2x
-4y+8
-x=0, y=-2

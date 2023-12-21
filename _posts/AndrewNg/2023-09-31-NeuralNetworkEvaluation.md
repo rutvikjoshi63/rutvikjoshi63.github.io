@@ -2,7 +2,7 @@
 layout: distill
 title: Bias and Variance
 date: 2023-09-31 06:56:00-0400
-description: Neural Network Evaluation
+description: Evaluation Technique
 tags: Machine Learning Evaluation math
 # categories: sample-posts
 giscus_comments: true
@@ -17,14 +17,14 @@ authors:
 
 toc:
   - name: Intro
-  - name: Bias
-  - name: Variance
+  - name: Bias (underfitted)
+  - name: Variance (Overfitted)
   - name: Regularisation
  #  if a section has subsections, you can add them as follows:
     subsections:
       - name: Lambda very large
       - name: Lambda very small
-  - name: baseline level of performance
+  - name: Baseline level of performance
   - name: Learning curves
 #  if a section has subsections, you can add them as follows:
     subsections:
@@ -59,7 +59,7 @@ If your learning algorithm has high bias, the key indicator will be if J train i
 ## Variance (Overfitted)
 the key indicator for high-variance will be if J_cv is much greater than J train does
 
-## Note
+### Note
 if you're training a neural network, there are some applications where unfortunately you have high bias and high variance
 
 One way to recognize that situation will be if J train is high, so you're not doing that well on the training set, but even worse, the cross-validation error is again, even much larger than the training set. 
@@ -69,10 +69,10 @@ we fit the training set really well and we overfit in part of the input, and we 
 ## Regularisation
 the value of Lambda is the regularization parameter that controls how much you trade-off keeping the parameters w small versus fitting the training data well.
 
-## Lambda very large
+### Lambda very large
 **if Lambda were very large**, then the algorithm is highly motivated to keep these parameters w very small and so you end up with w_1, w_2, really all of these parameters will be very close to zero.(d=0)
 
-## Lambda very small
+### Lambda very small
 **setting Lambda equals zero** you end up with that curve that overfits the data.
 
 By trying out a large range of possible values for Lambda, fitting parameters using those different regularization parameters, and then evaluating the performance on the cross-validation set, you can then try to pick what is the best value for the regularization parameter. 
@@ -86,22 +86,22 @@ In order to judge if the training error is high, it turns out to be more useful 
 
 -guess based on prior experience
 
-# Learning curves
+## Learning curves
 ![_config.yml]({{ site.baseurl }}/assets/img/AndrewNg/AdvAlgorithm_w3_Learningcurve.png) 
-## high bias
+### high bias
 I know that we're used to thinking that having more data is good, but if your algorithm has high bias, then if the only thing you do is throw more training data at it, that by itself will not ever let you bring down the error rate that much. 
 fix a high bias problem
 - adding additional features
 - Adding polynomial features
 - decreasing Lambda
-## high variance
+### high variance
 If a learning algorithm suffers from high variance, then getting more training data is indeed likely to help. Because extrapolating to the right of this curve, you see that you can expect J cv to keep on coming down.
 fix a high variance problem:
 - more training examples 
 - smaller set of features
 - increasing Lambda
 
-# neural networks
+## neural networks
 Bias Variance tradeoff
 
 large neural networks when trained on small / moderate sized datasets are low bias machines.

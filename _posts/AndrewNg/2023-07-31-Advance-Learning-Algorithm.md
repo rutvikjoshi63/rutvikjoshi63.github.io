@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Advance Learning Algorithms
-date: 2023-01-31 06:56:00-0400
+date: 2023-07-31 06:56:00-0400
 description: Study topics
 tags: Machine Learning Masters
 categories: sample-posts
 giscus_comments: true
 related_posts: false
-featured: true
+featured: false
 # related_publications: einstein1950meaning, einstein1905movement
 ---
 
 ## Topics covered in Advance Learning Algorithms
 
-# Week 1
+<!-- # Week 1 -->
 
 # Week 2
   * a layer is a grouping of neurons in a neural network
@@ -37,4 +37,4 @@ we're going to introduce a new subset of the data called the cross-validation/va
     ![_config.yml]({{ site.baseurl }}/assets/img/AndrewNg/AdvAlgorithm_w3_Cross-ValidationNeuralNetwork.png)
 
 
-# Week 4
+<!-- # Week 4 -->

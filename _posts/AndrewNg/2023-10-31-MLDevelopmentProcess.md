@@ -2,8 +2,8 @@
 layout: distill
 title: ML Development Process
 date: 2023-10-31 06:56:00-0400
-description: Neural Network Evaluation
-tags: Machine Learning Evaluation math
+description: Development Operations
+tags: Machine Learning
 # categories: sample-posts
 giscus_comments: true
 related_posts: false
@@ -57,14 +57,13 @@ _styles: >
 ## Intro
 ![_config.yml]({{ site.baseurl }}/assets/img/AndrewNg/AdvAlgorithm_w3_MLDevOp.png) 
 
-Eg:  **building an email spam classifier**.
+**building an email spam classifier**
 This application is an example of text classification because you're taking a text document that is an email and trying to classify it as either spam or non-spam.
-1. Data Acquisition
+1. **Data Acquisition**
 Honeypot Projects: Imagine planting bait for digital pirates! These projects create vast networks of fake email addresses specifically designed to attract spammers. Every email received becomes a labeled data point, enriching the training pool for spam filters.
 
-2. Feature Engineering:
+2. **Feature Engineering**:
 - Email Routing: Just like following breadcrumbs, analyzing the email's path can be revealing. The sequence of servers it traversed, the geographical hops, and even unexpected detours can unveil suspicious patterns often characteristic of spam campaigns.
-
 - Dissecting the Body: This is where linguistic finesse comes in. Algorithms can identify telltale signs like excessive exclamation points, suspicious URLs, or manipulative language often used in phishing attempts. Advanced techniques like stemming (discount/discounted) and n-gram analysis (identifying common word sequences) further refine the detection process.
 
 3. Beyond Binary:
@@ -74,14 +73,15 @@ While the core task is classifying spam versus non-spam, more nuanced labels can
 Spammers, like any resourceful villain, adapt. This necessitates continuous improvement in classification techniques. Research in areas like natural language processing and anomaly detection helps stay ahead of the curve, ensuring your inbox remains a safe haven.
 ![_config.yml]({{ site.baseurl }}/assets/img/AndrewNg/AdvAlgorithm_w3_MLDevOp0.png) 
 
-## Error analysis < Bias,Variance
+## Error analysis 
+After Bias,Variance analysis 
 1. Manual inspection of misclassified examples: By hand-picking and analyzing cases where your algorithm goes wrong, you gain valuable insights into its weaknesses.
 2. Grouping errors by common traits: Categorize misclassified examples based on shared features like pharmaceutical spam, deliberate misspellings, or phishing attempts.
 3. Quantifying impact: Count how many errors fall into each category to understand their relative influence on overall performance.
 4. Prioritizing improvements: Focus on tackling the most impactful error categories, like pharmaceutical spam in this example, rather than spending time on less significant areas like deliberate misspellings.
 5. Limitations: This method works best for tasks we intuitively grasp, like spam detection. Analyzing problems beyond human comprehension, like ad click prediction, becomes more challenging.
 
-### Insights:
+## Insights:
 
 Both techniques offer valuable feedback for optimizing your learning algorithm. Use error analysis to identify critical problem areas, and leverage bias-variance analysis to determine the most effective data collection strategy for addressing those areas.
  if error analysis has indicated that there are certain subsets of the data that the algorithm is doing particularly poorly on. And that you want to improve performance on, then getting more data of just the types where you wanted to do better. 

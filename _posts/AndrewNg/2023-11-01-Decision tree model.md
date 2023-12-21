@@ -2,8 +2,8 @@
 layout: distill
 title: Decision tree model
 date: 2023-11-01 06:56:00-0400
-description: Neural Network Evaluation
-tags: Machine Learning Evaluation math
+description: Intro to Decision tree
+tags: Machine Learning 
 # categories: sample-posts
 giscus_comments: false
 related_posts: false
@@ -17,24 +17,24 @@ authors:
 
 toc:
   - name: Intro
-    subsections:
-      - name: building an email spam classifier
+    # subsections:
+    #   - name: building an email spam classifier
   - name: Learning Process
   - name: Measuring purity
-  - name: Adding data
+  - name: Information Gain
  #  if a section has subsections, you can add them as follows:
-    subsections:
-      - name: Data augmentation
-      - name: Photo OCR 
-  - name: Transfer learning
-#  if a section has subsections, you can add them as follows:
-    subsections:
-      - name: Pre-training
-      - name: Fine-tuning
-      - name: Benefits
-      - name: Limitations
-      - name: Examples
-  - name: Deployment
+#     subsections:
+#       - name: Data augmentation
+#       - name: Photo OCR 
+#   - name: Transfer learning
+# #  if a section has subsections, you can add them as follows:
+#     subsections:
+#       - name: Pre-training
+#       - name: Fine-tuning
+#       - name: Benefits
+#       - name: Limitations
+#       - name: Examples
+#   - name: Deployment
 
 _styles: >
   .fake-img {
@@ -80,4 +80,4 @@ if you look in open source packages you may also hear about something called the
 ![_config.yml]({{ site.baseurl }}/assets/img/AndrewNg/AdvAlgorithm_w4_Information Gain.png) 
 ![_config.yml]({{ site.baseurl }}/assets/img/AndrewNg/AdvAlgorithm_w4_Information Gain2.png) 
 
-## Decision Tree Learning
+<!-- ## Decision Tree Learning -->
