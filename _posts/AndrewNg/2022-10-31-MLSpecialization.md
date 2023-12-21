@@ -1,13 +1,13 @@
 ---
 layout: distill
 title: ML Development Process
-date: 2023-10-31 06:56:00-0400
+date: 2022-10-31 06:56:00-0400
 description: Neural Network Evaluation
 tags: Machine Learning Evaluation math
 # categories: sample-posts
 giscus_comments: true
 related_posts: false
-featured: true
+featured: false
 # related_publications: einstein1950meaning, einstein1905movement
 
 authors:
@@ -22,24 +22,27 @@ toc:
       - name: building an email spam classifier
   - name: Advance Algorithm
     subsections:
-      - name: Bias and variance
       - name: Error metrics for skewed datasets
-      - name: Decision tree model
-  - name: Insights
-  - name: Adding data
- #  if a section has subsections, you can add them as follows:
+      - name: Bias and variance
+  - name: Calculus for Machine Learning and Data Science
     subsections:
-      - name: Data augmentation
-      - name: Photo OCR 
-  - name: Transfer learning
-#  if a section has subsections, you can add them as follows:
-    subsections:
-      - name: Pre-training
-      - name: Fine-tuning
-      - name: Benefits
-      - name: Limitations
-      - name: Examples
-  - name: Deployment
+      - name: Derivatives & Optimization
+      - name: Gradients & Gradient Descent
+#      - name: Bias and variance
+#  - name: Adding data
+# #  if a section has subsections, you can add them as follows:
+#    subsections:
+#      - name: Data augmentation
+#      - name: Photo OCR 
+#  - name: Transfer learning
+##  if a section has subsections, you can add them as follows:
+#    subsections:
+#      - name: Pre-training
+#      - name: Fine-tuning
+#      - name: Benefits
+#      - name: Limitations
+#      - name: Examples
+#  - name: Deployment
 
 _styles: >
   .fake-img {
@@ -57,10 +60,17 @@ _styles: >
     font-size: 16px;
   }
 ---
-<!-- Fee Structure: 1. Full Payment - 21,999 INR 2. Two Installments - 13,000 INR (First) + 10,999 INR (Second) [Total - 23999] 3. Three Installment - 8,999 INR (First) + 8,999 INR (Second) + 8000 INR (Third) [Total - 25999] You need to pay installments within 21 days. -->
+## Advance Algorithm
 
-## Error metrics for skewed datasets) 
+### Error metrics for skewed datasets) 
 **Precision and recall**,
 ![_config.yml]({{ site.baseurl }}/assets/img/AndrewNg/AdvAlgorithm_w3_PrecisionRecall.png
 
-# Decision tree model
+### Bias and variance
+
+## Calculus for Machine Learning and Data Science
+### Derivatives & Optimization
+Use Logarithm, derivates
+
+### Gradients & Gradient Descent
+

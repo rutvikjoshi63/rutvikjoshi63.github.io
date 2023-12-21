@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Advance Learning Algorithms
-date: 2023-10-31 06:56:00-0400
+date: 2023-01-31 06:56:00-0400
 description: Study topics
 tags: Machine Learning Masters
 categories: sample-posts
