@@ -1,4 +1,4 @@
-name: /home/rutvik/anaconda3
+name: anaconda3
 channels:
   - <unknown>
   - defaults
