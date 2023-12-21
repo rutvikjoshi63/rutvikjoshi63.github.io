@@ -28,6 +28,7 @@ toc:
     subsections:
       - name: Derivatives & Optimization
       - name: Gradients & Gradient Descent
+      # - name: maxima/minima
 #      - name: Bias and variance
 #  - name: Adding data
 # #  if a section has subsections, you can add them as follows:
@@ -64,7 +65,7 @@ _styles: >
 
 ### Error metrics for skewed datasets) 
 **Precision and recall**,
-![_config.yml]({{ site.baseurl }}/assets/img/AndrewNg/AdvAlgorithm_w3_PrecisionRecall.png
+![_config.yml]({{ site.baseurl }}/assets/img/AndrewNg/AdvAlgorithm_w3_PrecisionRecall.png)
 
 ### Bias and variance
 
@@ -73,4 +74,10 @@ _styles: >
 Use Logarithm, derivates
 
 ### Gradients & Gradient Descent
+nabla f gives![_config.yml]({{ site.baseurl }}/assets/img/AndrewNg/Calculus_w2_Gradient.png)
 
+**maxima/minima**
+df'/dx = 0
+2x
+4y+8
+x=0, y=-2

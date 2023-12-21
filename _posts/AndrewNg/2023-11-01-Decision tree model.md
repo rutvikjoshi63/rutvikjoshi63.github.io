@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Decision tree model
-date: 202-11-01 06:56:00-0400
+date: 2023-11-01 06:56:00-0400
 description: Neural Network Evaluation
 tags: Machine Learning Evaluation math
 # categories: sample-posts
