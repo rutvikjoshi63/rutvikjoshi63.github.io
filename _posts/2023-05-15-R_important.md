@@ -22,11 +22,12 @@ The most common data structures in the R programming language include:
     **Atomic vectors** can only contain elements of the same type. If you want to store elements of different types in the same data structure, you can use a list. 
 
     | Type       	| Description                        	| Example   	|
-    |------------	|------------------------------------	|-----------	|
+    |:------------	|:------------------------------------:	|-----------:	|
     | Logical    	| True/False                         	| TRUE      	|
     | Integer    	| Positive and negative whole values 	| 3         	|
     | Double     	| Decimal values                     	| 101.175   	|
     | Character  	| String/character values            	| “Coding”  	|
+
     * The c() function in R combines multiple values into a vector
     * You can determine what type of vector you are working with by using the typeof() function
     * You can determine the length of an existing vector–meaning the number of elements it contains–by using the length() function
