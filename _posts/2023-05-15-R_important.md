@@ -66,7 +66,26 @@ The most common data structures in the R programming language include:
         You can use the function as_date() to convert a date-time to a date. For example, put the current date-time—now()—in the parentheses of the function. 
         as_date(now()) #> [1] "2021-01-20"
     * R creates dates in the standard yyyy-mm-dd format by default.\
-    
+3. **Data frames**
+    A data frame is a collection of columns–similar to a spreadsheet or SQL table. Each column has a name at the top that represents a variable, and includes one observation per row. Data frames help summarize data and organize it into a format that is easy to read and use.\
+    when you are working with data frames: 
+    * First, columns should be named. 
+    * Second, data frames can include many different types of data, like numeric, logical, or character.
+    * Finally, elements in the same column should be of the same type.
+syntax: data.frame(x = c(1, 2, 3) , y = c(1.5, 5.5, 7.5))
+4. **Files**
+    * Use dir.create ("destination_folder") function to create a new folder, or directory, to hold your files. 
+    * file.create (“new_text_file.txt/new_word_file.docx/new_csv_file.csv”) to create a blank file
+    * If the file is successfully created when you run the function, R will return a value of TRUE 
+    * Copying a file can be done using the file.copy (“new_text_file.txt” , “destination_folder”)
+    * You can delete R files using the unlink (“some_.file.csv”)
+5. **Matrices** 
+A matrix is a two-dimensional collection of data elements. This means it has both rows and columns.But like vectors, matrices can only contain a single data type. For example, you can’t have both logicals and numerics in a matrix. \
+you want to create a 2x3 (two rows by three columns) matrix containing the values 3-8. First, enter a vector containing that series of numbers: c(3:8). Then, enter a comma. Finally, enter nrow = 2 to specify the number of rows.\ 
+matrix(c(3:8), nrow = 2)
+
+
+
 
 
 
