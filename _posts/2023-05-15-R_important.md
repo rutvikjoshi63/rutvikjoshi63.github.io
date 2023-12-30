@@ -88,7 +88,7 @@ you want to create a 2x3 (two rows by three columns) matrix containing the value
 matrix(c(3:8), nrow = 2)
 6. Logical operators
 * AND (sometimes represented as & or && in R)
-* OR (sometimes represented as | or || in R)
+* OR (sometimes represented as \| or \|\| in R)
 * NOT (!)
 7. Conditional statements 
 * if(){}
