@@ -7,15 +7,16 @@ tags: programming Data Analytics
 categories: sample-posts
 giscus_comments: true
 related_posts: true
+featured: true
 ---
 
 ## RStudio Cloud (now called Posit Cloud) is the primary tool 
 1. **Install packages to RStudio Cloud**: The **lubridate** package is part of the tidyverse. The tidyverse is a collection of packages in R with a common design philosophy for data manipulation, exploration, and visualization. For a lot of data analysts, the tidyverse is an essential tool.[Quick list of useful R packages](https://support.rstudio.com/hc/en-us/articles/201057987-Quick-list-of-useful-R-packages), [CRAN Task Views](https://cran.r-project.org/web/views/)\
 To install the core tidyverse packages and load them, follow these steps:\
-    1. In the bottom of the console, type install.packages("tidyverse") and press Enter (Windows)
+    1. In the bottom of the console, type install.packages("tidyverse") and press Enter (Windows), tidyverse_update() when you want to update
     2. Load the tidyverse library with the library() function. To load the core tidyverse, type library(tidyverse) and press Enter (Windows)
     3. Load the lubridate package. Since this is already part of the tidyverse package, there is no need to re-install. However, the library will need to be loaded. Type library(lubridate) into the console pane and press Enter (Windows)
-
+**Read tidyverse vignettes** eg browseVignettes(“ggplot2”)
 2. **Data structure**\
 The most common data structures in the R programming language include: 
     1. Vectors: There are two types of vectors: atomic vectors and lists
@@ -93,14 +94,19 @@ matrix(c(3:8), nrow = 2)
 * if(){}
 * else(){}
 * else if(){}
-
+7. Four packages that are an essential part of the workflow for data analysts:
+* ggplot2 : Create a variety of data viz by applying different
+visual properties to the data variables in R
+* dplyr : Offers a consistent set of functions that help you complete some common data manipulation tasks
+* tidyr : A package used for data cleaning to make tidy data
+* readr : Used for importing data
 Data frames
 Matrices
 Arrays
 
 
 
-
+<!-- 
 ```python
 
-```
+``` -->
