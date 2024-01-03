@@ -3,6 +3,7 @@ layout: page
 title: Land Lunar Lander on landing pad
 description: an agent learns through trial and error, maximizing its reward by making optimal decisions in a dynamic environment.
 category: Personal
+importance: 3
 redirect: https://github.com/rutvikjoshi63/Land-Lunar-Lander-on-landing-pad/tree/main/LunarLander
 ---
 
