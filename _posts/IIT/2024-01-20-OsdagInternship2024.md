@@ -9,6 +9,16 @@ giscus_comments: true
 related_posts: false
 # related_publications: einstein1950meaning, einstein1905movement
 ---
+<div class="row">
+    <div class="col-sm mt-2 mt-md-0">
+        {% include figure.html path="assets/img/IIT/Indian_Institute_of_Technology_Bombay_Logo.svg.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-2 mt-md-0">
+        {% include figure.html path="assets/img/IIT/Osdag.png"  class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<!-- ![_config.yml]({{ site.baseurl }}/assets/img/IIT/Indian_Institute_of_Technology_Bombay_Logo.svg.png)  -->
+
 📢**Announcing an exciting opportunity to work with the #Osdag team during the #FOSSEE's semester-long internship 2024**✨
 
 🔴Are you interested about **#softwaredevelopment #webdevelopment #opensource #frontend #backend #fullstackdevelopment**?
