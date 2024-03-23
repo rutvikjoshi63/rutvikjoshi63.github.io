@@ -47,12 +47,16 @@ Thank you for joining me on this journey as I explore the exciting intersection 
 
 ## **Technical Skills**:
 
-+ **Programming Languages**: Python, C++, Bash/Shell scripting <!-- ,JAVA -->
-+ **Databases**: MySQL <!--, SQL Server, Azure Cosmos DB, Firebase, MongoDB, Oracle Cloud--> <!-- •Big data ecosystem and cloud:Apache Spark, Azure(Basic) -->
-+ **Machine Learning**: Regression, Classification, Clustering, Dimensionality Reduction, Support Vector Machines (SVM), K-Nearest Neighbors (KNN), Decision Trees, Random forest, Boosting Methods, Neural Networks, Deep Learning, CNN, Reinforcement Learning <!--,, RNN, LSTM, GRU, VAE, GAN, Statistics, Probability Distribution  -->
++ **Programming Languages**: Python, C++, Bash/Shell scripting, HTML, LaTeX<!-- ,JAVA -->
++ **Databases**: MySQL, MongoDB <!--, SQL Server, Azure Cosmos DB, Firebase,  Oracle Cloud--> <!-- •Big data ecosystem and cloud:Apache Spark, Azure(Basic) -->
++ **Machine Learning**: Regression, Classification, Clustering, Dimensionality Reduction, Support Vector Machines (SVM), K-Nearest Neighbors (KNN), Decision Trees, Random forest, Boosting Methods, Neural Networks, Deep Learning, CNN, Reinforcement Learning, Statistics, Probability Distribution <!--,, RNN, LSTM, GRU, VAE, GAN,   -->
 + **Computer Vision**:Image Segmentation, Object Detection, Object Tracking
-+ **Libraries**:Numpy, Pandas, Matplotlib, Seaborn, Scikit-learn, Scipy, Pytorch, Keras, Tensorflow, Beautiful Soup, SymPy, PyQt5, PyLaTeX
-+ **Tools**: MATLAB, Git, Google Colab, Visual Studio code, Pycharm, LinuxOS, Anaconda, Jupyter Notebook, Excel. <!-- Azure Databricks, Jira, Bitbucket, Confluence, -->
++ **Libraries**: 
+  1. **ML Frameworks** : Scikit-learn, Tensorflow, Keras, NLTK, Scipy, Pytorch, Theano, Huggingface, XGBoost. 
+  2. **Training platforms** : Jupyter Notebook, Amazon AWS Sagemaker, AzureML
+  3. **Visualization & Dashboards** : Plotly, Bokeh, Matplotlib, Seaborn, SymPy
+  4. **Miscellaneous** : Numpy, Pandas, Pillow, eli5, Beautiful Soup, imbalanced-learn, PyQt5, PyLaTeX. 
++ **Tools**: MATLAB, Git, Google Colab, Visual Studio code, Pycharm, LinuxOS, Anaconda,  Excel. <!-- Azure Databricks, Jira, Bitbucket, Confluence, -->
 <!-- Management Information Systems - Competencies: A/B Testing, Teamwork, Agile, Customer-obsessed, Scrum, Analytical, Leadership, Critical ThinkingGreetings -->
 
 <!-- Text can be **bold**, _italic_, or ~~strikethrough~~. -->
