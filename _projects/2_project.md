@@ -4,7 +4,7 @@ title: Flexural member
 description: A Design module in Osdag software application for Steel Design
 img: assets/img/IIT/Indian_Institute_of_Technology_Bombay_Logo.svg.png
 importance: 2
-category: work
+category: "Academic & Open Source"
 ---
 
 The [FOSSEE](https://fossee.in/) project is part of the National Mission on Education through Information and Communication Technology (ICT), Ministry of Education (MoE), Government of India.\\

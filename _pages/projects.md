@@ -2,10 +2,10 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: A collection of Computer Science projects.
+description: Data Science, ML/NLP, and Full-Stack projects in financial technology and analytics.
 nav: true
 nav_order: 2
-display_categories: [work, Personal]
+display_categories: ["ML & NLP", "Full-Stack Applications", "Data Engineering", "Analytics", "Academic & Open Source"]
 horizontal: false
 ---
 <!-- Artificial Intelligence and Data Science -->

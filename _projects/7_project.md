@@ -4,7 +4,7 @@ title: K-means Image Compression
 description: to reduce image file size while preserving visual quality using K-means clustering
 img: 
 importance: 2
-category: Personal
+category: "Academic & Open Source"
 redirect: https://github.com/rutvikjoshi63/Land-Lunar-Lander-on-landing-pad/tree/main/K-means_ImageCompression
 ---
 

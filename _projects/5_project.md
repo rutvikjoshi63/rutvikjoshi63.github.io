@@ -4,7 +4,7 @@ title: Handwritten Digits Image Multiclass Classification
 description: a neural network to recognize the hand-written digits from zero and nine.
 img: 
 importance: 1
-category: Personal
+category: "Academic & Open Source"
 redirect: https://github.com/rutvikjoshi63/Image_Classification/tree/main/MultiClassClassification
 ---
 

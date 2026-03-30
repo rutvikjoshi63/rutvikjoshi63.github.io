@@ -3,94 +3,79 @@
   contents:
     - name: Full Name
       value: Rutvik Joshi
-    - name: Date of Birth
-      value: 8th October 2000
+    - name: Location
+      value: New York Metropolitan Area
     - name: Languages
       value: English, Hindi, Marathi
 
 - title: Education
   type: time_table
   contents:
-    - title: Bachelor of Technology
-      institution: VJTI, University of Mumbai, India
-      year: 2018
+    - title: Bachelor of Technology, Civil Engineering
+      institution: Veermata Jijabai Technological Institute (VJTI), University of Mumbai
+      year: 2018 - 2022
       description:
-        - Description 1.
-        - Description 2.
         - title: Relevant Coursework
           contents:
-            - Calculus
-            - Differential Equations
-            - Matrices
-            - Probability
-            - Statistics and Numerical Methods
+            - Calculus & Differential Equations
+            - Linear Algebra & Matrices
+            - Probability & Statistics
+            - Numerical Methods
             - Computer Programming
-            - Optimization and Decision Sciences
+            - Optimization & Decision Sciences
 
 - title: Experience
   type: time_table
   contents:
-    - title: Trainee Structural Engineer
-      institution: Burns & McDonnell India
-      year: 1933 - 1955
+    - title: Data Scientist
+      institution: Guggenheim Investments
+      year: 2023 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Build ML and NLP pipelines for entity resolution, knowledge graphs, and document extraction across large-scale financial datasets.
+        - Develop full-stack analytics dashboards (React 18, TypeScript, PySpark) for portfolio analysis across structured credit products.
+        - Design automated data engineering workflows for multi-format ingestion (Excel, PDF, CSV, email) with lossless verification.
+        - Create analytics engines with statistical outlier detection, time-series comparison, and portfolio concentration metrics.
+
+    - title: Research Assistant
+      institution: FOSSEE, IIT Bombay
+      year: 2021 - 2023
       description:
-        - Description 1.
-        - Description 2.
+        - Developed structural steel design modules for the Osdag open-source software under the National Mission on Education through ICT.
+        - Implemented design algorithms for compression members, flexural members, and truss connections per Indian Standard codes.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
-
-- title: Academic Interests
+- title: Technical Skills
   type: nested_list
   contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+    - title: ML & NLP
       items:
-        - Description 1.
-        - Description 2.
+        - "Languages & Frameworks: Python, PySpark, scikit-learn, PyTorch, TensorFlow, Hugging Face"
+        - "NLP: LLM integration (GPT-4, Llama-2), entity extraction, fuzzy matching, text classification"
+        - "Techniques: Regression, Classification, Clustering, Neural Networks, Reinforcement Learning"
+    - title: Data Engineering
+      items:
+        - "Processing: PySpark, pandas, openpyxl, xlrd, extract_msg"
+        - "Formats: Excel, PDF, CSV, email (MSG/EML), gzip compression"
+        - "Pipelines: Batch processing, chunking, multi-encoding detection, lossless verification"
+    - title: Frontend & Visualization
+      items:
+        - "Frameworks: React 18, TypeScript, Next.js"
+        - "UI Libraries: Tailwind CSS, Material-UI, Recharts, MUI X-Charts"
+        - "Visualization: Plotly, Matplotlib, Seaborn, NetworkX"
+    - title: Infrastructure & Tools
+      items:
+        - "Databases: MySQL, MongoDB"
+        - "DevOps: Git, Docker, Linux, CI/CD"
+        - "Cloud & Platforms: AWS, Jupyter, VS Code"
 
-- title: Other Interests
-  type: list
+- title: Certifications
+  type: time_table
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - title: Deep Learning Specialization
+      institution: DeepLearning.AI (Coursera)
+      year: 2023
+    - title: Applied Machine Learning in Python
+      institution: University of Michigan (Coursera)
+      year: 2023
+    - title: SQL for Data Science
+      institution: UC Davis (Coursera)
+      year: 2022
