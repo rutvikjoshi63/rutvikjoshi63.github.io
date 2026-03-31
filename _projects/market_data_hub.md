@@ -2,7 +2,7 @@
 layout: page
 title: Trading & Market Data Hub
 description: Centralized platform ingesting 8+ dealer data feeds with Excel/PDF/email parsing, reducing analyst prep time by 50%.
-img: assets/img/projects/market_data_hub.png
+img: assets/img/projects/market_data_hub.jpg
 importance: 2
 category: "Full-Stack Applications"
 ---

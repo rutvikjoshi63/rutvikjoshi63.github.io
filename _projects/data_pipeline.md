@@ -2,7 +2,7 @@
 layout: page
 title: Automated Data Extraction Pipeline
 description: Batch processing tool with compression, chunking, and multi-encoding support for high-volume financial spreadsheets.
-img: assets/img/projects/data_pipeline.png
+img: assets/img/projects/data_pipeline.jpg
 importance: 2
 category: "Data Engineering"
 ---

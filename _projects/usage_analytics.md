@@ -2,7 +2,7 @@
 layout: page
 title: Usage Analytics Dashboard
 description: Metrics tracking dashboard with React charting, session analytics, and admin controls.
-img: assets/img/projects/usage_analytics.png
+img: assets/img/projects/usage_analytics.jpg
 importance: 2
 category: "Analytics"
 ---

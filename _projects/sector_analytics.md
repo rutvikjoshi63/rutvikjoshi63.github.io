@@ -2,7 +2,7 @@
 layout: page
 title: CLO Sector Analytics Engine
 description: Analytics functions for portfolio analysis with GAAP vs. market value comparison, Z-score outlier detection, and MoM/QoQ deltas.
-img: assets/img/projects/sector_analytics.png
+img: assets/img/projects/sector_analytics.jpg
 importance: 1
 category: "Analytics"
 ---

@@ -2,7 +2,7 @@
 layout: page
 title: Entity Resolution at Scale
 description: NLP + LLM system deduplicating entity names across 5M+ financial records using fuzzy matching and distributed computing.
-img: assets/img/projects/entity_resolution.png
+img: assets/img/projects/entity_resolution.jpg
 importance: 1
 category: "ML & NLP"
 ---

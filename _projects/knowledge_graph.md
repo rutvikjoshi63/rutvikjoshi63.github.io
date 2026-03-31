@@ -2,7 +2,7 @@
 layout: page
 title: Financial News Knowledge Graph
 description: Real-time RSS crawling from 10+ sources with Llama-2-7B entity extraction and NetworkX graph visualization.
-img: assets/img/projects/knowledge_graph.png
+img: assets/img/projects/knowledge_graph.jpg
 importance: 2
 category: "ML & NLP"
 ---

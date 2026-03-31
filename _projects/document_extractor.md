@@ -2,7 +2,7 @@
 layout: page
 title: Universal Document Extractor
 description: Multi-format extraction engine for Excel, PDF, CSV, and email with lossless verification (Decimal precision <1e-10).
-img: assets/img/projects/document_extractor.png
+img: assets/img/projects/document_extractor.jpg
 importance: 1
 category: "Data Engineering"
 ---

@@ -2,7 +2,7 @@
 layout: page
 title: Investment Portfolio Analytics Dashboard
 description: React 18 + PySpark dashboard with 19+ analytical views for structured credit analysis (RMBS, CLO, CMBS, ABS).
-img: assets/img/projects/portfolio_dashboard.png
+img: assets/img/projects/portfolio_dashboard.jpg
 importance: 1
 category: "Full-Stack Applications"
 ---

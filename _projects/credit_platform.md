@@ -2,7 +2,7 @@
 layout: page
 title: Corporate Credit Platform
 description: React-based deal management application with PDF preview, search/filter, and ontology data layer.
-img: assets/img/projects/credit_platform.png
+img: assets/img/projects/credit_platform.jpg
 importance: 3
 category: "Full-Stack Applications"
 ---
