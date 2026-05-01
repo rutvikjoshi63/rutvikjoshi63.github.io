@@ -739,6 +739,107 @@ body {
   padding: 2px 0;
 }
 
+/* PPL Exercise Cards */
+.ppl-exercise-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  background: var(--bg-card);
+  border-radius: var(--radius-sm);
+  margin-bottom: 8px;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  transition: all 0.2s;
+}
+
+.ppl-exercise-card:active {
+  background: var(--bg-tertiary);
+  transform: scale(0.98);
+}
+
+.ppl-exercise-card.done {
+  opacity: 0.6;
+  border-color: var(--success);
+  background: rgba(129, 199, 132, 0.05);
+}
+
+.ppl-exercise-left {
+  flex: 1;
+}
+
+.ppl-exercise-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.ppl-exercise-best {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.ppl-exercise-arrow {
+  font-size: 20px;
+  color: var(--text-muted);
+  margin-left: 8px;
+}
+
+/* Exercise Input Card (modal-like) */
+.exercise-input-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.exercise-input-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.exercise-input-header input {
+  flex: 1;
+  padding: 8px 12px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--accent);
+  font-size: 15px;
+  font-weight: 600;
+  outline: none;
+}
+
+.cancel-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--bg-tertiary);
+  color: var(--text-muted);
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cancel-btn:active {
+  background: var(--danger);
+  color: white;
+}
+
+.exercise-best-hint {
+  font-size: 12px;
+  color: var(--text-muted);
+  padding: 4px 12px;
+  font-style: italic;
+}
+
 /* PR Badge */
 .pr-badge {
   display: inline-flex;

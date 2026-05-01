@@ -11,6 +11,25 @@ const GITHUB_API = 'https://api.github.com';
 // ===== Targets =====
 const TARGETS = { calories: 2200, protein: 150, carbs: 280, fat: 70 };
 
+// ===== PPL Schedule =====
+// 6-day rotation: Push, Pull, Legs, Push, Pull, Legs, Rest
+// Anchor: 2026-04-30 was Push (day 0 of cycle)
+const PPL_ANCHOR = '2026-04-30'; // A known Push day
+const PPL_CYCLE = ['push', 'pull', 'legs', 'push', 'pull', 'legs', 'rest'];
+
+function getPPLDay(dateStr) {
+  const anchor = new Date(PPL_ANCHOR + 'T12:00:00');
+  const target = new Date(dateStr + 'T12:00:00');
+  const diff = Math.round((target - anchor) / 86400000);
+  const idx = ((diff % 7) + 7) % 7;
+  return PPL_CYCLE[idx];
+}
+
+function getPPLLabel(type) {
+  const labels = { push: 'Push Day', pull: 'Pull Day', legs: 'Leg Day', rest: 'Rest Day' };
+  return labels[type] || '';
+}
+
 // ===== State =====
 let state = {
   currentTab: 'food',
@@ -20,6 +39,7 @@ let state = {
   weightLog: {},
   prs: {},
   currentSets: [],
+  currentExerciseIndex: 0,
   isOnline: navigator.onLine
 };
 
@@ -444,17 +464,120 @@ function deleteFood(index) {
 // ===== Workout Tab =====
 
 function renderWorkoutTab() {
-  document.getElementById('workout-date').textContent = formatDate(state.currentDate);
+  const dateLabel = document.getElementById('workout-date');
+  const pplType = getPPLDay(state.currentDate);
+  dateLabel.textContent = `${formatDate(state.currentDate)} — ${getPPLLabel(pplType)}`;
+  renderPPLTemplate(pplType);
   renderWorkoutLog();
+}
+
+function getBestSet(exerciseName) {
+  // Find the best set (heaviest weight) from PRs and recent logs
+  const prWeight = state.prs[exerciseName] || 0;
+  // Also search recent workout logs for best set with reps
+  let bestWeight = 0;
+  let bestReps = 0;
+
+  // Search past 14 days of local cache for this exercise's best set
+  for (let i = 1; i <= 14; i++) {
+    const date = shiftDate(todayStr(), -i);
+    const workout = localLoad(`workout_${date}`) || [];
+    for (const ex of workout) {
+      if (ex.name === exerciseName) {
+        for (const s of ex.sets) {
+          if (s.weight > bestWeight || (s.weight === bestWeight && s.reps > bestReps)) {
+            bestWeight = s.weight;
+            bestReps = s.reps;
+          }
+        }
+      }
+    }
+  }
+
+  // Also check today's logged exercises
+  for (const ex of state.workoutLog) {
+    if (ex.name === exerciseName) {
+      for (const s of ex.sets) {
+        if (s.weight > bestWeight || (s.weight === bestWeight && s.reps > bestReps)) {
+          bestWeight = s.weight;
+          bestReps = s.reps;
+        }
+      }
+    }
+  }
+
+  return bestWeight > 0 ? { weight: bestWeight, reps: bestReps } : null;
+}
+
+function renderPPLTemplate(pplType) {
+  const container = document.getElementById('ppl-exercises');
+  if (!container) return;
+
+  if (pplType === 'rest') {
+    container.innerHTML = '<div class="empty-state"><div class="empty-state-icon">😴</div><div class="empty-state-text">Rest Day — recover and grow!</div></div>';
+    return;
+  }
+
+  const template = WORKOUT_TEMPLATES[pplType];
+  if (!template) return;
+
+  const loggedNames = new Set(state.workoutLog.map(e => e.name));
+
+  container.innerHTML = template.exercises.map((name, idx) => {
+    const best = getBestSet(name);
+    const done = loggedNames.has(name);
+    const bestText = best ? `${best.weight}kg × ${best.reps}` : 'No data';
+    return `
+      <div class="ppl-exercise-card ${done ? 'done' : ''}" data-idx="${idx}" onclick="startExercise(${idx})">
+        <div class="ppl-exercise-left">
+          <div class="ppl-exercise-name">${done ? '✓ ' : ''}${name}</div>
+          <div class="ppl-exercise-best">Best: ${bestText}</div>
+        </div>
+        <div class="ppl-exercise-arrow">${done ? '' : '›'}</div>
+      </div>
+    `;
+  }).join('');
+}
+
+function startExercise(idx) {
+  const pplType = getPPLDay(state.currentDate);
+  const template = WORKOUT_TEMPLATES[pplType];
+  if (!template) return;
+
+  const name = template.exercises[idx];
+  state.currentExerciseIndex = idx;
+  state.currentSets = [];
+
+  // Show the exercise input panel
+  const panel = document.getElementById('exercise-input-panel');
+  panel.classList.remove('hidden');
+  document.getElementById('exercise-name').value = name;
+  document.getElementById('exercise-name').disabled = true;
+
+  const best = getBestSet(name);
+  const hint = document.getElementById('exercise-best-hint');
+  if (best) {
+    hint.textContent = `Previous best: ${best.weight}kg × ${best.reps}`;
+    hint.classList.remove('hidden');
+    // Pre-fill weight from best
+    document.getElementById('exercise-weight').value = best.weight;
+  } else {
+    hint.textContent = '';
+    hint.classList.add('hidden');
+    document.getElementById('exercise-weight').value = '';
+  }
+
+  document.getElementById('exercise-reps').value = '';
+  document.getElementById('current-sets').innerHTML = '';
+  document.getElementById('save-exercise').classList.add('hidden');
+  document.getElementById('exercise-reps').focus();
 }
 
 function renderWorkoutLog() {
   const el = document.getElementById('workout-log');
-  if (state.workoutLog.length === 0) {
-    el.innerHTML = '<div class="empty-state"><div class="empty-state-icon">🏋️</div><div class="empty-state-text">No exercises logged</div></div>';
-    return;
-  }
-  el.innerHTML = state.workoutLog.map(ex => {
+  if (state.workoutLog.length === 0) return;
+
+  el.innerHTML = '<div class="section-title">Completed</div>' + state.workoutLog.map(ex => {
     const isPR = ex.pr;
     return `
       <div class="workout-entry fade-in">
@@ -475,10 +598,8 @@ function addSet() {
   if (!name || !reps) return;
 
   state.currentSets.push({ weight, reps });
-  document.getElementById('exercise-name').disabled = true;
   renderCurrentSets();
   document.getElementById('save-exercise').classList.remove('hidden');
-  document.getElementById('exercise-weight').value = '';
   document.getElementById('exercise-reps').value = '';
   document.getElementById('exercise-reps').focus();
 }
@@ -517,19 +638,16 @@ function saveExercise() {
   document.getElementById('exercise-reps').value = '';
   document.getElementById('current-sets').innerHTML = '';
   document.getElementById('save-exercise').classList.add('hidden');
-  document.getElementById('exercise-suggestions').classList.remove('show');
+  document.getElementById('exercise-input-panel').classList.add('hidden');
+  document.getElementById('exercise-best-hint').classList.add('hidden');
   renderWorkoutTab();
 }
 
-function applyTemplate(tpl) {
-  document.querySelectorAll('.template-chip').forEach(c => c.classList.remove('active'));
-  document.querySelector(`[data-tpl="${tpl}"]`).classList.add('active');
-  // Set first exercise from template
-  const template = WORKOUT_TEMPLATES[tpl];
-  if (template && template.exercises.length > 0) {
-    document.getElementById('exercise-name').value = template.exercises[0];
-    document.getElementById('exercise-weight').focus();
-  }
+function cancelExercise() {
+  state.currentSets = [];
+  document.getElementById('exercise-input-panel').classList.add('hidden');
+  document.getElementById('exercise-name').value = '';
+  document.getElementById('exercise-name').disabled = false;
 }
 
 function showExerciseSuggestions(query) {
@@ -853,14 +971,9 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('add-set').addEventListener('click', addSet);
   document.getElementById('save-exercise').addEventListener('click', saveExercise);
 
-  // Exercise suggestions
+  // Exercise suggestions (for free-form, less used now with PPL auto)
   document.getElementById('exercise-name').addEventListener('input', (e) => {
     showExerciseSuggestions(e.target.value);
-  });
-
-  // Templates
-  document.querySelectorAll('.template-chip').forEach(chip => {
-    chip.addEventListener('click', () => applyTemplate(chip.dataset.tpl));
   });
 
   // Weight
