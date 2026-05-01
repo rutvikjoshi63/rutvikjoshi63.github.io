@@ -146,36 +146,32 @@
           <button class="weight-save-btn" id="steps-save">✓</button>
         </div>
 
-        <!-- Templates -->
-        <div class="template-selector" id="template-selector">
-          <button class="template-chip" data-tpl="push">Push</button>
-          <button class="template-chip" data-tpl="pull">Pull</button>
-          <button class="template-chip" data-tpl="legs">Legs</button>
-          <button class="template-chip" data-tpl="upper">Upper</button>
-          <button class="template-chip" data-tpl="lower">Lower</button>
-        </div>
+        <!-- PPL Exercise Cards (auto-populated) -->
+        <div class="section-title">Exercises</div>
+        <div id="ppl-exercises"></div>
 
-        <!-- Exercise input -->
-        <div class="exercise-input-group">
-          <div class="exercise-row">
-            <div style="position:relative">
-              <input type="text" id="exercise-name" placeholder="Exercise name" autocomplete="off">
-              <div class="suggestions" id="exercise-suggestions"></div>
+        <!-- Exercise Input Panel (shown when tapping an exercise) -->
+        <div id="exercise-input-panel" class="hidden">
+          <div class="exercise-input-card">
+            <div class="exercise-input-header">
+              <input type="text" id="exercise-name" placeholder="Exercise" autocomplete="off" disabled>
+              <button class="cancel-btn" onclick="cancelExercise()">✕</button>
             </div>
-            <input type="number" id="exercise-weight" placeholder="kg" inputmode="decimal">
-            <input type="number" id="exercise-reps" placeholder="reps" inputmode="numeric">
-            <button class="btn-add" id="add-set">+</button>
+            <div class="exercise-best-hint hidden" id="exercise-best-hint"></div>
+            <div class="exercise-row" style="margin-top:8px">
+              <input type="number" id="exercise-weight" placeholder="kg" inputmode="decimal" style="flex:1">
+              <input type="number" id="exercise-reps" placeholder="reps" inputmode="numeric" style="flex:1">
+              <button class="btn-add" id="add-set">+ Set</button>
+            </div>
+            <div id="current-sets"></div>
+            <button class="btn-primary hidden" id="save-exercise" style="width:100%;margin-top:8px">Save Exercise</button>
           </div>
         </div>
 
-        <!-- Current exercise sets -->
-        <div id="current-sets"></div>
-
-        <!-- Save exercise button -->
-        <button class="btn-primary hidden" id="save-exercise" style="width:100%;margin-bottom:16px">Save Exercise</button>
+        <!-- Hidden suggestion for free-form add -->
+        <div class="suggestions hidden" id="exercise-suggestions"></div>
 
         <!-- Workout log -->
-        <div class="section-title">Workout Log</div>
         <div class="workout-log" id="workout-log"></div>
       </div>
 
