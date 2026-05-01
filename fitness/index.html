@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#0f1117">
+  <meta name="description" content="Personal Fitness Tracker">
+  <title>Fitness Tracker</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%230f1117' width='100' height='100' rx='20'/><text y='68' x='50' text-anchor='middle' font-size='50'>💪</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- TOTP Auth Screen -->
+  <div id="auth-screen">
+    <div class="auth-title">Fitness Tracker</div>
+    <div class="auth-subtitle">Enter your authenticator code</div>
+    <div class="totp-display">
+      <div class="totp-digit" id="d0"></div>
+      <div class="totp-digit" id="d1"></div>
+      <div class="totp-digit" id="d2"></div>
+      <div class="totp-digit" id="d3"></div>
+      <div class="totp-digit" id="d4"></div>
+      <div class="totp-digit" id="d5"></div>
+    </div>
+    <div class="numpad">
+      <button class="numpad-btn" data-num="1">1</button>
+      <button class="numpad-btn" data-num="2">2</button>
+      <button class="numpad-btn" data-num="3">3</button>
+      <button class="numpad-btn" data-num="4">4</button>
+      <button class="numpad-btn" data-num="5">5</button>
+      <button class="numpad-btn" data-num="6">6</button>
+      <button class="numpad-btn" data-num="7">7</button>
+      <button class="numpad-btn" data-num="8">8</button>
+      <button class="numpad-btn" data-num="9">9</button>
+      <button class="numpad-btn empty"></button>
+      <button class="numpad-btn" data-num="0">0</button>
+      <button class="numpad-btn delete" id="numpad-delete">⌫</button>
+    </div>
+    <div class="auth-error" id="auth-error"></div>
+    <label class="auth-remember">
+      <input type="checkbox" id="remember-device">
+      Remember 24h
+    </label>
+  </div>
+
+  <!-- PAT Setup Screen -->
+  <div id="pat-screen">
+    <div class="auth-title">Connect to GitHub</div>
+    <div class="auth-subtitle">Enter your fine-grained Personal Access Token</div>
+    <input type="password" class="pat-input" id="pat-input" placeholder="github_pat_...">
+    <p class="pat-hint">Token needs read/write access to contents on the fitness-data repo only.</p>
+    <button class="btn-primary" id="pat-save">Save & Continue</button>
+  </div>
+
+  <!-- Main App -->
+  <div id="app">
+    <!-- Header with weight input -->
+    <header class="app-header">
+      <div class="header-left">
+        <span class="header-title">FT</span>
+        <span class="header-date" id="header-date"></span>
+      </div>
+      <div class="weight-input-group">
+        <input type="number" id="weight-input" placeholder="--" step="0.1" inputmode="decimal">
+        <span>kg</span>
+        <button class="weight-save-btn" id="weight-save">✓</button>
+      </div>
+    </header>
+
+    <!-- Status bar -->
+    <div class="status-bar">
+      <div class="status-dot" id="status-dot"></div>
+      <span id="status-text">Connected</span>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="tab-content">
+      <!-- Food Tab -->
+      <div class="tab-panel active" id="tab-food">
+        <!-- Date navigation -->
+        <div class="date-nav">
+          <button class="date-nav-btn" id="food-prev">‹</button>
+          <span class="date-nav-current" id="food-date">Today</span>
+          <button class="date-nav-btn" id="food-next">›</button>
+        </div>
+
+        <!-- Daily macro summary -->
+        <div class="daily-summary">
+          <div class="summary-card">
+            <div class="summary-value" id="total-cal">0</div>
+            <div class="summary-label">Calories</div>
+            <div class="progress-ring"><div class="progress-fill cal" id="prog-cal"></div></div>
+          </div>
+          <div class="summary-card">
+            <div class="summary-value" id="total-pro">0</div>
+            <div class="summary-label">Protein</div>
+            <div class="progress-ring"><div class="progress-fill pro" id="prog-pro"></div></div>
+          </div>
+          <div class="summary-card">
+            <div class="summary-value" id="total-carb">0</div>
+            <div class="summary-label">Carbs</div>
+            <div class="progress-ring"><div class="progress-fill carb" id="prog-carb"></div></div>
+          </div>
+          <div class="summary-card">
+            <div class="summary-value" id="total-fat">0</div>
+            <div class="summary-label">Fat</div>
+            <div class="progress-ring"><div class="progress-fill fat" id="prog-fat"></div></div>
+          </div>
+        </div>
+
+        <!-- Food search -->
+        <div class="search-container">
+          <span class="search-icon">🔍</span>
+          <input type="text" class="search-input" id="food-search" placeholder="Search food..." autocomplete="off">
+          <div class="search-results" id="food-results"></div>
+        </div>
+
+        <!-- Quick add (custom) -->
+        <div class="quick-add">
+          <input type="text" id="custom-food-name" placeholder="Custom food">
+          <input type="number" id="custom-food-cal" placeholder="Cal" inputmode="numeric">
+          <input type="number" id="custom-food-pro" placeholder="P" inputmode="numeric">
+          <button class="btn-add" id="custom-food-add">+</button>
+        </div>
+
+        <!-- Food log -->
+        <div class="section-title">Today's Log</div>
+        <ul class="food-log" id="food-log"></ul>
+      </div>
+
+      <!-- Workout Tab -->
+      <div class="tab-panel" id="tab-workout">
+        <div class="date-nav">
+          <button class="date-nav-btn" id="workout-prev">‹</button>
+          <span class="date-nav-current" id="workout-date">Today</span>
+          <button class="date-nav-btn" id="workout-next">›</button>
+        </div>
+
+        <!-- Steps -->
+        <div class="steps-input">
+          <label>Steps</label>
+          <input type="number" id="steps-input" placeholder="0" inputmode="numeric">
+          <button class="weight-save-btn" id="steps-save">✓</button>
+        </div>
+
+        <!-- Templates -->
+        <div class="template-selector" id="template-selector">
+          <button class="template-chip" data-tpl="push">Push</button>
+          <button class="template-chip" data-tpl="pull">Pull</button>
+          <button class="template-chip" data-tpl="legs">Legs</button>
+          <button class="template-chip" data-tpl="upper">Upper</button>
+          <button class="template-chip" data-tpl="lower">Lower</button>
+        </div>
+
+        <!-- Exercise input -->
+        <div class="exercise-input-group">
+          <div class="exercise-row">
+            <div style="position:relative">
+              <input type="text" id="exercise-name" placeholder="Exercise name" autocomplete="off">
+              <div class="suggestions" id="exercise-suggestions"></div>
+            </div>
+            <input type="number" id="exercise-weight" placeholder="kg" inputmode="decimal">
+            <input type="number" id="exercise-reps" placeholder="reps" inputmode="numeric">
+            <button class="btn-add" id="add-set">+</button>
+          </div>
+        </div>
+
+        <!-- Current exercise sets -->
+        <div id="current-sets"></div>
+
+        <!-- Save exercise button -->
+        <button class="btn-primary hidden" id="save-exercise" style="width:100%;margin-bottom:16px">Save Exercise</button>
+
+        <!-- Workout log -->
+        <div class="section-title">Workout Log</div>
+        <div class="workout-log" id="workout-log"></div>
+      </div>
+
+      <!-- Trends Tab -->
+      <div class="tab-panel" id="tab-trends">
+        <div class="chart-selector" id="trend-selector">
+          <button class="chart-chip active" data-trend="weight">Weight</button>
+          <button class="chart-chip" data-trend="calories">Calories</button>
+          <button class="chart-chip" data-trend="protein">Protein</button>
+          <button class="chart-chip" data-trend="volume">Volume</button>
+        </div>
+
+        <div class="chart-container">
+          <div class="chart-title" id="trend-title">Body Weight (30 days)</div>
+          <canvas class="chart-canvas" id="trend-chart"></canvas>
+        </div>
+
+        <div class="section-title">Data</div>
+        <table class="data-table" id="trend-table">
+          <thead><tr><th>Date</th><th>Value</th><th>Avg</th></tr></thead>
+          <tbody id="trend-table-body"></tbody>
+        </table>
+      </div>
+
+      <!-- Summary Tab -->
+      <div class="tab-panel" id="tab-summary">
+        <div class="section-title">This Week</div>
+
+        <div class="streak-card">
+          <div class="streak-fire">🔥</div>
+          <div class="streak-info">
+            <div class="streak-count" id="streak-count">0</div>
+            <div class="streak-label">day streak</div>
+          </div>
+        </div>
+
+        <div class="summary-grid">
+          <div class="stat-card">
+            <div class="stat-value" id="week-avg-cal">--</div>
+            <div class="stat-label">Avg Calories</div>
+          </div>
+          <div class="stat-card highlight">
+            <div class="stat-value" id="week-avg-pro">--</div>
+            <div class="stat-label">Avg Protein (g)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" id="week-train-days">--</div>
+            <div class="stat-label">Training Days</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" id="week-volume">--</div>
+            <div class="stat-label">Total Volume (kg)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" id="week-weight-delta">--</div>
+            <div class="stat-label">Weight Δ</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" id="week-prs">--</div>
+            <div class="stat-label">New PRs</div>
+          </div>
+        </div>
+
+        <!-- Weight mini chart -->
+        <div class="weight-chart-section">
+          <div class="weight-chart-header">
+            <div class="chart-title">Weight Trend</div>
+            <div class="weight-current">Current: <span id="current-weight">--</span> kg</div>
+          </div>
+          <canvas class="chart-canvas" id="weight-mini-chart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <button class="nav-item active" data-tab="food">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><path d="M6 1v3M10 1v3M14 1v3"/></svg>
+        Food
+      </button>
+      <button class="nav-item" data-tab="workout">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6.5 6.5h11M6.5 17.5h11M2 12h2M20 12h2M4 8v8M20 8v8"/></svg>
+        Workout
+      </button>
+      <button class="nav-item" data-tab="trends">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        Trends
+      </button>
+      <button class="nav-item" data-tab="summary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        Summary
+      </button>
+    </nav>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="food-db.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
