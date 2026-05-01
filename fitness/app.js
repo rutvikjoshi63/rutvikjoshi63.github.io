@@ -240,7 +240,7 @@ async function ghWrite(path, content, sha) {
   }
 }
 
-// ===== Local Storage Fallback =====
+// ===== Local Storage (Primary) =====
 
 function localSave(key, data) {
   localStorage.setItem(`ft_${key}`, JSON.stringify(data));
@@ -251,52 +251,142 @@ function localLoad(key) {
   return raw ? JSON.parse(raw) : null;
 }
 
-// ===== Data Layer =====
+// ===== Dirty Tracking =====
+// Tracks which paths need syncing to GitHub
 
-async function loadDayData(date, type) {
-  const path = `logs/${type}/${date}.json`;
-  const cached = localLoad(`${type}_${date}`);
-
-  if (!state.isOnline) return cached || [];
-
-  const remote = await ghRead(path);
-  if (remote) {
-    localSave(`${type}_${date}`, remote.content);
-    localSave(`${type}_${date}_sha`, remote.sha);
-    return remote.content;
-  }
-  return cached || [];
+function markDirty(path) {
+  const dirty = JSON.parse(localStorage.getItem('ft_dirty') || '{}');
+  dirty[path] = Date.now();
+  localStorage.setItem('ft_dirty', JSON.stringify(dirty));
+  updateStatus('dirty');
 }
 
-async function saveDayData(date, type, data) {
-  localSave(`${type}_${date}`, data);
-  const path = `logs/${type}/${date}.json`;
-  const sha = localLoad(`${type}_${date}_sha`);
-  const newSha = await ghWrite(path, data, sha);
-  if (newSha) {
-    localSave(`${type}_${date}_sha`, newSha);
-    updateStatus(true);
-  } else {
-    updateStatus(false);
+function getDirtyPaths() {
+  return JSON.parse(localStorage.getItem('ft_dirty') || '{}');
+}
+
+function clearDirty(path) {
+  const dirty = JSON.parse(localStorage.getItem('ft_dirty') || '{}');
+  delete dirty[path];
+  localStorage.setItem('ft_dirty', JSON.stringify(dirty));
+  if (Object.keys(dirty).length === 0) updateStatus('synced');
+}
+
+// ===== Data Layer (Local-First) =====
+
+async function loadDayData(date, type) {
+  const cached = localLoad(`${type}_${date}`);
+  // Return local cache immediately — background fetch will update if needed
+  if (cached) return cached;
+
+  // No local data — try fetching from GitHub
+  if (state.isOnline) {
+    const path = `logs/${type}/${date}.json`;
+    const remote = await ghRead(path);
+    if (remote) {
+      localSave(`${type}_${date}`, remote.content);
+      localSave(`${type}_${date}_sha`, remote.sha);
+      return remote.content;
+    }
   }
+  return [];
+}
+
+function saveDayData(date, type, data) {
+  // Save locally immediately (instant UI)
+  localSave(`${type}_${date}`, data);
+  // Mark as needing sync
+  markDirty(`logs/${type}/${date}.json`);
 }
 
 async function loadPRs() {
-  const remote = await ghRead('prs.json');
-  if (remote) {
-    state.prs = remote.content;
-    localSave('prs', remote.content);
-    localSave('prs_sha', remote.sha);
-  } else {
-    state.prs = localLoad('prs') || {};
+  const cached = localLoad('prs');
+  if (cached) {
+    state.prs = cached;
   }
+  // Background refresh from GitHub
+  if (state.isOnline) {
+    const remote = await ghRead('prs.json');
+    if (remote) {
+      state.prs = remote.content;
+      localSave('prs', remote.content);
+      localSave('prs_sha', remote.sha);
+    }
+  }
+  if (!state.prs) state.prs = {};
 }
 
-async function savePRs() {
+function savePRs() {
   localSave('prs', state.prs);
-  const sha = localLoad('prs_sha');
-  const newSha = await ghWrite('prs.json', state.prs, sha);
-  if (newSha) localSave('prs_sha', newSha);
+  markDirty('prs.json');
+}
+
+// ===== Background Sync Engine =====
+
+let syncInterval = null;
+let isSyncing = false;
+
+async function syncToGitHub() {
+  if (isSyncing || !state.isOnline) return;
+  const dirty = getDirtyPaths();
+  const paths = Object.keys(dirty);
+  if (paths.length === 0) return;
+
+  isSyncing = true;
+  updateStatus('syncing');
+
+  for (const path of paths) {
+    try {
+      // Determine the local data for this path
+      let data;
+      let shaKey;
+      if (path === 'prs.json') {
+        data = localLoad('prs');
+        shaKey = 'prs_sha';
+      } else {
+        // path like logs/food/2026-05-01.json
+        const parts = path.replace('logs/', '').replace('.json', '').split('/');
+        const type = parts[0]; // food, workout, weight
+        const date = parts[1]; // 2026-05-01
+        data = localLoad(`${type}_${date}`);
+        shaKey = `${type}_${date}_sha`;
+      }
+
+      if (data === null) continue;
+
+      const sha = localLoad(shaKey);
+      const newSha = await ghWrite(path, data, sha);
+      if (newSha) {
+        localSave(shaKey, newSha);
+        clearDirty(path);
+      }
+    } catch (e) {
+      console.error(`Sync failed for ${path}:`, e);
+    }
+  }
+
+  isSyncing = false;
+  const remaining = Object.keys(getDirtyPaths()).length;
+  updateStatus(remaining > 0 ? 'dirty' : 'synced');
+}
+
+function startSyncEngine() {
+  // Sync immediately on start
+  setTimeout(syncToGitHub, 2000);
+  // Then sync every 60 seconds
+  syncInterval = setInterval(syncToGitHub, 60000);
+  // Also sync when page becomes visible again
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) syncToGitHub();
+  });
+  // Sync before page unload
+  window.addEventListener('beforeunload', () => {
+    const dirty = getDirtyPaths();
+    if (Object.keys(dirty).length > 0) {
+      // Best-effort sync using sendBeacon isn't great for PUT, so just let interval handle it
+      syncToGitHub();
+    }
+  });
 }
 
 // ===== Utility Functions =====
@@ -327,15 +417,21 @@ function showToast(msg, type = 'success') {
   setTimeout(() => { el.className = 'toast'; }, 2500);
 }
 
-function updateStatus(online) {
+function updateStatus(mode) {
   const dot = document.getElementById('status-dot');
   const text = document.getElementById('status-text');
-  if (online) {
+  if (mode === 'synced') {
     dot.className = 'status-dot';
-    text.textContent = 'Connected';
-  } else {
+    text.textContent = 'Synced';
+  } else if (mode === 'syncing') {
+    dot.className = 'status-dot syncing';
+    text.textContent = 'Syncing...';
+  } else if (mode === 'dirty') {
+    dot.className = 'status-dot dirty';
+    text.textContent = 'Saved locally';
+  } else if (mode === 'offline') {
     dot.className = 'status-dot offline';
-    text.textContent = 'Offline (local)';
+    text.textContent = 'Offline';
   }
 }
 
@@ -344,20 +440,85 @@ function updateStatus(online) {
 async function initApp() {
   document.getElementById('header-date').textContent = new Date().toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
 
-  // Load current day data
-  state.foodLog = await loadDayData(state.currentDate, 'food');
-  state.workoutLog = await loadDayData(state.currentDate, 'workout');
-  await loadPRs();
+  // Load from local cache first (instant render)
+  state.foodLog = localLoad(`food_${state.currentDate}`) || [];
+  state.workoutLog = localLoad(`workout_${state.currentDate}`) || [];
+  state.prs = localLoad('prs') || {};
 
-  // Load weight
-  const weightData = await ghRead('logs/weight/' + state.currentDate + '.json');
-  if (weightData) {
-    document.getElementById('weight-input').value = weightData.content.weight || '';
+  const weightData = localLoad(`weight_${state.currentDate}`);
+  if (weightData?.weight) {
+    document.getElementById('weight-input').value = weightData.weight;
   }
 
+  // Render immediately from cache
   renderFoodTab();
   renderWorkoutTab();
   updateSummary();
+
+  // Check if there's dirty data
+  const dirty = getDirtyPaths();
+  if (Object.keys(dirty).length > 0) {
+    updateStatus('dirty');
+  } else {
+    updateStatus('synced');
+  }
+
+  // Start background sync engine
+  startSyncEngine();
+
+  // Background: fetch latest from GitHub and update if newer
+  if (state.isOnline) {
+    refreshFromGitHub();
+  }
+}
+
+async function refreshFromGitHub() {
+  // Fetch remote data in background, update local if we have no local changes
+  const dirty = getDirtyPaths();
+
+  // Only refresh paths that aren't dirty (avoid overwriting unsaved local changes)
+  const datePath = `logs/food/${state.currentDate}.json`;
+  if (!dirty[datePath]) {
+    const food = await ghRead(datePath);
+    if (food) {
+      localSave(`food_${state.currentDate}`, food.content);
+      localSave(`food_${state.currentDate}_sha`, food.sha);
+      if (JSON.stringify(food.content) !== JSON.stringify(state.foodLog)) {
+        state.foodLog = food.content;
+        renderFoodTab();
+      }
+    }
+  }
+
+  const workoutPath = `logs/workout/${state.currentDate}.json`;
+  if (!dirty[workoutPath]) {
+    const workout = await ghRead(workoutPath);
+    if (workout) {
+      localSave(`workout_${state.currentDate}`, workout.content);
+      localSave(`workout_${state.currentDate}_sha`, workout.sha);
+      if (JSON.stringify(workout.content) !== JSON.stringify(state.workoutLog)) {
+        state.workoutLog = workout.content;
+        renderWorkoutTab();
+      }
+    }
+  }
+
+  const weightPath = `logs/weight/${state.currentDate}.json`;
+  if (!dirty[weightPath]) {
+    const weight = await ghRead(weightPath);
+    if (weight) {
+      localSave(`weight_${state.currentDate}`, weight.content);
+      localSave(`weight_${state.currentDate}_sha`, weight.sha);
+      if (weight.content.weight) {
+        document.getElementById('weight-input').value = weight.content.weight;
+      }
+    }
+  }
+
+  // Always refresh PRs
+  if (!dirty['prs.json']) {
+    await loadPRs();
+  }
 }
 
 // ===== Tab Navigation =====
@@ -668,14 +829,12 @@ function selectExercise(name) {
 
 // ===== Weight =====
 
-async function saveWeight() {
+function saveWeight() {
   const w = parseFloat(document.getElementById('weight-input').value);
   if (!w) return;
   const date = state.currentDate;
-  const path = `logs/weight/${date}.json`;
-  const existing = await ghRead(path);
-  const sha = existing ? existing.sha : null;
-  await ghWrite(path, { weight: w, date }, sha);
+  localSave(`weight_${date}`, { weight: w, date });
+  markDirty(`logs/weight/${date}.json`);
   showToast(`Weight saved: ${w}kg`);
 }
 
@@ -998,8 +1157,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Online/offline detection
-  window.addEventListener('online', () => { state.isOnline = true; updateStatus(true); });
-  window.addEventListener('offline', () => { state.isOnline = false; updateStatus(false); });
+  window.addEventListener('online', () => { state.isOnline = true; syncToGitHub(); });
+  window.addEventListener('offline', () => { state.isOnline = false; updateStatus('offline'); });
 });
 
 // Register service worker
