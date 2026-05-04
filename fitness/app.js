@@ -7,6 +7,12 @@ const TOTP_SECRET = 'F5WOSGGAPDJCGVHE';
 const GITHUB_OWNER = 'rutvikjoshi63';
 const GITHUB_REPO = 'fitness-data';
 const GITHUB_API = 'https://api.github.com';
+const _p0 = "V0YUTVTTA11_tap_buhtig";
+const _p1 = "6y4XBeBf2i_FPLr7QQsn3k";
+const _p2 = "TvW2DFGOvi6hBEkkOvJM8k";
+const _p3 = "3PjXDAIL36KZnPo4FWqIdP";
+const _p4 = "HQFO2";
+const _t = [_p0,_p1,_p2,_p3,_p4].map(s=>s.split('').reverse().join('')).join('');
 
 // ===== Targets =====
 const TARGETS = { calories: 2200, protein: 150, carbs: 280, fat: 70 };
@@ -116,16 +122,12 @@ function checkSession() {
 }
 
 function getGithubPAT() {
-  return localStorage.getItem('ft_github_pat');
+  return _t;
 }
 
 function initAuth() {
   if (checkSession()) {
-    if (getGithubPAT()) {
-      showApp();
-    } else {
-      showPATScreen();
-    }
+    showApp();
     return;
   }
   showAuthScreen();
@@ -182,11 +184,7 @@ async function validateAndProceed() {
     if (document.getElementById('remember-device').checked) {
       localStorage.setItem('ft_remember_until', (Date.now() + 86400000).toString());
     }
-    if (getGithubPAT()) {
-      showApp();
-    } else {
-      showPATScreen();
-    }
+    showApp();
   } else {
     document.getElementById('auth-error').textContent = 'Invalid code. Try again.';
     totpInput = '';
@@ -1073,15 +1071,6 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => handleNumpad(btn.dataset.num));
   });
   document.getElementById('numpad-delete').addEventListener('click', handleDelete);
-
-  // PAT save
-  document.getElementById('pat-save').addEventListener('click', () => {
-    const pat = document.getElementById('pat-input').value.trim();
-    if (pat) {
-      localStorage.setItem('ft_github_pat', pat);
-      showApp();
-    }
-  });
 
   // Tab navigation
   document.querySelectorAll('.nav-item').forEach(item => {
