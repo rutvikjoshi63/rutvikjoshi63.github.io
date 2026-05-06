@@ -140,14 +140,12 @@ function showAuthScreen() {
 }
 
 function showPATScreen() {
-  document.getElementById('auth-screen').style.display = 'none';
-  document.getElementById('pat-screen').style.display = 'flex';
-  document.getElementById('app').style.display = 'none';
+  // PAT screen removed — go straight to app
+  showApp();
 }
 
 function showApp() {
   document.getElementById('auth-screen').style.display = 'none';
-  document.getElementById('pat-screen').style.display = 'none';
   document.getElementById('app').style.display = 'flex';
   initApp();
 }
@@ -577,10 +575,54 @@ function renderFoodLog() {
   `).join('');
 }
 
-function searchFood(query) {
-  if (!query || query.length < 2) return [];
+// Fuzzy match scoring - higher = better match
+function fuzzyScore(name, query) {
+  const n = name.toLowerCase();
   const q = query.toLowerCase();
-  return FOOD_DB.filter(f => f.name.toLowerCase().includes(q)).slice(0, 8);
+  // Exact start match = highest
+  if (n.startsWith(q)) return 100;
+  // Word start match (e.g. "chic" matches "Butter Chicken")
+  const words = n.split(/[\s(,]+/);
+  for (const w of words) {
+    if (w.startsWith(q)) return 80;
+  }
+  // Contains match
+  if (n.includes(q)) return 60;
+  // Fuzzy: allow skipped chars (e.g. "bch" matches "bench press")
+  let qi = 0;
+  for (let i = 0; i < n.length && qi < q.length; i++) {
+    if (n[i] === q[qi]) qi++;
+  }
+  if (qi === q.length) return 40 - (n.length - q.length);
+  return 0;
+}
+
+// Get top 3 frequently added foods (from history across all days)
+function getFrequentFoods() {
+  const counts = {};
+  // Check last 14 days of local cache
+  for (let i = 0; i < 14; i++) {
+    const date = shiftDate(todayStr(), -i);
+    const log = localLoad(`food_${date}`) || [];
+    for (const item of log) {
+      counts[item.name] = (counts[item.name] || 0) + 1;
+    }
+  }
+  // Sort by frequency, return top 3 as FOOD_DB entries
+  const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+  return sorted.slice(0, 3).map(([name]) => {
+    return FOOD_DB.find(f => f.name === name) || { name, calories: 0, protein: 0, carbs: 0, fat: 0, serving: '1 serving' };
+  });
+}
+
+function searchFood(query) {
+  if (!query || query.length < 1) return getFrequentFoods();
+  const q = query.toLowerCase();
+  const scored = FOOD_DB.map(f => ({ food: f, score: fuzzyScore(f.name, q) }))
+    .filter(x => x.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 8);
+  return scored.map(x => x.food);
 }
 
 function addFood(food, qty = 1) {
@@ -1064,6 +1106,13 @@ async function navigateDate(direction) {
 // ===== Event Listeners =====
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Unregister old service workers to clear stale cache
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then(regs => {
+      regs.forEach(r => r.unregister());
+    });
+  }
+
   initAuth();
 
   // Numpad
@@ -1077,17 +1126,18 @@ document.addEventListener('DOMContentLoaded', () => {
     item.addEventListener('click', () => switchTab(item.dataset.tab));
   });
 
-  // Food search
+  // Food search with fuzzy match + frequent suggestions
   const searchInput = document.getElementById('food-search');
   const searchResults = document.getElementById('food-results');
-  searchInput.addEventListener('input', () => {
-    const results = searchFood(searchInput.value);
+
+  function renderSearchResults(results, isFrequent) {
     if (results.length > 0) {
-      searchResults.innerHTML = results.map(f => `
+      const header = isFrequent ? '<div class="search-item" style="padding:6px 16px;font-size:11px;color:var(--text-muted);border-bottom:1px solid var(--border)">Frequently added</div>' : '';
+      searchResults.innerHTML = header + results.map(f => `
         <div class="search-item" data-food='${JSON.stringify(f)}'>
           <div>
             <div class="search-item-name">${f.name}</div>
-            <div class="search-item-meta">${f.serving} · P:${f.protein}g</div>
+            <div class="search-item-meta">${f.serving || '1 serving'} · P:${f.protein}g</div>
           </div>
           <div class="search-item-meta">${f.calories} cal</div>
         </div>
@@ -1096,6 +1146,18 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       searchResults.classList.remove('show');
     }
+  }
+
+  searchInput.addEventListener('input', () => {
+    const q = searchInput.value.trim();
+    const results = searchFood(q);
+    renderSearchResults(results, q.length === 0);
+  });
+
+  searchInput.addEventListener('focus', () => {
+    const q = searchInput.value.trim();
+    const results = searchFood(q);
+    renderSearchResults(results, q.length === 0);
   });
 
   searchResults.addEventListener('click', (e) => {
